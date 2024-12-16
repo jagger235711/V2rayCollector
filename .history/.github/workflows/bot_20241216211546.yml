@@ -1,0 +1,39 @@
+name: "CONFIG COLLECTOR"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/60 * * * *'
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          
+      - name: Execute PHP script
+        run: |
+          php bot.php
+          git config credential.helper store
+      
+      - name: Configure Git
+        run: |
+          git config --global user.email "vip.mahditaheri@gmail.com"
+          git config --global user.name "MhdiTaheri"
+          git remote set-url origin https://github.com/jagger235711/V2rayCollector.git
+      
+      - name: Push changes with rebase
+        run: |
+          git add -A
+          git commit -m "V0.2 🚀 - $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"
+          git pull --rebase origin main
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.PUSH_BOT }}
+
