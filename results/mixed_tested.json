@@ -45,14 +45,6 @@
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
 		},
 		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "84.17.53.160",
-			"server_port": 989,
-			"tag": "84.17.53.160:989 2",
-			"type": "shadowsocks"
-		},
-		{
 			"password": "dongtaiwang.com",
 			"server": "46.29.163.171",
 			"server_port": 18626,
@@ -639,6 +631,25 @@
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
+			"server": "59.25.246.161",
+			"server_port": 12391,
+			"tag": "59.25.246.161:12391",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "edfgk.aimercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "edfgk.aimercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
 			"server": "59.28.131.112",
 			"server_port": 12381,
 			"tag": "59.28.131.112:12381",
@@ -969,6 +980,25 @@
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
 		},
 		{
+			"server": "www.speedtest.net",
+			"server_port": 8443,
+			"tag": "www.speedtest.net:8443",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "6PaI52dYm3.DmNeWnOd110.CoM"
+			},
+			"transport": {
+				"headers": {
+					"Host": "6PaI52dYm3.DmNeWnOd110.CoM"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "24a4aa9b-b341-4717-9d4a-00d74c2b84e0"
+		},
+		{
 			"server": "47.76.62.98",
 			"server_port": 587,
 			"tag": "47.76.62.98:587 2",
@@ -1190,15 +1220,6 @@
 				"server_name": "www.bing.com"
 			},
 			"type": "hysteria2"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "183.236.51.36",
-			"server_port": 59003,
-			"tag": "🇨🇳|CN|@wxgqlfx|42 | V2rayCollector 3",
-			"type": "vmess",
-			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
 		},
 		{
 			"alter_id": 0,
@@ -1705,25 +1726,6 @@
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
-			"server": "154.29.150.2",
-			"server_port": 8080,
-			"tag": " - 44",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
 			"server": "154.218.15.250",
 			"server_port": 2083,
 			"tag": " - 43",
@@ -2003,6 +2005,14 @@
 			"type": "trojan"
 		},
 		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "84.17.53.160",
+			"server_port": 989,
+			"tag": "84.17.53.160:989 3",
+			"type": "shadowsocks"
+		},
+		{
 			"password": "dongtaiwang.com",
 			"server": "46.29.163.171",
 			"server_port": 18626,
@@ -2135,7 +2145,7 @@
 			"security": "auto",
 			"server": "si.1808.site",
 			"server_port": 30002,
-			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 20",
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 21",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -2671,25 +2681,6 @@
 			"server": "192.200.160.109",
 			"server_port": 8443,
 			"tag": "192.200.160.109:8443 5",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
-			"server": "27.50.49.37",
-			"server_port": 2053,
-			"tag": "27.50.49.37:2053 3",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -3278,14 +3269,6 @@
 			"type": "shadowsocks"
 		},
 		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "84.17.53.160",
-			"server_port": 989,
-			"tag": " - 37 3",
-			"type": "shadowsocks"
-		},
-		{
 			"server": "211.193.231.86",
 			"server_port": 12289,
 			"tag": " - 33 3",
@@ -3308,25 +3291,6 @@
 			"server": "59.28.131.112",
 			"server_port": 12381,
 			"tag": " - 32 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
-			"server": "59.25.246.161",
-			"server_port": 12391,
-			"tag": " - 31 3",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -3802,14 +3766,6 @@
 				"type": "ws"
 			},
 			"type": "trojan"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "lBtNN4MG3N4yTrre1pBLIS",
-			"server": "147.45.221.105",
-			"server_port": 55515,
-			"tag": "147.45.221.105:55515",
-			"type": "shadowsocks"
 		},
 		{
 			"alter_id": 0,
@@ -4341,14 +4297,6 @@
 			},
 			"type": "vless",
 			"uuid": "f6bd2c47-99da-4bca-bf70-7186aa9e7e06"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "lBtNN4MG3N4yTrre1pBLIS",
-			"server": "147.45.221.105",
-			"server_port": 55515,
-			"tag": "147.45.221.105:55515 2",
-			"type": "shadowsocks"
 		},
 		{
 			"alter_id": 0,
@@ -4918,25 +4866,6 @@
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
 		},
 		{
-			"server": "52.187.36.104",
-			"server_port": 443,
-			"tag": "52.187.36.104:443",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "werrr.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "werrr.azurewebsites.net"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
-		},
-		{
 			"server": "15.204.191.23",
 			"server_port": 443,
 			"tag": "15.204.191.23:443",
@@ -5306,25 +5235,6 @@
 			},
 			"type": "vless",
 			"uuid": "c4fa89d4-fcb9-48ba-adbc-665181cc817f"
-		},
-		{
-			"server": "52.187.36.104",
-			"server_port": 443,
-			"tag": " - 73 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "werrr.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "werrr.azurewebsites.net"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
 		},
 		{
 			"server": "45.131.5.236",
@@ -5787,14 +5697,6 @@
 			"server": "151.115.43.27",
 			"server_port": 11202,
 			"tag": " - 36 5",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "lBtNN4MG3N4yTrre1pBLIS",
-			"server": "147.45.221.105",
-			"server_port": 55515,
-			"tag": " - 23 8",
 			"type": "shadowsocks"
 		},
 		{
@@ -6306,14 +6208,6 @@
 			"uuid": "f6bd2c47-99da-4bca-bf70-7186aa9e7e06"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "lBtNN4MG3N4yTrre1pBLIS",
-			"server": "147.45.221.105",
-			"server_port": 55515,
-			"tag": "147.45.221.105:55515 3",
-			"type": "shadowsocks"
-		},
-		{
 			"alter_id": 0,
 			"security": "auto",
 			"server": "183.236.51.36",
@@ -6410,25 +6304,6 @@
 			"transport": {
 				"headers": {
 					"Host": "agedgj.ambercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
-			"server": "59.25.246.161",
-			"server_port": 12391,
-			"tag": "59.25.246.161:12391 11",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
 				},
 				"path": "/?ed",
 				"type": "ws"
@@ -6648,25 +6523,6 @@
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
 		},
 		{
-			"server": "52.187.36.104",
-			"server_port": 443,
-			"tag": "52.187.36.104:443 2",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "werrr.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "werrr.azurewebsites.net"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
-		},
-		{
 			"server": "14.32.158.138",
 			"server_port": 12135,
 			"tag": "14.32.158.138:12135 2",
@@ -6843,14 +6699,6 @@
 			"uuid": "f6bd2c47-99da-4bca-bf70-7186aa9e7e06"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "lBtNN4MG3N4yTrre1pBLIS",
-			"server": "147.45.221.105",
-			"server_port": 55515,
-			"tag": "147.45.221.105:55515 4",
-			"type": "shadowsocks"
-		},
-		{
 			"alter_id": 0,
 			"security": "auto",
 			"server": "183.236.51.36",
@@ -6858,25 +6706,6 @@
 			"tag": "🇨🇳|CN|@wxgqlfx|35 | V2rayCollector 11",
 			"type": "vmess",
 			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
-		},
-		{
-			"server": "220.135.202.250",
-			"server_port": 81,
-			"tag": "220.135.202.250:81 2",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "agedgj.ambercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "agedgj.ambercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
 			"server": "154.9.207.177",
@@ -6958,25 +6787,6 @@
 			"server": "103.116.7.235",
 			"server_port": 443,
 			"tag": "103.116.7.235:443 4",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "agedgj.ambercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "agedgj.ambercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
-			"server": "168.138.46.67",
-			"server_port": 443,
-			"tag": "168.138.46.67:443 3",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -7171,25 +6981,6 @@
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
 		},
 		{
-			"server": "52.187.36.104",
-			"server_port": 443,
-			"tag": "52.187.36.104:443 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "werrr.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "werrr.azurewebsites.net"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
-		},
-		{
 			"server": "14.32.158.138",
 			"server_port": 12135,
 			"tag": "14.32.158.138:12135 3",
@@ -7271,25 +7062,6 @@
 			},
 			"type": "vmess",
 			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
-		},
-		{
-			"server": "52.187.36.104",
-			"server_port": 443,
-			"tag": " - 31 6",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "werrr.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "werrr.azurewebsites.net"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
 		},
 		{
 			"server": "92.243.75.49",
@@ -7649,14 +7421,6 @@
 			"type": "shadowsocks"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "lBtNN4MG3N4yTrre1pBLIS",
-			"server": "147.45.221.105",
-			"server_port": 55515,
-			"tag": " - 60 6",
-			"type": "shadowsocks"
-		},
-		{
 			"flow": "xtls-rprx-vision",
 			"server": "157.245.40.50",
 			"server_port": 8989,
@@ -7829,25 +7593,6 @@
 			},
 			"type": "vless",
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
-			"server": "52.187.36.104",
-			"server_port": 443,
-			"tag": " - 19 10",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "werrr.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "werrr.azurewebsites.net"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
 		},
 		{
 			"server": "45.131.4.153",
@@ -8073,6 +7818,44 @@
 			},
 			"type": "vless",
 			"uuid": "e20ebe01-1815-4c09-8e77-fb2f168263ce"
+		},
+		{
+			"server": "154.29.150.2",
+			"server_port": 8080,
+			"tag": " - 1 15",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "edfgk.aimercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "edfgk.aimercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.92",
+			"server_port": 2053,
+			"tag": " - 5 13",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
 		},
 		{
 			"password": "Aimer",
@@ -8559,25 +8342,6 @@
 			"transport": {
 				"headers": {
 					"Host": "agedgj.ambercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
-			"server": "59.25.246.161",
-			"server_port": 12391,
-			"tag": "59.25.246.161:12391 12",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
 				},
 				"path": "/?ed",
 				"type": "ws"
@@ -9378,6 +9142,27 @@
 			"security": "auto",
 			"server": "si.1808.site",
 			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 61",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
 			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 62",
 			"tls": {
 				"enabled": true,
@@ -9504,27 +9289,6 @@
 			"security": "auto",
 			"server": "si.1808.site",
 			"server_port": 30002,
-			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 68",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "obdii.cfd"
-			},
-			"transport": {
-				"headers": {
-					"Host": "obdii.cfd"
-				},
-				"path": "/linkws",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "si.1808.site",
-			"server_port": 30002,
 			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 69",
 			"tls": {
 				"enabled": true,
@@ -9589,7 +9353,7 @@
 			"security": "auto",
 			"server": "si.1808.site",
 			"server_port": 30002,
-			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 71",
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 72",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -11077,25 +10841,6 @@
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
-			"server": "217.30.10.55",
-			"server_port": 443,
-			"tag": "217.30.10.55:443",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "agedgj.ambercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "agedgj.ambercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
 			"server": "168.138.46.67",
 			"server_port": 443,
 			"tag": "168.138.46.67:443 5",
@@ -11407,6 +11152,28 @@
 			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
 		},
 		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": "31.59.111.49:33718 3",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
+		},
+		{
 			"alter_id": 0,
 			"security": "auto",
 			"server": "si.1808.site",
@@ -11594,6 +11361,28 @@
 			},
 			"type": "vmess",
 			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": "31.59.111.49:33718 4",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
 		},
 		{
 			"alter_id": 0,
@@ -12096,15 +11885,6 @@
 			},
 			"type": "vless",
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "183.236.51.36",
-			"server_port": 59003,
-			"tag": "🇨🇳|CN|@wxgqlfx|82 | V2rayCollector 5",
-			"type": "vmess",
-			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
 		},
 		{
 			"server": "199.34.228.162",
@@ -12641,6 +12421,28 @@
 			},
 			"type": "vless",
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": " - 16 18",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
 		},
 		{
 			"server": "135.148.157.112",
@@ -13366,25 +13168,6 @@
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
-			"server": "217.30.10.55",
-			"server_port": 443,
-			"tag": " - 47 10",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "agedgj.ambercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "agedgj.ambercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
 			"server": "199.34.228.65",
 			"server_port": 443,
 			"tag": " - 45 10",
@@ -13642,15 +13425,6 @@
 			},
 			"type": "vless",
 			"uuid": "c4fa89d4-fcb9-48ba-adbc-665181cc817f"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "183.236.51.36",
-			"server_port": 59003,
-			"tag": "🇨🇳|CN|@wxgqlfx|80 | V2rayCollector",
-			"type": "vmess",
-			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
 		},
 		{
 			"server": "199.34.228.167",
@@ -14434,25 +14208,6 @@
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
-			"server": "211.193.36.238",
-			"server_port": 16017,
-			"tag": "211.193.36.238:16017",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
 			"server": "59.25.246.161",
 			"server_port": 12391,
 			"tag": "59.25.246.161:12391 14",
@@ -14597,25 +14352,6 @@
 			},
 			"type": "vless",
 			"uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055"
-		},
-		{
-			"server": "vsdfee.azurewebsites.net",
-			"server_port": 443,
-			"tag": "vsdfee.azurewebsites.net:443",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "vsdfee.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "vsdfee.azurewebsites.net"
-				},
-				"path": "/fp",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
 		},
 		{
 			"password": "Y0IweO6223CjwZD8FFZAaCz3yTYxDKX9yOAlXp5FTRONDaZl3zSeS7a3D4cYuCxFRx7yS",
@@ -14992,25 +14728,6 @@
 			"uuid": "3b9bc773-05eb-4d5f-8c1f-57342c0c4f40"
 		},
 		{
-			"server": "vsdfee.azurewebsites.net",
-			"server_port": 443,
-			"tag": " - 48 12",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "vsdfee.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "vsdfee.azurewebsites.net"
-				},
-				"path": "/fp",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
-		},
-		{
 			"server": "135.148.74.159",
 			"server_port": 443,
 			"tag": " - 47 12",
@@ -15023,28 +14740,28 @@
 			"uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055"
 		},
 		{
-			"server": "104.26.9.63",
-			"server_port": 2083,
-			"tag": " - 46 12",
+			"server": "92.243.74.180",
+			"server_port": 8443,
+			"tag": " - 44 12",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "test.bujidao.org"
+				"server_name": "edfgk.aimercc.filegear-sg.me"
 			},
 			"transport": {
 				"headers": {
-					"Host": "test.bujidao.org"
+					"Host": "edfgk.aimercc.filegear-sg.me"
 				},
 				"path": "/?ed",
 				"type": "ws"
 			},
 			"type": "vless",
-			"uuid": "1ccc1dd8-d8ed-4b69-b0c2-27f6282f9755"
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
-			"server": "92.243.74.180",
-			"server_port": 8443,
-			"tag": " - 44 12",
+			"server": "59.25.246.161",
+			"server_port": 12391,
+			"tag": " - 43 12",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -15173,28 +14890,6 @@
 			},
 			"type": "vless",
 			"uuid": "d154eff1-379b-4f8b-9bd8-887018f64611"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "47.79.32.197",
-			"server_port": 33792,
-			"tag": " - 23 17",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "85EHAJweJMU14xhl2ETPxWcYDa6bOMYS0IR5-QXbS24",
-					"short_id": "f54d2d48374323"
-				},
-				"server_name": "www.yahoo.com",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "ee26a997-6ad5-4160-adc7-35a803f5fe77"
 		},
 		{
 			"server": "ignacio.ns.cloudflare.com",
@@ -15327,22 +15022,6 @@
 		{
 			"alter_id": 0,
 			"security": "auto",
-			"server": "185.85.241.196",
-			"server_port": 8080,
-			"tag": "🇩🇪|DE|@wxgqlfx|374 | V2rayCollector 3",
-			"transport": {
-				"headers": {
-					"Host": "www.bing.com"
-				},
-				"path": "a9b84c67-6143-4db3-abc0-d9fa332205cc-vm",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "a9b84c67-6143-4db3-abc0-d9fa332205cc"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
 			"server": "183.236.51.36",
 			"server_port": 59003,
 			"tag": "🇨🇳|CN|@wxgqlfx|80 | V2rayCollector 3",
@@ -15360,6 +15039,25 @@
 			},
 			"type": "vless",
 			"uuid": "0a44145f-59dc-4e5b-a233-677b97f5114c"
+		},
+		{
+			"server": "211.193.36.238",
+			"server_port": 16017,
+			"tag": " - 108 7",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "edfgk.aimercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "edfgk.aimercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
 			"server": "8.219.112.93",
@@ -16034,6 +15732,27 @@
 			"security": "auto",
 			"server": "si.1808.site",
 			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 113",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
 			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 114",
 			"tls": {
 				"enabled": true,
@@ -16361,25 +16080,6 @@
 			"server": "112.165.54.52",
 			"server_port": 35263,
 			"tag": "112.165.54.52:35263 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
-			"server": "211.193.36.238",
-			"server_port": 16017,
-			"tag": "211.193.36.238:16017 2",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -17123,25 +16823,6 @@
 			"type": "trojan"
 		},
 		{
-			"server": "104.26.9.63",
-			"server_port": 2083,
-			"tag": "104.26.9.63:2083 2",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "test.bujidao.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "test.bujidao.org"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "1ccc1dd8-d8ed-4b69-b0c2-27f6282f9755"
-		},
-		{
 			"server": "135.148.74.159",
 			"server_port": 443,
 			"tag": "135.148.74.159:443 2",
@@ -17661,28 +17342,6 @@
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
 		},
 		{
-			"flow": "xtls-rprx-vision",
-			"server": "47.79.32.197",
-			"server_port": 33792,
-			"tag": " - 73 13",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "85EHAJweJMU14xhl2ETPxWcYDa6bOMYS0IR5-QXbS24",
-					"short_id": "f54d2d48374323"
-				},
-				"server_name": "www.yahoo.com",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "ee26a997-6ad5-4160-adc7-35a803f5fe77"
-		},
-		{
 			"server": "135.148.74.159",
 			"server_port": 443,
 			"tag": " - 72 13",
@@ -17935,25 +17594,6 @@
 			"uuid": "c4fa89d4-fcb9-48ba-adbc-665181cc817f"
 		},
 		{
-			"server": "www.speedtest.net",
-			"server_port": 8443,
-			"tag": " - 41 15",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "6PaI52dYm3.DmNeWnOd110.CoM"
-			},
-			"transport": {
-				"headers": {
-					"Host": "6PaI52dYm3.DmNeWnOd110.CoM"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "24a4aa9b-b341-4717-9d4a-00d74c2b84e0"
-		},
-		{
 			"server": "185.18.250.12",
 			"server_port": 80,
 			"tag": " - 40 16",
@@ -17990,6 +17630,25 @@
 			"server": "106.240.1.52",
 			"server_port": 20443,
 			"tag": " - 36 16",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "edfgk.aimercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "edfgk.aimercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "211.193.36.238",
+			"server_port": 16017,
+			"tag": " - 35 18",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -18500,25 +18159,6 @@
 			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
 		},
 		{
-			"server": "46.232.54.100",
-			"server_port": 443,
-			"tag": "46.232.54.100:443",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
 			"server": "135.148.157.112",
 			"server_port": 443,
 			"tag": "135.148.157.112:443 8",
@@ -19000,28 +18640,6 @@
 			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
 		},
 		{
-			"flow": "xtls-rprx-vision",
-			"server": "47.79.32.197",
-			"server_port": 33792,
-			"tag": "47.79.32.197:33792 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "85EHAJweJMU14xhl2ETPxWcYDa6bOMYS0IR5-QXbS24",
-					"short_id": "f54d2d48374323"
-				},
-				"server_name": "www.yahoo.com",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "ee26a997-6ad5-4160-adc7-35a803f5fe77"
-		},
-		{
 			"server": "104.17.147.22",
 			"server_port": 80,
 			"tag": "104.17.147.22:80 3",
@@ -19112,25 +18730,6 @@
 			"server": "206.237.13.106",
 			"server_port": 10093,
 			"tag": "206.237.13.106:10093 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
-			"server": "46.232.54.100",
-			"server_port": 443,
-			"tag": "46.232.54.100:443 2",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -20176,25 +19775,6 @@
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
-			"server": "211.193.36.238",
-			"server_port": 16017,
-			"tag": " - 112 10",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
 			"server": "27.50.49.166",
 			"server_port": 8443,
 			"tag": " - 111 10",
@@ -20626,25 +20206,6 @@
 			},
 			"type": "vless",
 			"uuid": "d154eff1-379b-4f8b-9bd8-887018f64611"
-		},
-		{
-			"server": "46.232.54.100",
-			"server_port": 443,
-			"tag": " - 43 18",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
 			"method": "aes-256-gcm",
@@ -21560,25 +21121,6 @@
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
-			"server": "46.232.54.100",
-			"server_port": 443,
-			"tag": "46.232.54.100:443 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
 			"server": "135.148.83.52",
 			"server_port": 443,
 			"tag": "135.148.83.52:443 5",
@@ -21962,25 +21504,6 @@
 			"type": "shadowsocks"
 		},
 		{
-			"password": "d67cfeaf-b277-44ac-ab99-9dd02a7c5299",
-			"server": "104.21.49.59",
-			"server_port": 443,
-			"tag": "104.21.49.59:443 8",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "Fgh9JkR5.890617.xYz"
-			},
-			"transport": {
-				"headers": {
-					"Host": "Fgh9JkR5.890617.xYz"
-				},
-				"path": "/lWljHWvIMOj85lz42MdhsCLV",
-				"type": "ws"
-			},
-			"type": "trojan"
-		},
-		{
 			"server": "135.148.174.211",
 			"server_port": 443,
 			"tag": "135.148.174.211:443 2",
@@ -21991,25 +21514,6 @@
 			},
 			"type": "vless",
 			"uuid": "0a44145f-59dc-4e5b-a233-677b97f5114c"
-		},
-		{
-			"server": "104.26.9.63",
-			"server_port": 2083,
-			"tag": "104.26.9.63:2083 4",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "test.bujidao.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "test.bujidao.org"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "1ccc1dd8-d8ed-4b69-b0c2-27f6282f9755"
 		},
 		{
 			"password": "Y0IweO6223CjwZD8FFZAaCz3yTYxDKX9yOAlXp5FTRONDaZl3zSeS7a3D4cYuCxFRx7yS",
@@ -22321,25 +21825,6 @@
 			"uuid": "c4fa89d4-fcb9-48ba-adbc-665181cc817f"
 		},
 		{
-			"server": "46.232.54.100",
-			"server_port": 443,
-			"tag": " - 31 20",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "edfgk.aimercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "edfgk.aimercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
 			"server": "221.164.192.95",
 			"server_port": 50003,
 			"tag": " - 30 19",
@@ -22525,6 +22010,28 @@
 			"uuid": "d154eff1-379b-4f8b-9bd8-887018f64611"
 		},
 		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": " - 5 29",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
+		},
+		{
 			"server": "51.81.22.144",
 			"server_port": 443,
 			"tag": " - 1 38",
@@ -22568,25 +22075,6 @@
 			"type": "trojan"
 		},
 		{
-			"server": "www.speedtest.net",
-			"server_port": 8443,
-			"tag": " - 121 11",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "6PaI52dYm3.DmNeWnOd110.CoM"
-			},
-			"transport": {
-				"headers": {
-					"Host": "6PaI52dYm3.DmNeWnOd110.CoM"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "24a4aa9b-b341-4717-9d4a-00d74c2b84e0"
-		},
-		{
 			"server": "185.18.250.12",
 			"server_port": 80,
 			"tag": " - 119 11",
@@ -22599,25 +22087,6 @@
 			},
 			"type": "vless",
 			"uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9"
-		},
-		{
-			"server": "104.26.9.63",
-			"server_port": 2083,
-			"tag": " - 118 12",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "test.bujidao.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "test.bujidao.org"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "1ccc1dd8-d8ed-4b69-b0c2-27f6282f9755"
 		},
 		{
 			"server": "135.148.174.211",
@@ -22813,28 +22282,6 @@
 			},
 			"type": "vless",
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "47.79.32.197",
-			"server_port": 33792,
-			"tag": " - 81 16",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "85EHAJweJMU14xhl2ETPxWcYDa6bOMYS0IR5-QXbS24",
-					"short_id": "f54d2d48374323"
-				},
-				"server_name": "www.yahoo.com",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "ee26a997-6ad5-4160-adc7-35a803f5fe77"
 		},
 		{
 			"server": "135.148.74.159",
@@ -23297,6 +22744,27 @@
 			"security": "auto",
 			"server": "si.1808.site",
 			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 160",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
 			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 161",
 			"tls": {
 				"enabled": true,
@@ -23340,6 +22808,27 @@
 			"server": "si.1808.site",
 			"server_port": 30002,
 			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 163",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 164",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -23620,20 +23109,6 @@
 			},
 			"type": "vless",
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
-		},
-		{
-			"server": "45.131.6.102",
-			"server_port": 80,
-			"tag": "45.131.6.102:80",
-			"transport": {
-				"headers": {
-					"Host": "901.dbodanwi.workers.dev"
-				},
-				"path": "Telegram@WangCai2/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f183280-b258-437a-a216-e83f7dece776"
 		},
 		{
 			"server": "45.131.4.142",
@@ -23937,6 +23412,23 @@
 			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
 		},
 		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "112.132.215.12",
+			"server_port": 50002,
+			"tag": "🇨🇳|CN|@wxgqlfx|82 | V2rayCollector 7",
+			"type": "vmess",
+			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "e014f8ab71735926",
+			"server": "57.128.190.245",
+			"server_port": 20568,
+			"tag": "57.128.190.245:20568",
+			"type": "shadowsocks"
+		},
+		{
 			"server": "51.81.124.80",
 			"server_port": 443,
 			"tag": "51.81.124.80:443",
@@ -24158,25 +23650,6 @@
 			"uuid": "409ef7ff-6449-4b9a-9db9-775927a1a925"
 		},
 		{
-			"server": "vsdfee.azurewebsites.net",
-			"server_port": 443,
-			"tag": "vsdfee.azurewebsites.net:443 2",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "vsdfee.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "vsdfee.azurewebsites.net"
-				},
-				"path": "/fp",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
-		},
-		{
 			"server": "104.17.147.22",
 			"server_port": 80,
 			"tag": "104.17.147.22:80 6",
@@ -24344,20 +23817,6 @@
 			},
 			"type": "vless",
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
-		},
-		{
-			"server": "45.131.6.102",
-			"server_port": 80,
-			"tag": "45.131.6.102:80 2",
-			"transport": {
-				"headers": {
-					"Host": "901.dbodanwi.workers.dev"
-				},
-				"path": "Telegram@WangCai2/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f183280-b258-437a-a216-e83f7dece776"
 		},
 		{
 			"server": "45.131.4.196",
@@ -24617,9 +24076,9 @@
 		{
 			"alter_id": 0,
 			"security": "auto",
-			"server": "47.92.152.169",
+			"server": "120.26.55.225",
 			"server_port": 50002,
-			"tag": "🇨🇳|CN|@wxgqlfx|79 | V2rayCollector 2",
+			"tag": "🇨🇳|CN|@wxgqlfx|80 | V2rayCollector 14",
 			"type": "vmess",
 			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
 		},
@@ -24745,28 +24204,6 @@
 		},
 		{
 			"flow": "xtls-rprx-vision",
-			"server": "194.127.173.202",
-			"server_port": 443,
-			"tag": "194.127.173.202:443",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
-					"short_id": "21181028b56c8702"
-				},
-				"server_name": "maviks.eu",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae"
-		},
-		{
-			"flow": "xtls-rprx-vision",
 			"server": "194.49.53.185",
 			"server_port": 443,
 			"tag": "194.49.53.185:443 2",
@@ -24808,6 +24245,28 @@
 			},
 			"type": "vless",
 			"uuid": "7e84b5b9-e9fe-4dbe-906d-4abd67c09376"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": "31.59.111.49:33718 7",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
 		},
 		{
 			"server": "156.238.18.153",
@@ -24870,9 +24329,9 @@
 		{
 			"alter_id": 0,
 			"security": "auto",
-			"server": "47.92.152.169",
+			"server": "120.26.55.225",
 			"server_port": 50002,
-			"tag": "🇨🇳|CN|@wxgqlfx|79 | V2rayCollector 3",
+			"tag": "🇨🇳|CN|@wxgqlfx|80 | V2rayCollector 15",
 			"type": "vmess",
 			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
 		},
@@ -24930,6 +24389,28 @@
 			},
 			"type": "vmess",
 			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": " - 45 23",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
 		},
 		{
 			"flow": "xtls-rprx-vision",
@@ -25112,20 +24593,6 @@
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
 		},
 		{
-			"server": "45.131.6.102",
-			"server_port": 80,
-			"tag": " - 28 23",
-			"transport": {
-				"headers": {
-					"Host": "901.dbodanwi.workers.dev"
-				},
-				"path": "Telegram@WangCai2/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f183280-b258-437a-a216-e83f7dece776"
-		},
-		{
 			"server": "45.131.5.120",
 			"server_port": 80,
 			"tag": " - 27 23",
@@ -25152,25 +24619,6 @@
 			},
 			"type": "vless",
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
-		},
-		{
-			"server": "vsdfee.azurewebsites.net",
-			"server_port": 443,
-			"tag": " - 25 23",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "vsdfee.azurewebsites.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "vsdfee.azurewebsites.net"
-				},
-				"path": "/fp",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f995056-7802-4a1d-bff7-61678e626c3f"
 		},
 		{
 			"server": "192.18.130.65",
@@ -25439,25 +24887,6 @@
 			"uuid": "409ef7ff-6449-4b9a-9db9-775927a1a925"
 		},
 		{
-			"server": "104.26.9.63",
-			"server_port": 2083,
-			"tag": " - 2 37",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "test.bujidao.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "test.bujidao.org"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "1ccc1dd8-d8ed-4b69-b0c2-27f6282f9755"
-		},
-		{
 			"server": "135.148.174.211",
 			"server_port": 443,
 			"tag": " - 1 42",
@@ -25504,6 +24933,28 @@
 			},
 			"type": "vless",
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": " - 85 17",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
 		},
 		{
 			"server": "104.17.147.22",
@@ -25884,20 +25335,6 @@
 			},
 			"type": "vless",
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
-		},
-		{
-			"server": "45.131.6.102",
-			"server_port": 80,
-			"tag": " - 44 24",
-			"transport": {
-				"headers": {
-					"Host": "901.dbodanwi.workers.dev"
-				},
-				"path": "Telegram@WangCai2/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6f183280-b258-437a-a216-e83f7dece776"
 		},
 		{
 			"server": "45.131.4.41",
@@ -26394,25 +25831,6 @@
 			"type": "shadowsocks"
 		},
 		{
-			"password": "d67cfeaf-b277-44ac-ab99-9dd02a7c5299",
-			"server": "104.21.49.59",
-			"server_port": 443,
-			"tag": "104.21.49.59:443 11",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "Fgh9JkR5.890617.xYz"
-			},
-			"transport": {
-				"headers": {
-					"Host": "Fgh9JkR5.890617.xYz"
-				},
-				"path": "/lWljHWvIMOj85lz42MdhsCLV",
-				"type": "ws"
-			},
-			"type": "trojan"
-		},
-		{
 			"server": "172.64.34.232",
 			"server_port": 443,
 			"tag": "172.64.34.232:443 6",
@@ -26430,25 +25848,6 @@
 			},
 			"type": "vless",
 			"uuid": "10525b84-7f6e-43ef-912b-87434df813f4"
-		},
-		{
-			"server": "104.26.9.63",
-			"server_port": 2083,
-			"tag": "104.26.9.63:2083 6",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "test.bujidao.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "test.bujidao.org"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "1ccc1dd8-d8ed-4b69-b0c2-27f6282f9755"
 		},
 		{
 			"flow": "xtls-rprx-vision",
@@ -26483,22 +25882,6 @@
 				"server_name": "tenderly.meijireform.com"
 			},
 			"type": "trojan"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "185.85.241.196",
-			"server_port": 8080,
-			"tag": "🇩🇪|DE|@wxgqlfx|374 | V2rayCollector 16",
-			"transport": {
-				"headers": {
-					"Host": "www.bing.com"
-				},
-				"path": "a9b84c67-6143-4db3-abc0-d9fa332205cc-vm",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "a9b84c67-6143-4db3-abc0-d9fa332205cc"
 		},
 		{
 			"server": "147.135.125.113",
@@ -26837,6 +26220,32 @@
 			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
 		},
 		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "120.26.55.225",
+			"server_port": 50002,
+			"tag": "🇨🇳|CN|@wxgqlfx|80 | V2rayCollector 16",
+			"type": "vmess",
+			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "112.132.215.12",
+			"server_port": 50002,
+			"tag": "🇨🇳|CN|@wxgqlfx|82 | V2rayCollector 10",
+			"type": "vmess",
+			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "e014f8ab71735926",
+			"server": "57.128.190.245",
+			"server_port": 20568,
+			"tag": "57.128.190.245:20568 3",
+			"type": "shadowsocks"
+		},
+		{
 			"server": "135.148.163.90",
 			"server_port": 443,
 			"tag": "135.148.163.90:443",
@@ -27051,28 +26460,6 @@
 			},
 			"type": "vless",
 			"uuid": "10525b84-7f6e-43ef-912b-87434df813f4"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "47.79.32.197",
-			"server_port": 33792,
-			"tag": "47.79.32.197:33792 7",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "85EHAJweJMU14xhl2ETPxWcYDa6bOMYS0IR5-QXbS24",
-					"short_id": "f54d2d48374323"
-				},
-				"server_name": "www.yahoo.com",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "ee26a997-6ad5-4160-adc7-35a803f5fe77"
 		},
 		{
 			"password": "Y0IweO6223CjwZD8FFZAaCz3yTYxDKX9yOAlXp5FTRONDaZl3zSeS7a3D4cYuCxFRx7yS",
@@ -27523,18 +26910,9 @@
 		{
 			"alter_id": 0,
 			"security": "auto",
-			"server": "47.92.152.169",
+			"server": "120.26.55.225",
 			"server_port": 50002,
-			"tag": "🇨🇳|CN|@wxgqlfx|79 | V2rayCollector 5",
-			"type": "vmess",
-			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "112.132.215.12",
-			"server_port": 50002,
-			"tag": "🇨🇳|CN|@wxgqlfx|82 | V2rayCollector 11",
+			"tag": "🇨🇳|CN|@wxgqlfx|80 | V2rayCollector 17",
 			"type": "vmess",
 			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
 		},
@@ -27735,47 +27113,25 @@
 		},
 		{
 			"flow": "xtls-rprx-vision",
-			"server": "185.85.241.196",
-			"server_port": 47769,
-			"tag": " - 21 34",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": " - 23 29",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
 				"reality": {
 					"enabled": true,
-					"public_key": "yZDga7N5QiyK8-kuNn64zQ2vsSJf5enkWJYWtuoLwUQ",
-					"short_id": "71c63039"
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
 				},
-				"server_name": "www.yahoo.com",
+				"server_name": "icloud.cdn-apple.com",
 				"utls": {
 					"enabled": true,
 					"fingerprint": "chrome"
 				}
 			},
 			"type": "vless",
-			"uuid": "a9b84c67-6143-4db3-abc0-d9fa332205cc"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "194.127.173.201",
-			"server_port": 443,
-			"tag": " - 20 31",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
-					"short_id": "21181028b56c8702"
-				},
-				"server_name": "maviks.eu",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae"
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
 		},
 		{
 			"server": "104.21.58.135",
@@ -27877,28 +27233,6 @@
 			},
 			"type": "vless",
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "194.127.173.200",
-			"server_port": 443,
-			"tag": " - 10 35",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
-					"short_id": "21181028b56c8702"
-				},
-				"server_name": "maviks.eu",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae"
 		},
 		{
 			"server": "45.131.4.125",
@@ -28640,14 +27974,6 @@
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "e014f8ab71735926",
-			"server": "57.128.190.245",
-			"server_port": 20568,
-			"tag": " - 34 26",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
 			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
 			"server": "103.104.247.49",
 			"server_port": 8080,
@@ -29307,6 +28633,28 @@
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
 		},
 		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": "31.59.111.49:33718 10",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
+		},
+		{
 			"server": "156.238.18.235",
 			"server_port": 80,
 			"tag": "156.238.18.235:80 3",
@@ -29707,6 +29055,25 @@
 			"server": "188.164.159.174",
 			"server_port": 2053,
 			"tag": "188.164.159.174:2053",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.48.189",
+			"server_port": 2083,
+			"tag": "27.50.48.189:2083 5",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -30191,6 +29558,28 @@
 			"uuid": "3b9bc773-05eb-4d5f-8c1f-57342c0c4f40"
 		},
 		{
+			"flow": "xtls-rprx-vision",
+			"server": "185.184.70.90",
+			"server_port": 46865,
+			"tag": "185.184.70.90:46865 3",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "MKAJr8pG0z3lTPa7L1uWQ9jlrCUIAV9H7cQeOBsUrlI",
+					"short_id": "45f61645"
+				},
+				"server_name": "www.yahoo.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "7e84b5b9-e9fe-4dbe-906d-4abd67c09376"
+		},
+		{
 			"server": "104.21.58.212",
 			"server_port": 80,
 			"tag": "104.21.58.212:80 3",
@@ -30225,6 +29614,28 @@
 			},
 			"type": "vless",
 			"uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": "31.59.111.49:33718 11",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
 		},
 		{
 			"server": "15.204.151.80",
@@ -30269,25 +29680,6 @@
 			"server": "192.200.160.109",
 			"server_port": 8443,
 			"tag": "192.200.160.109:8443 19",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "agepj.ambercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "agepj.ambercc.filegear-sg.me"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "Aimer",
-			"server": "135.84.74.27",
-			"server_port": 8443,
-			"tag": "135.84.74.27:8443 6",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -30429,25 +29821,6 @@
 			"transport": {
 				"headers": {
 					"Host": "agepl.ambercc.filegear-sg.me"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "Aimer",
-			"server": "59.188.46.218",
-			"server_port": 10028,
-			"tag": "59.188.46.218:10028 2",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "agepj.ambercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "agepj.ambercc.filegear-sg.me"
 				},
 				"path": "/",
 				"type": "ws"
@@ -31391,25 +30764,6 @@
 			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
 		},
 		{
-			"server": "210.204.159.68",
-			"server_port": 11920,
-			"tag": "210.204.159.68:11920 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "agedgk.ambercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "agedgk.ambercc.filegear-sg.me"
-				},
-				"path": "/?ed",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
-		},
-		{
 			"server": "27.50.48.189",
 			"server_port": 2083,
 			"tag": "27.50.48.189:2083 7",
@@ -31551,23 +30905,26 @@
 			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
 		},
 		{
-			"server": "51.20.17.97",
-			"server_port": 22222,
-			"tag": "51.20.17.97:22222 2",
+			"flow": "xtls-rprx-vision",
+			"server": "185.122.164.48",
+			"server_port": 45292,
+			"tag": "185.122.164.48:45292",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "telegram-channel-vlessconfig.sohala.uk"
-			},
-			"transport": {
-				"headers": {
-					"Host": "telegram-channel-vlessconfig.sohala.uk"
+				"reality": {
+					"enabled": true,
+					"public_key": "r2kiFEkgxnMM-dDVX93R-pb0vO_H5T6SbUr_qaygP2E",
+					"short_id": "b94e9d86"
 				},
-				"path": "/telegram-channel-vlessconfig-ws",
-				"type": "ws"
+				"server_name": "www.yahoo.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
 			},
 			"type": "vless",
-			"uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e"
+			"uuid": "737ff2b6-0e5d-48b5-9d4e-b9998e3ce1c1"
 		},
 		{
 			"flow": "xtls-rprx-vision",
@@ -31722,7 +31079,7 @@
 			"security": "auto",
 			"server": "si.1808.site",
 			"server_port": 30002,
-			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 187",
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 188",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -31743,7 +31100,7 @@
 			"security": "auto",
 			"server": "si.1808.site",
 			"server_port": 30002,
-			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 188",
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 189",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -32440,47 +31797,6 @@
 			"uuid": "11dbb0b6-8b02-59b9-ac62-593b1b23898a"
 		},
 		{
-			"server": "51.20.17.97",
-			"server_port": 22222,
-			"tag": " - 94 19",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "telegram-channel-vlessconfig.sohala.uk"
-			},
-			"transport": {
-				"headers": {
-					"Host": "telegram-channel-vlessconfig.sohala.uk"
-				},
-				"path": "/telegram-channel-vlessconfig-ws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "185.122.164.48",
-			"server_port": 45292,
-			"tag": " - 90 19",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "r2kiFEkgxnMM-dDVX93R-pb0vO_H5T6SbUr_qaygP2E",
-					"short_id": "b94e9d86"
-				},
-				"server_name": "www.yahoo.com",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "737ff2b6-0e5d-48b5-9d4e-b9998e3ce1c1"
-		},
-		{
 			"server": "156.238.18.28",
 			"server_port": 2095,
 			"tag": " - 89 19",
@@ -32642,25 +31958,25 @@
 		},
 		{
 			"flow": "xtls-rprx-vision",
-			"server": "194.127.173.202",
-			"server_port": 443,
-			"tag": " - 71 22",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": " - 72 23",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
 				"reality": {
 					"enabled": true,
-					"public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
-					"short_id": "21181028b56c8702"
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
 				},
-				"server_name": "maviks.eu",
+				"server_name": "icloud.cdn-apple.com",
 				"utls": {
 					"enabled": true,
 					"fingerprint": "chrome"
 				}
 			},
 			"type": "vless",
-			"uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae"
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
 		},
 		{
 			"flow": "xtls-rprx-vision",
@@ -33186,6 +32502,25 @@
 		},
 		{
 			"password": "Aimer",
+			"server": "167.68.4.7",
+			"server_port": 2053,
+			"tag": " - 38 30",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
 			"server": "108.165.152.219",
 			"server_port": 443,
 			"tag": " - 37 29",
@@ -33227,6 +32562,25 @@
 			"server": "154.197.64.189",
 			"server_port": 2087,
 			"tag": " - 35 30",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "38.60.92.27",
+			"server_port": 443,
+			"tag": " - 34 29",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -34943,25 +34297,6 @@
 		},
 		{
 			"password": "Aimer",
-			"server": "38.60.92.27",
-			"server_port": 443,
-			"tag": "38.60.92.27:443 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "agepj.ambercc.filegear-sg.me"
-			},
-			"transport": {
-				"headers": {
-					"Host": "agepj.ambercc.filegear-sg.me"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "Aimer",
 			"server": "154.197.64.189",
 			"server_port": 2087,
 			"tag": "154.197.64.189:2087 7",
@@ -36373,6 +35708,25 @@
 		},
 		{
 			"password": "Aimer",
+			"server": "38.60.92.27",
+			"server_port": 443,
+			"tag": "38.60.92.27:443 4",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
 			"server": "154.197.64.189",
 			"server_port": 2087,
 			"tag": "154.197.64.189:2087 8",
@@ -36806,40 +36160,6 @@
 			"uuid": "a9b84c67-6143-4db3-abc0-d9fa332205cc"
 		},
 		{
-			"flow": "xtls-rprx-vision",
-			"server": "194.127.173.202",
-			"server_port": 443,
-			"tag": "194.127.173.202:443 4",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
-					"short_id": "21181028b56c8702"
-				},
-				"server_name": "maviks.eu",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae"
-		},
-		{
-			"password": "0qBVTmOwV5JGMIBnx6J78INuc9o",
-			"server": "34.220.176.173",
-			"server_port": 34630,
-			"tag": " - 2 47",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "bing.com"
-			},
-			"type": "hysteria2"
-		},
-		{
 			"alter_id": 0,
 			"security": "auto",
 			"server": "183.236.51.36",
@@ -36868,28 +36188,6 @@
 			},
 			"type": "vmess",
 			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "194.127.173.202",
-			"server_port": 443,
-			"tag": " - 31 28",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
-					"short_id": "21181028b56c8702"
-				},
-				"server_name": "maviks.eu",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "7e5813d0-e5ac-437c-ba4e-2f8c17a84aae"
 		},
 		{
 			"server": "45.131.5.149",
@@ -38601,6 +37899,4482 @@
 			"server": "192.200.160.109",
 			"server_port": 8443,
 			"tag": " - 4 44",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "160.79.105.80",
+			"server_port": 2087,
+			"tag": "160.79.105.80:2087 11",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"password": "Aimer",
+			"server": "192.200.160.109",
+			"server_port": 8443,
+			"tag": "192.200.160.109:8443 22",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "135.84.74.27",
+			"server_port": 8443,
+			"tag": "135.84.74.27:8443 9",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.49.156",
+			"server_port": 2096,
+			"tag": "27.50.49.156:2096 13",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "154.211.8.150",
+			"server_port": 2096,
+			"tag": "154.211.8.150:2096 25",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.48.21",
+			"server_port": 443,
+			"tag": "27.50.48.21:443 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "167.68.4.131",
+			"server_port": 8443,
+			"tag": "167.68.4.131:8443 17",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "46.254.93.134",
+			"server_port": 2087,
+			"tag": "46.254.93.134:2087 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "59.188.46.218",
+			"server_port": 10028,
+			"tag": "59.188.46.218:10028 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "154.197.64.248",
+			"server_port": 8443,
+			"tag": "154.197.64.248:8443 17",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "77.232.140.101",
+			"server_port": 2053,
+			"tag": "77.232.140.101:2053 21",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "121.129.110.242",
+			"server_port": 18038,
+			"tag": "121.129.110.242:18038 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "162.120.94.232",
+			"server_port": 8443,
+			"tag": "162.120.94.232:8443 17",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "156.238.18.89",
+			"server_port": 80,
+			"tag": "156.238.18.89:80 5",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"password": "Aimer",
+			"server": "46.254.93.251",
+			"server_port": 2087,
+			"tag": "46.254.93.251:2087 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "221.164.192.95",
+			"server_port": 50003,
+			"tag": "221.164.192.95:50003 12",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "130.250.137.63",
+			"server_port": 2083,
+			"tag": "130.250.137.63:2083 9",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "45.131.4.55",
+			"server_port": 80,
+			"tag": "45.131.4.55:80 3",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "91.239.148.133",
+			"server_port": 443,
+			"tag": "91.239.148.133:443 7",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "45.131.5.165",
+			"server_port": 80,
+			"tag": "45.131.5.165:80 4",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.49",
+			"server_port": 80,
+			"tag": "156.238.18.49:80 4",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.19.99",
+			"server_port": 80,
+			"tag": "156.238.19.99:80 5",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.6.23",
+			"server_port": 80,
+			"tag": "45.131.6.23:80 4",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.136",
+			"server_port": 80,
+			"tag": "45.131.4.136:80 4",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "43.156.181.203",
+			"server_port": 443,
+			"tag": "43.156.181.203:443 7",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "156.238.18.252",
+			"server_port": 80,
+			"tag": "156.238.18.252:80 2",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.235",
+			"server_port": 80,
+			"tag": "156.238.18.235:80 4",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.122",
+			"server_port": 80,
+			"tag": "45.131.4.122:80 3",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.30",
+			"server_port": 80,
+			"tag": "156.238.18.30:80 3",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.13",
+			"server_port": 80,
+			"tag": "45.131.4.13:80 2",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "47.76.218.163",
+			"server_port": 443,
+			"tag": "47.76.218.163:443 2",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "45.131.4.138",
+			"server_port": 80,
+			"tag": "45.131.4.138:80 3",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "103.104.247.49",
+			"server_port": 8080,
+			"tag": "103.104.247.49:8080 9",
+			"type": "shadowsocks"
+		},
+		{
+			"server": "103.137.63.3",
+			"server_port": 443,
+			"tag": "103.137.63.3:443 2",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"password": "Aimer",
+			"server": "43.129.171.137",
+			"server_port": 443,
+			"tag": "43.129.171.137:443 18",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "112.165.54.52",
+			"server_port": 35263,
+			"tag": "112.165.54.52:35263 10",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "104.129.166.131",
+			"server_port": 8443,
+			"tag": "104.129.166.131:8443 12",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"password": "Aimer",
+			"server": "45.194.53.81",
+			"server_port": 2087,
+			"tag": "45.194.53.81:2087 11",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "103.116.7.230",
+			"server_port": 443,
+			"tag": "103.116.7.230:443 13",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.49.61",
+			"server_port": 2096,
+			"tag": "27.50.49.61:2096 15",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "213.109.205.55",
+			"server_port": 2096,
+			"tag": "213.109.205.55:2096 17",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.171",
+			"server_port": 443,
+			"tag": "188.164.159.171:443 17",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "160.79.105.133",
+			"server_port": 8443,
+			"tag": "160.79.105.133:8443 13",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.55",
+			"server_port": 2096,
+			"tag": "188.164.159.55:2096 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "198.46.158.37",
+			"server_port": 34237,
+			"tag": "198.46.158.37:34237 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.174",
+			"server_port": 2053,
+			"tag": "188.164.159.174:2053 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.48.189",
+			"server_port": 2083,
+			"tag": "27.50.48.189:2083 10",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.93",
+			"server_port": 2083,
+			"tag": "108.165.152.93:2083 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.49.166",
+			"server_port": 8443,
+			"tag": "27.50.49.166:8443 21",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "154.197.64.189",
+			"server_port": 2087,
+			"tag": "154.197.64.189:2087 9",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.92",
+			"server_port": 2053,
+			"tag": "108.165.152.92:2053 13",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.219",
+			"server_port": 443,
+			"tag": "108.165.152.219:443 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "167.68.4.7",
+			"server_port": 2053,
+			"tag": "167.68.4.7:2053 9",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "86.38.214.186",
+			"server_port": 443,
+			"tag": "86.38.214.186:443 21",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepk.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.74",
+			"server_port": 8443,
+			"tag": "188.164.159.74:8443 13",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "46.254.92.191",
+			"server_port": 443,
+			"tag": "46.254.92.191:443 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "213.109.205.45",
+			"server_port": 443,
+			"tag": "213.109.205.45:443 9",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.67",
+			"server_port": 2053,
+			"tag": "108.165.152.67:2053 7",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "216.24.57.207",
+			"server_port": 443,
+			"tag": "216.24.57.207:443 9",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "38.207.190.141",
+			"server_port": 587,
+			"tag": "38.207.190.141:587 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "121.129.110.242",
+			"server_port": 18038,
+			"tag": "121.129.110.242:18038 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "66.81.247.230",
+			"server_port": 2096,
+			"tag": "66.81.247.230:2096 14",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "222.107.236.137",
+			"server_port": 12191,
+			"tag": "222.107.236.137:12191 7",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "156.238.18.51",
+			"server_port": 80,
+			"tag": "156.238.18.51:80 4",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳 @WangCai2 /?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "183.236.51.36",
+			"server_port": 59003,
+			"tag": "🇨🇳|CN|@wxgqlfx|149 | V2rayCollector 7",
+			"type": "vmess",
+			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+		},
+		{
+			"server": "156.238.18.156",
+			"server_port": 80,
+			"tag": "156.238.18.156:80 3",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳@WangCai2",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"password": "0qBVTmOwV5JGMIBnx6J78INuc9o",
+			"server": "34.220.176.173",
+			"server_port": 34630,
+			"tag": "34.220.176.173:34630 5",
+			"tls": {
+				"enabled": true,
+				"insecure": true,
+				"server_name": "bing.com"
+			},
+			"type": "hysteria2"
+		},
+		{
+			"server": "156.238.18.112",
+			"server_port": 80,
+			"tag": "156.238.18.112:80 2",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "185.122.164.48",
+			"server_port": 45292,
+			"tag": "185.122.164.48:45292 3",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "r2kiFEkgxnMM-dDVX93R-pb0vO_H5T6SbUr_qaygP2E",
+					"short_id": "b94e9d86"
+				},
+				"server_name": "www.yahoo.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "737ff2b6-0e5d-48b5-9d4e-b9998e3ce1c1"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "185.85.241.194",
+			"server_port": 10940,
+			"tag": "185.85.241.194:10940 4",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "pPzdjI1zEj-jp-_ZIwLswbswzRS-jskjxXXj2DiHkkI",
+					"short_id": "0d43314b"
+				},
+				"server_name": "www.yahoo.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "6b1a8762-30d3-4953-a71b-7e1a84c3a437"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": "31.59.111.49:33718 13",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
+		},
+		{
+			"password": "Aimer",
+			"server": "192.200.160.109",
+			"server_port": 8443,
+			"tag": "192.200.160.109:8443 23",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "135.84.74.27",
+			"server_port": 8443,
+			"tag": "135.84.74.27:8443 10",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "45.150.115.195",
+			"server_port": 2087,
+			"tag": "45.150.115.195:2087 18",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.49.156",
+			"server_port": 2096,
+			"tag": "27.50.49.156:2096 14",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "154.211.8.150",
+			"server_port": 2096,
+			"tag": "154.211.8.150:2096 26",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.48.21",
+			"server_port": 443,
+			"tag": "27.50.48.21:443 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "167.68.4.131",
+			"server_port": 8443,
+			"tag": "167.68.4.131:8443 18",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "46.254.93.134",
+			"server_port": 2087,
+			"tag": "46.254.93.134:2087 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "59.188.46.218",
+			"server_port": 10028,
+			"tag": "59.188.46.218:10028 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "154.197.64.248",
+			"server_port": 8443,
+			"tag": "154.197.64.248:8443 18",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "27.50.49.224",
+			"server_port": 8443,
+			"tag": "27.50.49.224:8443 14",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"password": "Aimer",
+			"server": "77.232.140.101",
+			"server_port": 2053,
+			"tag": "77.232.140.101:2053 22",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "121.129.110.242",
+			"server_port": 18038,
+			"tag": "121.129.110.242:18038 7",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "162.120.94.232",
+			"server_port": 8443,
+			"tag": "162.120.94.232:8443 18",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "156.238.18.89",
+			"server_port": 80,
+			"tag": "156.238.18.89:80 6",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"password": "Aimer",
+			"server": "46.254.93.251",
+			"server_port": 2087,
+			"tag": "46.254.93.251:2087 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "221.164.192.95",
+			"server_port": 50003,
+			"tag": "221.164.192.95:50003 13",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "130.250.137.63",
+			"server_port": 2083,
+			"tag": "130.250.137.63:2083 10",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "104.17.147.22",
+			"server_port": 2052,
+			"tag": "104.17.147.22:2052 8",
+			"transport": {
+				"headers": {
+					"Host": "sPeedtest2.sbs.it2.v2vless.sitespeedtest.net"
+				},
+				"path": "/vless",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "11dbb0b6-8b02-59b9-ac62-593b1b23898a"
+		},
+		{
+			"server": "45.131.4.55",
+			"server_port": 80,
+			"tag": "45.131.4.55:80 4",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.88",
+			"server_port": 80,
+			"tag": "45.131.4.88:80 2",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.19.99",
+			"server_port": 80,
+			"tag": "156.238.19.99:80 6",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.136",
+			"server_port": 80,
+			"tag": "45.131.4.136:80 5",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.252",
+			"server_port": 80,
+			"tag": "156.238.18.252:80 3",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.162",
+			"server_port": 80,
+			"tag": "45.131.4.162:80 3",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.174",
+			"server_port": 80,
+			"tag": "156.238.18.174:80 3",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.5.140",
+			"server_port": 80,
+			"tag": "45.131.5.140:80 4",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "47.76.218.163",
+			"server_port": 443,
+			"tag": "47.76.218.163:443 3",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "45.131.4.138",
+			"server_port": 80,
+			"tag": "45.131.4.138:80 4",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "103.104.247.49",
+			"server_port": 8080,
+			"tag": "103.104.247.49:8080 10",
+			"type": "shadowsocks"
+		},
+		{
+			"server": "43.129.171.137",
+			"server_port": 443,
+			"tag": "43.129.171.137:443 19",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"password": "Aimer",
+			"server": "43.129.171.137",
+			"server_port": 443,
+			"tag": "43.129.171.137:443 20",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "112.165.54.52",
+			"server_port": 35263,
+			"tag": "112.165.54.52:35263 11",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "45.194.53.81",
+			"server_port": 2087,
+			"tag": "45.194.53.81:2087 12",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "103.116.7.230",
+			"server_port": 443,
+			"tag": "103.116.7.230:443 14",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.49.61",
+			"server_port": 2096,
+			"tag": "27.50.49.61:2096 16",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "213.109.205.55",
+			"server_port": 2096,
+			"tag": "213.109.205.55:2096 18",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.171",
+			"server_port": 443,
+			"tag": "188.164.159.171:443 18",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "160.79.105.133",
+			"server_port": 8443,
+			"tag": "160.79.105.133:8443 14",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.55",
+			"server_port": 2096,
+			"tag": "188.164.159.55:2096 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "198.46.158.37",
+			"server_port": 34237,
+			"tag": "198.46.158.37:34237 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.174",
+			"server_port": 2053,
+			"tag": "188.164.159.174:2053 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.48.189",
+			"server_port": 2083,
+			"tag": "27.50.48.189:2083 11",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.93",
+			"server_port": 2083,
+			"tag": "108.165.152.93:2083 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "168.138.46.67",
+			"server_port": 443,
+			"tag": "168.138.46.67:443 9",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.49.166",
+			"server_port": 8443,
+			"tag": "27.50.49.166:8443 22",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "154.197.64.189",
+			"server_port": 2087,
+			"tag": "154.197.64.189:2087 10",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.92",
+			"server_port": 2053,
+			"tag": "108.165.152.92:2053 14",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.219",
+			"server_port": 443,
+			"tag": "108.165.152.219:443 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "167.68.4.7",
+			"server_port": 2053,
+			"tag": "167.68.4.7:2053 10",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "86.38.214.186",
+			"server_port": 443,
+			"tag": "86.38.214.186:443 22",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepk.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.74",
+			"server_port": 8443,
+			"tag": "188.164.159.74:8443 14",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "46.254.92.191",
+			"server_port": 443,
+			"tag": "46.254.92.191:443 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "213.109.205.45",
+			"server_port": 443,
+			"tag": "213.109.205.45:443 10",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.67",
+			"server_port": 2053,
+			"tag": "108.165.152.67:2053 8",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "216.24.57.207",
+			"server_port": 443,
+			"tag": "216.24.57.207:443 10",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "38.207.190.141",
+			"server_port": 587,
+			"tag": "38.207.190.141:587 6",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"server": "221.157.253.188",
+			"server_port": 12384,
+			"tag": "221.157.253.188:12384 2",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "66.81.247.230",
+			"server_port": 2096,
+			"tag": "66.81.247.230:2096 16",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "222.107.236.137",
+			"server_port": 12191,
+			"tag": "222.107.236.137:12191 9",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "156.238.18.51",
+			"server_port": 80,
+			"tag": "156.238.18.51:80 5",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳 @WangCai2 /?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "104.26.14.16",
+			"server_port": 2096,
+			"tag": "104.26.14.16:2096 3",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "bEAt.MIRaclETaxbiTS.Top."
+			},
+			"transport": {
+				"headers": {
+					"Host": "bEAt.MIRaclETaxbiTS.Top."
+				},
+				"path": "/2096/@VRayyNGvpn",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "f6b436f0-772b-4154-9e41-c70f82a2cf8b"
+		},
+		{
+			"server": "156.238.18.205",
+			"server_port": 80,
+			"tag": "156.238.18.205:80 2",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳 @WangCai2",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "172.67.69.236",
+			"server_port": 2096,
+			"tag": "172.67.69.236:2096 4",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "bEAt.MIRaclETaxbiTS.Top."
+			},
+			"transport": {
+				"headers": {
+					"Host": "bEAt.MIRaclETaxbiTS.Top."
+				},
+				"path": "/2096/@VRayyNGvpn",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "f6b436f0-772b-4154-9e41-c70f82a2cf8b"
+		},
+		{
+			"server": "104.17.147.22",
+			"server_port": 80,
+			"tag": "104.17.147.22:80 11",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "/telegram-id-@MTMVPN/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "183.236.51.36",
+			"server_port": 59003,
+			"tag": "🇨🇳|CN|@wxgqlfx|149 | V2rayCollector 8",
+			"type": "vmess",
+			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+		},
+		{
+			"server": "172.67.69.236",
+			"server_port": 2083,
+			"tag": "172.67.69.236:2083 3",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "bEAt.MIRaclETaxbiTS.Top."
+			},
+			"transport": {
+				"headers": {
+					"Host": "bEAt.MIRaclETaxbiTS.Top."
+				},
+				"path": "/2083/@VRayyNGvpn",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "bd75896c-b773-422b-8574-023996622964"
+		},
+		{
+			"server": "156.238.18.156",
+			"server_port": 80,
+			"tag": "156.238.18.156:80 4",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳@WangCai2",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"password": "0qBVTmOwV5JGMIBnx6J78INuc9o",
+			"server": "34.220.176.173",
+			"server_port": 34630,
+			"tag": "34.220.176.173:34630 6",
+			"tls": {
+				"enabled": true,
+				"insecure": true,
+				"server_name": "bing.com"
+			},
+			"type": "hysteria2"
+		},
+		{
+			"server": "45.131.4.117",
+			"server_port": 80,
+			"tag": "45.131.4.117:80 5",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "135.148.74.147",
+			"server_port": 443,
+			"tag": "135.148.74.147:443 2",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "147135004002.sec20org.com"
+			},
+			"type": "vless",
+			"uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "185.184.70.90",
+			"server_port": 46865,
+			"tag": "185.184.70.90:46865 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "MKAJr8pG0z3lTPa7L1uWQ9jlrCUIAV9H7cQeOBsUrlI",
+					"short_id": "45f61645"
+				},
+				"server_name": "www.yahoo.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "7e84b5b9-e9fe-4dbe-906d-4abd67c09376"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": "31.59.111.49:33718 14",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 211",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 212",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 213",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 214",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 215",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 216",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 217",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 218",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 219",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 220",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 221",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 222",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 223",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 224",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"server": "172.67.69.236",
+			"server_port": 2083,
+			"tag": " - 33 31",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "bEAt.MIRaclETaxbiTS.Top."
+			},
+			"transport": {
+				"headers": {
+					"Host": "bEAt.MIRaclETaxbiTS.Top."
+				},
+				"path": "/2083/@VRayyNGvpn",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "bd75896c-b773-422b-8574-023996622964"
+		},
+		{
+			"server": "104.17.147.22",
+			"server_port": 80,
+			"tag": " - 32 30",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "/telegram-id-@MTMVPN/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "43.129.171.137",
+			"server_port": 443,
+			"tag": " - 31 30",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "45.131.4.138",
+			"server_port": 80,
+			"tag": " - 30 29",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.5.140",
+			"server_port": 80,
+			"tag": " - 29 30",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.162",
+			"server_port": 80,
+			"tag": " - 28 31",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.136",
+			"server_port": 80,
+			"tag": " - 27 30",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.19.99",
+			"server_port": 80,
+			"tag": " - 26 30",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.55",
+			"server_port": 80,
+			"tag": " - 25 32",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "27.50.49.224",
+			"server_port": 8443,
+			"tag": " - 24 34",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": " - 21 43",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "185.85.241.194",
+			"server_port": 10940,
+			"tag": " - 20 40",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "pPzdjI1zEj-jp-_ZIwLswbswzRS-jskjxXXj2DiHkkI",
+					"short_id": "0d43314b"
+				},
+				"server_name": "www.yahoo.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "6b1a8762-30d3-4953-a71b-7e1a84c3a437"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "185.122.164.48",
+			"server_port": 45292,
+			"tag": " - 18 41",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "r2kiFEkgxnMM-dDVX93R-pb0vO_H5T6SbUr_qaygP2E",
+					"short_id": "b94e9d86"
+				},
+				"server_name": "www.yahoo.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "737ff2b6-0e5d-48b5-9d4e-b9998e3ce1c1"
+		},
+		{
+			"server": "156.238.18.112",
+			"server_port": 80,
+			"tag": " - 17 44",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "222.107.236.137",
+			"server_port": 12191,
+			"tag": " - 14 43",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "121.129.110.242",
+			"server_port": 18038,
+			"tag": " - 13 43",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "103.137.63.3",
+			"server_port": 443,
+			"tag": " - 12 44",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "47.76.218.163",
+			"server_port": 443,
+			"tag": " - 11 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "45.131.4.122",
+			"server_port": 80,
+			"tag": " - 10 44",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.235",
+			"server_port": 80,
+			"tag": " - 9 44",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.252",
+			"server_port": 80,
+			"tag": " - 8 44",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.6.23",
+			"server_port": 80,
+			"tag": " - 7 45",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.49",
+			"server_port": 80,
+			"tag": " - 6 43",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "si.1808.site",
+			"server_port": 30002,
+			"tag": "🇰🇷 KR\u003e加拿大 多伦多 | V2rayCollector 225",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "obdii.cfd"
+			},
+			"transport": {
+				"headers": {
+					"Host": "obdii.cfd"
+				},
+				"path": "/linkws",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "183.236.51.36",
+			"server_port": 59003,
+			"tag": "🇨🇳|CN|@wxgqlfx|149 | V2rayCollector 9",
+			"type": "vmess",
+			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "103.104.247.49",
+			"server_port": 8080,
+			"tag": " - 64 27",
+			"type": "shadowsocks"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "31.59.111.49",
+			"server_port": 33718,
+			"tag": " - 42 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+					"short_id": ""
+				},
+				"server_name": "icloud.cdn-apple.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "e657e5fb-c417-4d3f-d84e-a3a8f010f9fa"
+		},
+		{
+			"flow": "xtls-rprx-vision",
+			"server": "185.184.70.90",
+			"server_port": 46865,
+			"tag": " - 41 31",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "MKAJr8pG0z3lTPa7L1uWQ9jlrCUIAV9H7cQeOBsUrlI",
+					"short_id": "45f61645"
+				},
+				"server_name": "www.yahoo.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "7e84b5b9-e9fe-4dbe-906d-4abd67c09376"
+		},
+		{
+			"server": "135.148.74.147",
+			"server_port": 443,
+			"tag": " - 40 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "147135004002.sec20org.com"
+			},
+			"type": "vless",
+			"uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055"
+		},
+		{
+			"server": "45.131.4.117",
+			"server_port": 80,
+			"tag": " - 39 30",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "172.67.69.236",
+			"server_port": 2096,
+			"tag": " - 38 34",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "bEAt.MIRaclETaxbiTS.Top."
+			},
+			"transport": {
+				"headers": {
+					"Host": "bEAt.MIRaclETaxbiTS.Top."
+				},
+				"path": "/2096/@VRayyNGvpn",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "f6b436f0-772b-4154-9e41-c70f82a2cf8b"
+		},
+		{
+			"server": "156.238.18.205",
+			"server_port": 80,
+			"tag": " - 37 32",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳 @WangCai2",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "104.26.14.16",
+			"server_port": 2096,
+			"tag": " - 36 31",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "bEAt.MIRaclETaxbiTS.Top."
+			},
+			"transport": {
+				"headers": {
+					"Host": "bEAt.MIRaclETaxbiTS.Top."
+				},
+				"path": "/2096/@VRayyNGvpn",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "f6b436f0-772b-4154-9e41-c70f82a2cf8b"
+		},
+		{
+			"server": "221.157.253.188",
+			"server_port": 12384,
+			"tag": " - 34 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "168.138.46.67",
+			"server_port": 443,
+			"tag": " - 33 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "47.76.218.163",
+			"server_port": 443,
+			"tag": " - 32 31",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "156.238.18.174",
+			"server_port": 80,
+			"tag": " - 31 31",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.88",
+			"server_port": 80,
+			"tag": " - 30 30",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "104.17.147.22",
+			"server_port": 2052,
+			"tag": " - 29 31",
+			"transport": {
+				"headers": {
+					"Host": "sPeedtest2.sbs.it2.v2vless.sitespeedtest.net"
+				},
+				"path": "/vless",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "11dbb0b6-8b02-59b9-ac62-593b1b23898a"
+		},
+		{
+			"server": "156.238.18.156",
+			"server_port": 80,
+			"tag": " - 21 44",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳@WangCai2",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.51",
+			"server_port": 80,
+			"tag": " - 18 42",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram🇨🇳 @WangCai2 /?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "66.81.247.230",
+			"server_port": 2096,
+			"tag": " - 17 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "104.129.166.131",
+			"server_port": 8443,
+			"tag": " - 16 46",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "45.131.4.138",
+			"server_port": 80,
+			"tag": " - 15 44",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.4.13",
+			"server_port": 80,
+			"tag": " - 14 44",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.30",
+			"server_port": 80,
+			"tag": " - 13 44",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "43.156.181.203",
+			"server_port": 443,
+			"tag": " - 12 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgk.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "45.131.4.136",
+			"server_port": 80,
+			"tag": " - 11 46",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.19.99",
+			"server_port": 80,
+			"tag": " - 10 45",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "45.131.5.165",
+			"server_port": 80,
+			"tag": " - 9 45",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "91.239.148.133",
+			"server_port": 443,
+			"tag": " - 8 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"server": "45.131.4.55",
+			"server_port": 80,
+			"tag": " - 7 46",
+			"transport": {
+				"headers": {
+					"Host": "301.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "156.238.18.89",
+			"server_port": 80,
+			"tag": " - 6 44",
+			"transport": {
+				"headers": {
+					"Host": "redw.pooriam.ir"
+				},
+				"path": "Telegram@WangCai2/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049"
+		},
+		{
+			"server": "160.79.105.80",
+			"server_port": 2087,
+			"tag": " - 5 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agedgj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agedgj.ambercc.filegear-sg.me"
+				},
+				"path": "/?ed",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee6774c0-9b19-4ff1-8b30-2da4b71977e2"
+		},
+		{
+			"password": "Aimer",
+			"server": "38.207.190.141",
+			"server_port": 587,
+			"tag": " - 45 33",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "216.24.57.207",
+			"server_port": 443,
+			"tag": " - 44 34",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.67",
+			"server_port": 2053,
+			"tag": " - 43 34",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "213.109.205.45",
+			"server_port": 443,
+			"tag": " - 42 33",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "46.254.92.191",
+			"server_port": 443,
+			"tag": " - 41 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.74",
+			"server_port": 8443,
+			"tag": " - 40 33",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "86.38.214.186",
+			"server_port": 443,
+			"tag": " - 39 31",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepk.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepk.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "167.68.4.7",
+			"server_port": 2053,
+			"tag": " - 38 35",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.219",
+			"server_port": 443,
+			"tag": " - 37 33",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.92",
+			"server_port": 2053,
+			"tag": " - 36 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "154.197.64.189",
+			"server_port": 2087,
+			"tag": " - 35 34",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.49.166",
+			"server_port": 8443,
+			"tag": " - 33 33",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "108.165.152.93",
+			"server_port": 2083,
+			"tag": " - 32 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.48.189",
+			"server_port": 2083,
+			"tag": " - 31 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.174",
+			"server_port": 2053,
+			"tag": " - 30 31",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "198.46.158.37",
+			"server_port": 34237,
+			"tag": " - 29 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.55",
+			"server_port": 2096,
+			"tag": " - 28 33",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "160.79.105.133",
+			"server_port": 8443,
+			"tag": " - 27 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "188.164.159.171",
+			"server_port": 443,
+			"tag": " - 26 32",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "213.109.205.55",
+			"server_port": 2096,
+			"tag": " - 25 34",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.49.61",
+			"server_port": 2096,
+			"tag": " - 24 35",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "103.116.7.230",
+			"server_port": 443,
+			"tag": " - 23 38",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "45.194.53.81",
+			"server_port": 2087,
+			"tag": " - 22 38",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "112.165.54.52",
+			"server_port": 35263,
+			"tag": " - 21 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "43.129.171.137",
+			"server_port": 443,
+			"tag": " - 20 42",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "130.250.137.63",
+			"server_port": 2083,
+			"tag": " - 19 44",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "221.164.192.95",
+			"server_port": 50003,
+			"tag": " - 18 43",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "46.254.93.251",
+			"server_port": 2087,
+			"tag": " - 17 46",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "162.120.94.232",
+			"server_port": 8443,
+			"tag": " - 16 47",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "121.129.110.242",
+			"server_port": 18038,
+			"tag": " - 15 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "77.232.140.101",
+			"server_port": 2053,
+			"tag": " - 14 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "154.197.64.248",
+			"server_port": 8443,
+			"tag": " - 13 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "59.188.46.218",
+			"server_port": 10028,
+			"tag": " - 12 46",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "46.254.93.134",
+			"server_port": 2087,
+			"tag": " - 11 47",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "167.68.4.131",
+			"server_port": 8443,
+			"tag": " - 10 46",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.48.21",
+			"server_port": 443,
+			"tag": " - 9 46",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "154.211.8.150",
+			"server_port": 2096,
+			"tag": " - 8 46",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepl.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepl.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "27.50.49.156",
+			"server_port": 2096,
+			"tag": " - 7 47",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "45.150.115.195",
+			"server_port": 2087,
+			"tag": " - 6 45",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "135.84.74.27",
+			"server_port": 8443,
+			"tag": " - 5 46",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "agepj.ambercc.filegear-sg.me"
+			},
+			"transport": {
+				"headers": {
+					"Host": "agepj.ambercc.filegear-sg.me"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "Aimer",
+			"server": "192.200.160.109",
+			"server_port": 8443,
+			"tag": " - 4 47",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
