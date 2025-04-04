@@ -36,7 +36,7 @@ jobs:
       - name: Start subconverter and send request
         run: |
           # 启动 subconverter 服务
-          ./tool/subconverter/subconverter 
+          ./tool/subconverter/subconverter &
 
           # 等待 subconverter 服务就绪
           until curl -s http://0.0.0.0:25500 >/dev/null; do
