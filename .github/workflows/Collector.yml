@@ -33,32 +33,36 @@ jobs:
           go build -o myapp
           ./myapp -sort -log warn
 
-      - name: Read subscription links from subList
-        id: read-links
+      - name: Start subconverter and send request
         run: |
-          ./tool/subconverter/subconverter &
+          # 启动 subconverter 服务
+          ./tool/subconverter/subconverter 
 
-            until curl -s http://0.0.0.0:25500 >/dev/null; do
-              sleep 1
-            done
-          
+          # 等待 subconverter 服务就绪
+          until curl -s http://0.0.0.0:25500 >/dev/null; do
+            sleep 1
+          done
+
+          # 检查 subList.csv 文件是否存在
           if [ -f "subList.csv" ]; then
-            LINKS=$(cat subList | tr '\n' '|')
+            # 读取订阅链接并使用 | 分割
+            LINKS=$(cat subList.csv | tr '\n' '|')
             LINKS="${LINKS%|}"
-            echo "::set-output name=links::$LINKS"
-          else
-            echo "subList file not found."
-            exit 1
-          fi
 
-      - name: Send request to subconverter
-        id: subconverter-request
-        run: |
-          FULL_URL="http://0.0.0.0:25500/sub\?target\=mixed\&url\=${{ steps.read-links.outputs.links }}"
-          echo "Full URL: $FULL_URL"
-          curl -o ./results/mixed_base64.txt "$FULL_URL"
-          if [ $? -ne 0 ]; then
-            echo "Request to subconverter failed."
+            # 构造完整的请求 URL
+            FULL_URL="http://0.0.0.0:25500/sub?target=mixed&url=$LINKS"
+            echo "Full URL: $FULL_URL"
+
+            # 发送请求并保存结果
+            curl -o ./results/mixed_base64.txt "$FULL_URL"
+            if [ $? -ne 0 ]; then
+              echo "Request to subconverter failed."
+              kill $SUBPROCESS_PID
+              exit 1
+            fi
+          else
+            echo "subList.csv file not found."
+            kill $SUBPROCESS_PID
             exit 1
           fi
 
