@@ -72,7 +72,7 @@ jobs:
 
       - name: Speedtest
         run: |
-          ./tool/speedTest_singtools/singtools test   -i ./results/mixed.txt -o ./results/mixed_tested.json -e fatal -f ""
+          ./tool/speedTest_singtools/singtools test   -i ./results/mixed.txt -c ./tool/speedTest_singtools/config.json -o ./results/mixed_tested.json -e fatal -f ""
 
       - name: Convert to mixed with base64encode
         run: |

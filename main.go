@@ -228,7 +228,7 @@ func main() {
 			lines := collector.RemoveDuplicate(content)
 			gologger.Debug().Msgf("去重后内容长度: %d", len(lines))
 			
-			lines = AddConfigNames(lines, proto)
+			// lines = AddConfigNames(lines, proto)
 			gologger.Debug().Msgf("添加配置名称后内容长度: %d", len(lines))
 			
 			if *cfg.Sort {
