@@ -364,7 +364,7 @@ func AddConfigNames(config string, configtype string) string {
 				extractedConfig = strings.ReplaceAll(extractedConfig, " ", "")
 				if extractedConfig != "" {
 					if protoRegex == "vmess" {
-						// extractedConfig = collector.EditVmessPs(extractedConfig)
+						extractedConfig = collector.EditVmessPs(extractedConfig)
 						if extractedConfig != "" {
 							newConfigs += extractedConfig + "\n"
 						}
@@ -449,7 +449,7 @@ func CrawlForV2ray(doc *goquery.Document, channelLink string, HasAllMessagesFlag
 							gologger.Debug().Msgf("匹配到 %s 协议: %s", proto, extractedConfig)
 							
 							if proto == "vmess" {
-								extractedConfig = collector.EditVmessPs(extractedConfig)
+								// extractedConfig = collector.EditVmessPs(extractedConfig)
 							}
 							
 							if extractedConfig != "" {
@@ -530,7 +530,7 @@ func CrawlForV2ray(doc *goquery.Document, channelLink string, HasAllMessagesFlag
 							gologger.Debug().Msgf("匹配到 %s 协议: %s", proto, extractedConfig)
 							
 							if proto == "vmess" {
-								extractedConfig = collector.EditVmessPs(extractedConfig)
+								// extractedConfig = collector.EditVmessPs(extractedConfig)
 							}
 							
 							if extractedConfig != "" {
