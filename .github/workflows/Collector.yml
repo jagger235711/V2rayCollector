@@ -35,11 +35,11 @@ jobs:
 
       - name: Start subconverter and send request
         run: |
-          # 启动 subconverter 服务
-          ./tool/subconverter/subconverter &
+          # 启动 subconverter 容器
+          docker run -d --name subconverter_container --restart=always -p 25500:25500 asdlokj1qpi23/subconverter:latest
 
-          # 等待 subconverter 服务就绪
-          until curl -s http://0.0.0.0:25500 >/dev/null; do
+          # 等待容器服务就绪
+          until curl -s http://localhost:25500/version | grep "subconverter v"; do
             sleep 1
           done
 
@@ -76,9 +76,8 @@ jobs:
 
       - name: Convert to mixed with base64encode
         run: |
-          ./tool/subconverter/subconverter &
-
-          until curl -s http://0.0.0.0:25500 >/dev/null; do
+          # 直接使用已启动的容器，无需重复启动
+          until curl -s http://localhost:25500/version | grep "subconverter v"; do
             sleep 1
           done
 
@@ -109,6 +108,7 @@ jobs:
           git add ./results/*
           git checkout main
           git commit -m "✔️ $(date '+%Y-%m-%d %H:%M:%S') Collected"
+     
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
