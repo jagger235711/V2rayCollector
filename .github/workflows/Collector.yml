@@ -41,7 +41,7 @@ jobs:
       - name: Start subconverter and send request
         run: |
           # 启动 subconverter 容器
-          docker run -d --name subconverter_container --restart=always -p 25500:25500 asdlokj1qpi23/subconverter:latest
+          docker run -d --name subconverter_container --restart=always -v $(pwd)/results:/subconverter/results -p 25500:25500 asdlokj1qpi23/subconverter:latest
 
           # 等待容器服务就绪
           until curl -s http://localhost:25500/version | grep "subconverter v"; do
@@ -81,27 +81,35 @@ jobs:
 
       - name: Convert to mixed with base64encode
         run: |
-          # 直接使用已启动的容器，无需重复启动
+          # 添加文件存在性检查
+          if [ ! -f "./results/mixed_tested.json" ]; then
+            echo "Error: mixed_tested.json 文件不存在，转换前必须存在该文件"
+            exit 1
+          fi
+
+          # 确保 subconverter 容器已启动并响应
           until curl -s http://localhost:25500/version | grep "subconverter v"; do
             sleep 1
           done
 
-          # curl -o ./results/mixed_tested.txt http://0.0.0.0:25500/sub\?target\=mixed\&url\=./results/mixed_tested.json
-
-          # 执行 curl 命令并将结果保存到文件，同时添加错误检查
-          full_url="http://0.0.0.0:25500/sub?target=mixed&url=$GITHUB_WORKSPACE/results/mixed_tested.json"
+          # 构造正确的文件路径（使用绝对路径避免相对路径问题）
+          full_url="http://0.0.0.0:25500/sub?target=mixed&url=file:///subconverter/results/mixed_tested.json"
 
           echo "\n------------------"
+          echo "当前路径: $(pwd)"
+          echo "mixed_tested.json 路径存在性: $(ls -l ./results/mixed_tested.json)"
           echo "Full URL: $full_url"
           echo "\n------------------"
 
-          if ! curl -o ./results/mixed_tested.txt $full_url; then
+          # 执行请求并捕获详细输出
+          if ! curl -v -o ./results/mixed_tested.txt "$full_url"; then
             echo "curl 请求失败，退出步骤"
             exit 1
           fi
-          # 检查文件是否成功下载
-          if [ ! -f "./results/mixed_tested.txt" ]; then
-            echo "下载的文件未找到，退出步骤"
+
+          # 验证输出文件内容
+          if [ ! -s "./results/mixed_tested.txt" ]; then
+            echo "生成的 mixed_tested.txt 文件为空，转换失败"
             exit 1
           fi
 
