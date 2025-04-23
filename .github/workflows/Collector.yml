@@ -93,7 +93,7 @@ jobs:
           done
 
           # 构造正确的文件路径（使用绝对路径避免相对路径问题）
-          full_url="http://0.0.0.0:25500/sub?target=mixed&url=file:///subconverter/results/mixed_tested.json"
+          full_url="http://0.0.0.0:25500/sub?target=mixed&url=$GITHUB_WORKSPACE/results/mixed_tested.json"
 
           echo "\n------------------"
           echo "当前路径: $(pwd)"
