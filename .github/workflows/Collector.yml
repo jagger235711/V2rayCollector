@@ -77,13 +77,30 @@ jobs:
 
       - name: Speedtest
         run: |
-          ./tool/speedTest_singtools/singtools test   -i ./results/mixed.txt -c ./tool/speedTest_singtools/config.json -o ./results/mixed_tested.json -e fatal -f ""
+          echo "执行性能测试前检查输入文件..."
+          if [ ! -f "./results/mixed.txt" ]; then
+            echo "Error: mixed.txt 文件不存在，无法执行性能测试"
+            exit 1
+          fi
+          ./tool/speedTest_singtools/singtools test -i ./results/mixed.txt -c ./tool/speedTest_singtools/config.json -o ./results/mixed_tested.json -e fatal -f ""
+          echo "性能测试完成，检查输出文件..."
+          if [ ! -f "./results/mixed_tested.json" ]; then
+            echo "Error: 性能测试未生成 mixed_tested.json 文件"
+            exit 1
+          fi
+          echo "mixed_tested.json 文件大小: $(wc -c ./results/mixed_tested.json)"
 
       - name: Convert to mixed with base64encode
         run: |
-          # 添加文件存在性检查
+          # 增强路径验证和日志输出
           if [ ! -f "./results/mixed_tested.json" ]; then
-            echo "Error: mixed_tested.json 文件不存在，转换前必须存在该文件"
+            echo "Error: mixed_tested.json 文件不存在于 $(pwd)/results/ 目录"
+            exit 1
+          fi
+
+          # 检查文件大小是否为0
+          if [ ! -s "./results/mixed_tested.json" ]; then
+            echo "Error: mixed_tested.json 文件为空，无法进行转换"
             exit 1
           fi
 
@@ -92,18 +109,28 @@ jobs:
             sleep 1
           done
 
-          # 构造正确的文件路径（使用绝对路径避免相对路径问题）
-          full_url="http://0.0.0.0:25500/sub?target=mixed&url=$GITHUB_WORKSPACE/results/mixed_tested.json"
+          # 显示容器内挂载目录内容（调试用）
+          docker exec subconverter_container sh -c "ls -l /subconverter/results && echo '挂载目录内容检查完成'"
+
+          # 显式声明完整URL并添加调试输出
+          full_url="http://localhost:25500/sub?target=mixed&url=file:///subconverter/results/mixed_tested.json"
+          echo "正在使用的完整URL地址: $full_url"
 
           echo "\n------------------"
-          echo "当前路径: $(pwd)"
-          echo "mixed_tested.json 路径存在性: $(ls -l ./results/mixed_tested.json)"
+          echo "当前工作目录: $(pwd)"
+          echo "mixed_tested.json 路径: $(realpath ./results/mixed_tested.json)"
+          echo "容器内对应路径: /subconverter/results/mixed_tested.json"
           echo "Full URL: $full_url"
           echo "\n------------------"
 
-          # 执行请求并捕获详细输出
+          # 移除错误信息抑制并显示详细curl输出
           if ! curl -v -o ./results/mixed_tested.txt "$full_url"; then
-            echo "curl 请求失败，退出步骤"
+            echo "curl 请求失败，请检查以下信息:"
+            echo "1. 容器挂载目录内容:"
+            docker exec subconverter_container sh -c "ls -l /subconverter/results"
+            echo "2. 当前工作目录文件列表:"
+            ls -l ./results/
+            echo "3. 请求的URL地址: $full_url"
             exit 1
           fi
 
