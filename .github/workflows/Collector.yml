@@ -125,7 +125,9 @@ jobs:
           docker exec subconverter_container sh -c "ls -l /subconverter/results && echo '挂载目录内容检查完成'"
 
           # 显式声明完整URL并添加调试输出
-          full_url="http://localhost:25500/sub?target=mixed&url=file:///subconverter/results/mixed_tested.json"
+          # full_url="http://localhost:25500/sub?target=mixed&url=file:///subconverter/results/mixed_tested.json"
+
+          full_url="http://localhost:25500/sub?target=mixed&url=/subconverter/results/mixed_tested.json"
           echo "正在使用的完整URL地址: $full_url"
 
           echo "\n------------------"
