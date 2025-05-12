@@ -55,10 +55,6 @@ jobs:
           echo "挂载验证: 确认宿主机results目录与容器/subconverter/results已正确绑定"
           echo "=== 容器挂载调试结束 ==="
 
-          # 等待容器服务就绪
-          until curl -s http://localhost:25500/version | grep "subconverter v"; do
-            sleep 1
-          done
 
           # 检查 subList.csv 文件是否存在
           if [ -f "subList.csv" ]; then
@@ -87,6 +83,37 @@ jobs:
         run: |
           base64 -d ./results/mixed_base64.txt >> ./results/mixed.txt
 
+      - name: Clean mixed.txt content
+        run: |
+          # 检查文件是否存在
+          if [ ! -f "./results/mixed.txt" ]; then
+            echo "Error: mixed.txt 文件不存在"
+            exit 1
+          fi
+          
+          # 创建临时文件
+          echo "开始清理文件内容..."
+          
+          # 处理文件：
+          # 1. 移除前导和后导空格
+          # 2. 删除空行
+          # 3. 保存到临时文件
+          cat "./results/mixed.txt" | \
+            sed 's/^[ \t]*//;s/[ \t]*$//' | \
+            sed '/^$/d' > "./results/mixed.txt.tmp"
+          
+          # 用处理后的文件替换原文件
+          mv "./results/mixed.txt.tmp" "./results/mixed.txt"
+          
+          # 显示处理结果
+          echo "清理完成。文件统计信息："
+          echo "总行数: $(wc -l < ./results/mixed.txt)"
+          echo "文件大小: $(wc -c < ./results/mixed.txt) 字节"
+          
+          # 预览处理后的内容
+          echo "\n处理后的前5行内容："
+          head -n 50 "./results/mixed.txt"
+
       - name: Speedtest
         run: |
           echo "执行性能测试前检查输入文件..."
@@ -109,20 +136,6 @@ jobs:
             echo "Error: mixed_tested.json 文件不存在于 $(pwd)/results/ 目录"
             exit 1
           fi
-
-          # 检查文件大小是否为0
-          if [ ! -s "./results/mixed_tested.json" ]; then
-            echo "Error: mixed_tested.json 文件为空，无法进行转换"
-            exit 1
-          fi
-
-          # 确保 subconverter 容器已启动并响应
-          until curl -s http://localhost:25500/version | grep "subconverter v"; do
-            sleep 1
-          done
-
-          # 显示容器内挂载目录内容（调试用）
-          docker exec subconverter_container sh -c "ls -l /subconverter/results && echo '挂载目录内容检查完成'"
 
           # 显式声明完整URL并添加调试输出
           # full_url="http://localhost:25500/sub?target=mixed&url=file:///subconverter/results/mixed_tested.json"
