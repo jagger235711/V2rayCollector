@@ -1,0 +1,65 @@
+import csv
+import requests
+import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from functools import partial
+from requests.exceptions import RequestException
+
+def deduplicate_file(input_path, output_path):
+    seen = {}
+    failed_urls = []
+    successful_count = 0
+    total_urls = 0
+
+    logging.basicConfig(
+        format='%(asctime)s [%(levelname)s] %(message)s',
+        level=logging.INFO,
+        datefmt='%Y-%m-%d %H:%M:%S'
+    )
+
+    def check_url(row):
+        nonlocal successful_count
+        url = row[0].strip()
+        try:
+            response = requests.get(url, timeout=5)
+            if response.status_code == 200:
+                logging.info(f"✅ {url} is reachable")
+                return (True, row)
+            else:
+                logging.warning(f"❌ {url} returned {response.status_code}")
+                return (False, row)
+        except RequestException as e:
+            logging.error(f"URLException {url}: {str(e)}")
+            return (False, row)
+
+    with open(input_path, 'r', encoding='utf-8') as f:
+        reader = csv.reader(f)
+        rows = [row for row in reader if row]
+        total_urls = len(rows)
+        logging.info(f"Total URLs to process: {total_urls}")
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            future_to_row = {executor.submit(check_url, row): row for row in rows}
+            for future in as_completed(future_to_row):
+                row = future_to_row[future]
+                try:
+                    result, data = future.result()
+                    if result:
+                        url = data[0].strip()
+                        if url not in seen:
+                            seen[url] = data
+                            successful_count +=1
+                except Exception as exc:
+                    logging.error(f"Unexpected error processing {row}: {exc}")
+
+    logging.info(f"✅ Completed {input_path}: {successful_count}/{total_urls} URLs valid")
+    with open(output_path, 'w', newline='', encoding='utf-8') as f:
+        # 直接写入纯文本，避免CSV换行问题
+        for row in seen.values():
+            f.write(row[0].strip() + '\n')
+
+if __name__ == '__main__':
+    files = ['subList.csv']
+    for input_path in files:
+        print(f"Processing {input_path}...")
+        deduplicate_file(input_path, input_path)
