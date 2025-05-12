@@ -58,7 +58,7 @@ jobs:
 
           # 检查 subList.csv 文件是否存在
           if [ -f "subList.csv" ]; then
-            MAX_PER_BATCH=20  # 可根据实际调整批次大小
+            MAX_PER_BATCH=10  # 可根据实际调整批次大小
             RESULT_FILE="./results/mixed_base64.txt"
             
             # 清空结果文件
