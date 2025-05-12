@@ -66,23 +66,11 @@ jobs:
 
               # 新增详细日志记录
               echo ">>> 发送请求到 $current_url"
-              if ! curl -s -w "HTTP_CODE:%{http_code}" -o "$temp_response" -L "$current_url"; then
-                echo "请求失败：HTTP状态码 $(grep -oP 'HTTP_CODE:\K\d+' "$temp_response")"
+              if ! curl -fs -o "$temp_response" -L "$current_url"; then
+                echo "请求失败，无法获取完整响应"
                 rm -f "$temp_response"
                 exit 1
               fi
-
-              # 验证响应状态码
-              http_status=$(grep -oP 'HTTP_CODE:\K\d+' "$temp_response")
-              if [ "$http_status" -ne 200 ]; then
-                echo "错误响应: 状态码 $http_status 内容: $(cat $temp_response)"
-                rm -f "$temp_response"
-                exit 1
-              fi
-
-              # 移除状态码标记
-              response_content=$(sed '/HTTP_CODE/d' "$temp_response")
-              echo "$response_content" > "$temp_response"
 
               if [ ! -s "$temp_response" ]; then
                 echo "响应内容为空，跳过批次"
