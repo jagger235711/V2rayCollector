@@ -1,14 +1,12 @@
 name: Collector
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "0 */6 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Delete old Releases and Workflows
         uses: ophub/delete-releases-workflows@main
@@ -40,8 +38,6 @@ jobs:
 
       - name: Start subconverter and send request
         run: |
-          # 启动 subconverter 容器
-          # 修正挂载路径并添加详细调试日志
           echo "=== 容器挂载调试开始 ==="
           echo "当前工作目录: $(pwd)"
           echo "宿主机挂载源目录: $(pwd)/results"
@@ -50,58 +46,56 @@ jobs:
             -v $(pwd)/results:/subconverter/results \
             -p 25500:25500 \
             asdlokj1qpi23/subconverter:latest
-          echo "容器启动后立即检查挂载目录..."
-          docker exec subconverter_container sh -c "ls -laR /subconverter && echo '完整目录结构检查完成'"
-          echo "挂载验证: 确认宿主机results目录与容器/subconverter/results已正确绑定"
+          docker exec subconverter_container sh -c "ls -laR /subconverter"
           echo "=== 容器挂载调试结束 ==="
 
-
-          # 检查 subList.csv 文件是否存在
           if [ -f "subList.csv" ]; then
-            MAX_PER_BATCH=10  # 可根据实际调整批次大小
+            MAX_PER_BATCH=10
             RESULT_FILE="./results/mixed_base64.txt"
-            
-            # 清空结果文件
             > "$RESULT_FILE"
-
-            # 读取所有订阅链接到数组
             readarray -t links < subList.csv
 
-            # 分批次处理
             for ((i=0; i<${#links[@]}; i+=$MAX_PER_BATCH))
             do
-              # 获取当前批次的链接
               batch=("${links[@]:i:$MAX_PER_BATCH}")
               batch_url=$(IFS='|'; echo "${batch[*]}")
-
-              # 构造请求URL
               current_url="http://0.0.0.0:25500/sub?target=mixed&url=$batch_url"
-              echo "Processing batch $((i/$MAX_PER_BATCH + 1)) with URL: $current_url"
 
-              # 增强请求验证逻辑
-              echo "正在执行请求：$current_url"
+              echo "Processing batch $((i/$MAX_PER_BATCH + 1)) with URL: $current_url"
               temp_response=$(mktemp)
-              if ! curl -s --fail -o "$temp_response" "$current_url"; then
-                echo "HTTP请求失败：$(cat $temp_response)"
+
+              # 新增详细日志记录
+              echo ">>> 发送请求到 $current_url"
+              if ! curl -s -w "HTTP_CODE:%{http_code}" -o "$temp_response" -L "$current_url"; then
+                echo "请求失败：HTTP状态码 $(grep -oP 'HTTP_CODE:\K\d+' "$temp_response")"
                 rm -f "$temp_response"
                 exit 1
               fi
 
-              # 检查响应内容是否为空
+              # 验证响应状态码
+              http_status=$(grep -oP 'HTTP_CODE:\K\d+' "$temp_response")
+              if [ "$http_status" -ne 200 ]; then
+                echo "错误响应: 状态码 $http_status 内容: $(cat $temp_response)"
+                rm -f "$temp_response"
+                exit 1
+              fi
+
+              # 移除状态码标记
+              response_content=$(sed '/HTTP_CODE/d' "$temp_response")
+              echo "$response_content" > "$temp_response"
+
               if [ ! -s "$temp_response" ]; then
-                echo "响应内容为空，跳过该批次"
+                echo "响应内容为空，跳过批次"
                 rm -f "$temp_response"
                 continue
               fi
 
-              # 合并到最终结果并清理临时文件
               cat "$temp_response" >> "$RESULT_FILE"
               rm -f "$temp_response"
-              echo "批次 $((i/$MAX_PER_BATCH + 1)) 处理完成"
+              echo "批次成功处理"
             done
           else
-            echo "subList.csv 文件未找到."
-            kill $SUBPROCESS_PID
+            echo "subList.csv not found"
             exit 1
           fi
 
@@ -111,87 +105,27 @@ jobs:
 
       - name: Clean mixed.txt content
         run: |
-          # 检查文件是否存在
-          if [ ! -f "./results/mixed.txt" ]; then
-            echo "Error: mixed.txt 文件不存在"
-            exit 1
-          fi
-          
-          # 创建临时文件
-          echo "开始清理文件内容..."
-          
-          # 处理文件：
-          # 1. 移除前导和后导空格
-          # 2. 删除空行
-          # 3. 保存到临时文件
-          cat "./results/mixed.txt" | \
-            sed 's/^[ \t]*//;s/[ \t]*$//' | \
-            sed '/^$/d' > "./results/mixed.txt.tmp"
-          
-          # 用处理后的文件替换原文件
+          if [ ! -f "./results/mixed.txt" ]; then exit 1; fi
+          cat "./results/mixed.txt" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed '/^$/d' > "./results/mixed.txt.tmp"
           mv "./results/mixed.txt.tmp" "./results/mixed.txt"
-          
-          # 显示处理结果
-          echo "清理完成。文件统计信息："
-          echo "总行数: $(wc -l < ./results/mixed.txt)"
-          echo "文件大小: $(wc -c < ./results/mixed.txt) 字节"
-          
-          # 预览处理后的内容
-          echo "\n处理后的前5行内容："
-          head -n 50 "./results/mixed.txt"
+          echo "清理后统计：$(wc -l ./results/mixed.txt) 行 $(wc -c ./results/mixed.txt) 字节"
 
       - name: Speedtest
         run: |
-          echo "执行性能测试前检查输入文件..."
-          if [ ! -f "./results/mixed.txt" ]; then
-            echo "Error: mixed.txt 文件不存在，无法执行性能测试"
-            exit 1
-          fi
+          if [ ! -f "./results/mixed.txt" ]; then exit 1; fi
           ./tool/speedTest_singtools/singtools test -i ./results/mixed.txt -c ./tool/speedTest_singtools/config.json -o ./results/mixed_tested.json -e fatal -f ""
-          echo "性能测试完成，检查输出文件..."
-          if [ ! -f "./results/mixed_tested.json" ]; then
-            echo "Error: 性能测试未生成 mixed_tested.json 文件"
-            exit 1
-          fi
-          echo "mixed_tested.json 文件大小: $(wc -c ./results/mixed_tested.json)"
+          if [ ! -f "./results/mixed_tested.json" ]; then exit 1; fi
 
       - name: Convert to mixed with base64encode
         run: |
-          # 增强路径验证和日志输出
-          if [ ! -f "./results/mixed_tested.json" ]; then
-            echo "Error: mixed_tested.json 文件不存在于 $(pwd)/results/ 目录"
-            exit 1
-          fi
-
-          # 显式声明完整URL并添加调试输出
-          # full_url="http://localhost:25500/sub?target=mixed&url=file:///subconverter/results/mixed_tested.json"
-
+          if [ ! -f "./results/mixed_tested.json" ]; then exit 1; fi
           full_url="http://localhost:25500/sub?target=mixed&url=/subconverter/results/mixed_tested.json"
-          echo "正在使用的完整URL地址: $full_url"
-
-          echo "\n------------------"
-          echo "当前工作目录: $(pwd)"
-          echo "mixed_tested.json 路径: $(realpath ./results/mixed_tested.json)"
-          echo "容器内对应路径: /subconverter/results/mixed_tested.json"
-          echo "Full URL: $full_url"
-          echo "\n------------------"
-
-          # 移除错误信息抑制并显示详细curl输出
+          echo "正在请求: $full_url"
           if ! curl -v -o ./results/mixed_tested.txt "$full_url"; then
-            echo "curl 请求失败，请检查以下信息:"
-            echo "1. 容器挂载目录内容:"
-            docker exec subconverter_container sh -c "ls -l /subconverter/results"
-            echo "2. 当前工作目录文件列表:"
-            ls -l ./results/
-            echo "3. 请求的URL地址: $full_url"
+            echo "curl failed: $(docker exec subconverter_container ls -l /subconverter/results)"
             exit 1
           fi
-
-          # 验证输出文件内容
-          if [ ! -s "./results/mixed_tested.txt" ]; then
-            echo "生成的 mixed_tested.txt 文件为空，转换失败"
-            exit 1
-          fi
+          if [ ! -s "./results/mixed_tested.txt" ]; then exit 1; fi
 
       - name: Commit Changes
         run: |
@@ -199,9 +133,8 @@ jobs:
           git config --local user.name "GitHub Actions"
           git pull origin main
           git add ./results/*
-          git checkout main
-          git commit -m "✔️ $(date '+%Y-%m-%d %H:%M:%S') Collected"
-     
+          git commit -m "✔️ $(date '+%Y-%m-%d %H:%M:%S') Collected" || echo "No changes to commit"
+
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
