@@ -71,7 +71,7 @@ jobs:
               #   rm -f "$temp_response"
               #   exit 1
               # fi
-              curl -fs -o "$temp_response" -L "$current_url"
+              curl -L -o ./results/mixed_base64.txt "$current_url"
 
               if [ ! -s "$temp_response" ]; then
                 echo "响应内容为空，跳过批次"
