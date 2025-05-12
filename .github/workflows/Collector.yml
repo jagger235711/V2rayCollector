@@ -58,23 +58,49 @@ jobs:
 
           # 检查 subList.csv 文件是否存在
           if [ -f "subList.csv" ]; then
-            # 读取订阅链接并使用 | 分割
-            LINKS=$(cat subList.csv | tr '\n' '|')
-            LINKS="${LINKS%|}"
+            MAX_PER_BATCH=20  # 可根据实际调整批次大小
+            RESULT_FILE="./results/mixed_base64.txt"
+            
+            # 清空结果文件
+            > "$RESULT_FILE"
 
-            # 构造完整的请求 URL
-            FULL_URL="http://0.0.0.0:25500/sub?target=mixed&url=$LINKS"
-            echo "Full URL: $FULL_URL"
+            # 读取所有订阅链接到数组
+            readarray -t links < subList.csv
 
-            # 发送请求并保存结果
-            curl -o ./results/mixed_base64.txt "$FULL_URL"
-            if [ $? -ne 0 ]; then
-              echo "Request to subconverter failed."
-              kill $SUBPROCESS_PID
-              exit 1
-            fi
+            # 分批次处理
+            for ((i=0; i<${#links[@]}; i+=$MAX_PER_BATCH))
+            do
+              # 获取当前批次的链接
+              batch=("${links[@]:i:$MAX_PER_BATCH}")
+              batch_url=$(IFS='|'; echo "${batch[*]}")
+
+              # 构造请求URL
+              current_url="http://0.0.0.0:25500/sub?target=mixed&url=$batch_url"
+              echo "Processing batch $((i/$MAX_PER_BATCH + 1)) with URL: $current_url"
+
+              # 增强请求验证逻辑
+              echo "正在执行请求：$current_url"
+              temp_response=$(mktemp)
+              if ! curl -s --fail -o "$temp_response" "$current_url"; then
+                echo "HTTP请求失败：$(cat $temp_response)"
+                rm -f "$temp_response"
+                exit 1
+              fi
+
+              # 检查响应内容是否为空
+              if [ ! -s "$temp_response" ]; then
+                echo "响应内容为空，跳过该批次"
+                rm -f "$temp_response"
+                continue
+              fi
+
+              # 合并到最终结果并清理临时文件
+              cat "$temp_response" >> "$RESULT_FILE"
+              rm -f "$temp_response"
+              echo "批次 $((i/$MAX_PER_BATCH + 1)) 处理完成"
+            done
           else
-            echo "subList.csv file not found."
+            echo "subList.csv 文件未找到."
             kill $SUBPROCESS_PID
             exit 1
           fi
