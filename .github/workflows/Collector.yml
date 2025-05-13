@@ -77,7 +77,6 @@ jobs:
                     56)  echo "接收数据失败" ;;
                     *)   echo "未知错误: $status" ;;
                 esac
-
               fi
 
               DELAY=0
@@ -88,14 +87,15 @@ jobs:
                 if [ $DELAY -gt 10 ]; then
                   echo "重试次数过多，跳过批次"
                   rm -f "$temp_response"
-                  break
+                  continue 2
                 fi
               done
-
+          
               cat "$temp_response" >> "$RESULT_FILE"
               rm -f "$temp_response"
               echo "批次成功处理"
             done
+            
           else
             echo "subList.csv not found"
             exit 1
