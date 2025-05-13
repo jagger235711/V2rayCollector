@@ -15,7 +15,7 @@ do
     temp_response=$(mktemp)
 
     # 新增详细日志记录
-    echo ">>> 发送请求到 $current_url"
+    echo ">>> 发送请求到 $current_url 临时文件: $temp_response"
     if  curl -fs -o "$temp_response" -L "$current_url"; then
     
         status=$?
@@ -35,10 +35,24 @@ do
 
     DELAY=0
     while [ ! -s "$temp_response" ]; do
-        echo "响应内容为空，等待 $DELAY 秒后重试..."
+        echo "响应内容 $temp_response 为空，等待 $DELAY 秒后重试..."
         sleep $DELAY
         DELAY=$((DELAY + 1))
+        if [ $DELAY -gt 10 ]; then
+            echo "重试次数过多，跳过批次"
+            rm -f "$temp_response"
+            break
+        fi
     done
+
+    # 检查并创建结果目录
+    if [ ! -d "$RESULT_DIR" ]; then
+        echo "创建结果目录: $RESULT_DIR"
+        if ! mkdir -p "$RESULT_DIR"; then
+            echo "错误：无法创建结果目录"
+            exit 1
+        fi
+    fi
 
     cat "$temp_response" >> "$RESULT_FILE"
     rm -f "$temp_response"
