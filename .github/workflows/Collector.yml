@@ -50,7 +50,7 @@ jobs:
           echo "=== 容器挂载调试结束 ==="
 
           if [ -f "subList.csv" ]; then
-            MAX_PER_BATCH=1
+            MAX_PER_BATCH=10
             RESULT_FILE="./results/mixed_base64.txt"
             > "$RESULT_FILE"
             readarray -t links < subList.csv
@@ -66,9 +66,9 @@ jobs:
 
               # 新增详细日志记录
               echo ">>> 发送请求到 $current_url"
-              if ! curl -fs -o "$temp_response" -L "$current_url"; then
+              if  curl -fs -o "$temp_response" -L "$current_url"; then
                 
-              status=$?
+                status=$?
                 case $status in
                     0)   echo "请求成功" ;;
                     6)   echo "无法解析主机" ;;
