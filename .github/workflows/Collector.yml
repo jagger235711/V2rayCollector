@@ -83,11 +83,16 @@ jobs:
                 exit 1
               fi
 
-              if [ ! -s "$temp_response" ]; then
-                echo "响应内容为空，跳过批次"
-                rm -f "$temp_response"
-                continue
-              fi
+              while [ ! -s "$temp_response" ]; do
+                echo "响应内容为空，等待 1 秒后重试..."
+                sleep 1
+              done
+
+              # if [ ! -s "$temp_response" ]; then
+              #   echo "响应内容为空，跳过批次"
+              #   rm -f "$temp_response"
+              #   continue
+              # fi
 
               cat "$temp_response" >> "$RESULT_FILE"
               rm -f "$temp_response"
