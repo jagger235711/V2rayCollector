@@ -62,7 +62,7 @@ jobs:
               current_url="http://0.0.0.0:25500/sub?target=mixed&url=$batch_url"
 
               echo "Processing batch $((i/$MAX_PER_BATCH + 1)) with URL: $current_url"
-              temp_response=$(mktemp)
+              temp_response=$(mktemp -p ./results)
 
               # 新增详细日志记录
               echo ">>> 发送请求到 $current_url 临时文件: $temp_response"
