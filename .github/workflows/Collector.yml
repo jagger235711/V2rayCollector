@@ -95,7 +95,6 @@ jobs:
               rm -f "$temp_response"
               echo "批次成功处理"
             done
-            
           else
             echo "subList.csv not found"
             exit 1
