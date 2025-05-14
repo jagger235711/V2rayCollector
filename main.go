@@ -449,28 +449,32 @@ func CrawlForV2ray(doc *goquery.Document, channelLink string, HasAllMessagesFlag
 							gologger.Debug().Msgf("匹配到 %s 协议: %s", proto, extractedConfig)
 							
 							if proto == "vmess" {
-								// extractedConfig = collector.EditVmessPs(extractedConfig)
+								extractedConfig = collector.EditVmessPs(extractedConfig)
 							}
 							
 							if extractedConfig != "" {
+
+								cfg.mu.Lock()
 								cfg.Configs[proto] += extractedConfig + "\n"
+								cfg.mu.Unlock()
+
 								// 直接写入mixed文件
-				lock := fileLocks["mixed"]
-				lock.mu.Lock()
-				for lock.count > 0 {
-					lock.cond.Wait()
-				}
-				lock.count++
-				lock.mu.Unlock()
-				
-				if err := collector.AppendToFile(extractedConfig+"\n", "results/mixed.txt"); err != nil {
-					gologger.Error().Msgf("写入mixed.txt失败: %v", err)
-				}
-				
-				lock.mu.Lock()
-				lock.count--
-				lock.cond.Signal()
-				lock.mu.Unlock()
+								lock := fileLocks["mixed"]
+								lock.mu.Lock()
+								for lock.count > 0 {
+									lock.cond.Wait()
+								}
+								lock.count++
+								lock.mu.Unlock()
+								
+								if err := collector.AppendToFile(extractedConfig+"\n", "results/mixed.txt"); err != nil {
+									gologger.Error().Msgf("写入mixed.txt失败: %v", err)
+								}
+								
+								lock.mu.Lock()
+								lock.count--
+								lock.cond.Signal()
+								lock.mu.Unlock()
 							}
 							break
 						}
@@ -530,14 +534,23 @@ func CrawlForV2ray(doc *goquery.Document, channelLink string, HasAllMessagesFlag
 							gologger.Debug().Msgf("匹配到 %s 协议: %s", proto, extractedConfig)
 							
 							if proto == "vmess" {
-								// extractedConfig = collector.EditVmessPs(extractedConfig)
+								extractedConfig = collector.EditVmessPs(extractedConfig)
 							}
 							
 							if extractedConfig != "" {
+
+								
+								cfg.mu.Lock()
 								cfg.Configs[proto] += extractedConfig + "\n"
+								cfg.mu.Unlock()
+
 								// 确保mixed包含所有协议
 								if proto != "mixed" {
+
+									cfg.mu.Lock()
 									cfg.Configs["mixed"] += extractedConfig + "\n"
+									cfg.mu.Unlock()
+
 								}
 							}
 							break
