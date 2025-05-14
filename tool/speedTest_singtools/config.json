@@ -10,7 +10,7 @@
     "timeout": 5,                    
     "bufferSize": 65536,              
     "retryAttempts": 1,             
-    "retryDelay": 1 ,                 
+    "retryDelay": 5 ,                 
     "detect": false,                   
     "removeDup": true,               
     "enableMetrics": true,           
@@ -18,8 +18,8 @@
     "logLevel": "INFO",               
     "logFile": "speedtest.log",       
     "geoipDbPath": "GeoLite2-Country.mmdb",  
-    "downloadTimeout": 30,           
-    "downloadRetries": 2,             
+    "downloadTimeout": 10,           
+    "downloadRetries": 1,             
     "downloadBufferSize": 65536       
 
 }
