@@ -113,6 +113,8 @@ jobs:
                 cat "$temp_response" >> "$RESULT_FILE"
                 rm -f "$temp_response"
                 echo "批次成功处理"
+                # 加个延迟，太快了subconverter反应不过来
+                sleep 2 
             done
           else
             echo "subList.csv not found"
