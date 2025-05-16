@@ -12,7 +12,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/projectdiscovery/gologger"
-	"github.com/projectdiscovery/gologger/levels"
+	// "github.com/projectdiscovery/gologger/levels"
 )
 
 func ChangeUrlToTelegramWebUrl(input string) string {
