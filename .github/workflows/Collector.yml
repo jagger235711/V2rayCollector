@@ -26,6 +26,11 @@ jobs:
           rm -rf results/*
           mkdir -p results
 
+      - name: Deduplicate URLs
+        run: |
+          python deduplicate.py subList.csv subList.csv
+          echo "去重完成，处理了 $(wc -l < subList.csv) 个URL"
+
       - uses: actions/setup-go@v4
         with:
           go-version: ">=1.21.3"
@@ -65,9 +70,6 @@ jobs:
               echo "ERROR: Subconverter未在30秒内启动，终止流程"
               exit 1
           fi
-
-
-          
 
           if [ -f "subList.csv" ]; then
             MAX_PER_BATCH=5
@@ -130,7 +132,7 @@ jobs:
           if [ ! -f "./results/mixed.txt" ]; then exit 1; fi
           cat "./results/mixed.txt" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed '/^$/d' > "./results/mixed.txt.tmp"
           mv "./results/mixed.txt.tmp" "./results/mixed.txt"
-          echo "清理后统计：$(wc -l ./results/mixed.txt) 行 $(wc -c ./results/mixed.txt) 字节"
+          echo "清理后统计：$(wc -l ./results/m mixed.txt) 行 $(wc -c ./results/mixed.txt) 字节"
 
       - name: Speedtest
         run: |

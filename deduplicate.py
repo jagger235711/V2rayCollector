@@ -1,6 +1,7 @@
 import csv
 import requests
 import logging
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from functools import partial
 from requests.exceptions import RequestException
@@ -21,9 +22,15 @@ def deduplicate_file(input_path, output_path):
         nonlocal successful_count
         url = row[0].strip()
         try:
+            start_time = time.time()
             response = requests.get(url, timeout=5)
+            elapsed = time.time() - start_time
+            
             if response.status_code == 200:
-                logging.info(f"✅ {url} is reachable")
+                if elapsed > 2:  # 超过2秒视为慢速
+                    logging.warning(f"⚠️ {url} is slow (took {elapsed:.2f}s)")
+                    return (False, row)
+                logging.info(f"✅ {url} is reachable (took {elapsed:.2f}s)")
                 return (True, row)
             else:
                 logging.warning(f"❌ {url} returned {response.status_code}")
