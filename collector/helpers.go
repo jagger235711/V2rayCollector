@@ -11,6 +11,8 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/projectdiscovery/gologger"
+	"github.com/projectdiscovery/gologger/levels"
 )
 
 func ChangeUrlToTelegramWebUrl(input string) string {
@@ -148,7 +150,7 @@ func WriteToFile(content string, filePath string) error {
 			if err := os.WriteFile(outputPath, []byte(content), 0644); err != nil {
 				return fmt.Errorf("写入%s文件失败: %v", protocol, err)
 			}
-			fmt.Printf("[INFO] 成功写入 %d 条%s配置到 %s\n", len(configs), protocol, outputPath)
+			gologger.Info().Msgf("成功写入 %d 条%s配置到 %s", len(configs), protocol, outputPath)
 		}
 	}
 
@@ -215,7 +217,7 @@ func loadMore(link string) *goquery.Document {
 	for i := 0; i < 3; i++ {
 		req, err := http.NewRequest("GET", link, nil)
 		if err != nil {
-			fmt.Printf("[WARN] 创建请求失败: %v (重试 %d/3)\n", err, i+1)
+			gologger.Warning().Msgf("创建请求失败: %v (重试 %d/3)", err, i+1)
 			continue
 		}
 
@@ -226,7 +228,7 @@ func loadMore(link string) *goquery.Document {
 
 		resp, err := client.Do(req)
 		if err != nil {
-			fmt.Printf("[WARN] 请求失败: %v (重试 %d/3)\n", err, i+1)
+			gologger.Warning().Msgf("请求失败: %v (重试 %d/3)", err, i+1)
 			time.Sleep(2 * time.Second)
 			continue
 		}
@@ -234,22 +236,22 @@ func loadMore(link string) *goquery.Document {
 
 		// 检查响应状态码
 		if resp.StatusCode != http.StatusOK {
-			fmt.Printf("[WARN] 请求返回非200状态码: %d (重试 %d/3)\n", resp.StatusCode, i+1)
+			gologger.Warning().Msgf("请求返回非200状态码: %d (重试 %d/3)", resp.StatusCode, i+1)
 			time.Sleep(2 * time.Second)
 			continue
 		}
 
 		doc, err := goquery.NewDocumentFromReader(resp.Body)
 		if err != nil {
-			fmt.Printf("[WARN] 解析HTML失败: %v (重试 %d/3)\n", err, i+1)
+			gologger.Warning().Msgf("解析HTML失败: %v (重试 %d/3)", err, i+1)
 			time.Sleep(2 * time.Second)
 			continue
 		}
 
-		fmt.Printf("[INFO] 成功加载更多消息 from %s\n", link)
+		gologger.Info().Msgf("成功加载更多消息 from %s", link)
 		return doc
 	}
 
-	fmt.Printf("[ERROR] 加载更多消息失败 after 3次重试: %s\n", link)
+	gologger.Error().Msgf("加载更多消息失败 after 3次重试: %s", link)
 	return nil
 }

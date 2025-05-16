@@ -148,8 +148,8 @@ func main() {
 		gologger.DefaultLogger.SetMaxLevel(levels.LevelFatal)
 		gologger.Info().Msg("日志级别设置为：fatal")
 	default:
-		gologger.DefaultLogger.SetMaxLevel(levels.LevelInfo)
-		gologger.Info().Msg("使用默认日志级别：info")
+		gologger.DefaultLogger.SetMaxLevel(levels.LevelWarning)
+		gologger.Info().Msg("使用默认日志级别：warn (减少默认输出)")
 	}
 
 	// 读取频道列表
