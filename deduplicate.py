@@ -45,7 +45,8 @@ def deduplicate_file(input_path, output_path):
         rows = [row for row in reader if row]
         
         # 检查是否有表头(第一行与其他行格式不同)
-        if len(rows) > 1 and len(rows[0]) != len(rows[1]):
+        # if len(rows) > 1 and len(rows[0]) != len(rows[1]):
+        if True:
             header = rows[0]
             rows = rows[1:]
             
