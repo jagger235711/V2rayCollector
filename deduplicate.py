@@ -28,7 +28,7 @@ def deduplicate_file(input_path, output_path):
             elapsed = time.time() - start_time
             
             if response.status_code == 200:
-                if elapsed > 10:  # 超过1秒视为慢速
+                if elapsed > 1:  # 超过1秒视为慢速
                     logging.warning(f"⚠️ {url} is slow (took {elapsed:.2f}s)")
                     return (False, row)
                 logging.info(f"✅ {url} is reachable (took {elapsed:.2f}s)")
