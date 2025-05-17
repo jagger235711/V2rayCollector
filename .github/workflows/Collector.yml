@@ -26,12 +26,24 @@ jobs:
           rm -rf results/*
           mkdir -p results
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
       - name: Deduplicate URLs
         run: |
           python deduplicate.py subList.csv subList.csv
           echo "去重完成，处理了 $(wc -l < subList.csv) 个URL"
           python deduplicate.py channels.csv channels.csv
           echo "去重完成，处理了 $(wc -l < channels.csv) 个URL"
+          echo "备份文件:"
+          ls -la *.bak
 
       - uses: actions/setup-go@v4
         with:
