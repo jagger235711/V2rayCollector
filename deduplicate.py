@@ -11,6 +11,7 @@ def deduplicate_file(input_path, output_path):
     failed_urls = []
     successful_count = 0
     total_urls = 0
+    header = None
 
     logging.basicConfig(
         format='%(asctime)s [%(levelname)s] %(message)s',
@@ -42,6 +43,12 @@ def deduplicate_file(input_path, output_path):
     with open(input_path, 'r', encoding='utf-8') as f:
         reader = csv.reader(f)
         rows = [row for row in reader if row]
+        
+        # 检查是否有表头(第一行与其他行格式不同)
+        if len(rows) > 1 and len(rows[0]) != len(rows[1]):
+            header = rows[0]
+            rows = rows[1:]
+            
         total_urls = len(rows)
         logging.info(f"Total URLs to process: {total_urls}")
 
@@ -61,12 +68,15 @@ def deduplicate_file(input_path, output_path):
 
     logging.info(f"✅ Completed {input_path}: {successful_count}/{total_urls} URLs valid")
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
-        # 直接写入纯文本，避免CSV换行问题
+        # 如果有表头先写入表头
+        if header:
+            f.write(','.join(header) + '\n')
+        # 写入去重后的内容
         for row in seen.values():
             f.write(row[0].strip() + '\n')
 
 if __name__ == '__main__':
-    files = ['subList.csv']
+    files = ['subList.csv','channels.csv']
     for input_path in files:
         print(f"Processing {input_path}...")
         deduplicate_file(input_path, input_path)

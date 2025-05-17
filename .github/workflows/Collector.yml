@@ -77,7 +77,8 @@ jobs:
             > "$RESULT_FILE"
             readarray -t links < subList.csv
 
-            for ((i=0; i<${#links[@]}; i+=$MAX_PER_BATCH))
+            # 表头不算在内
+            for ((i=1; i<${#links[@]}; i+=$MAX_PER_BATCH))
             do
                 batch=("${links[@]:i:$MAX_PER_BATCH}")
                 batch_url=$(IFS='|'; echo "${batch[*]}")
