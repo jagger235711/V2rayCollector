@@ -30,6 +30,8 @@ jobs:
         run: |
           python deduplicate.py subList.csv subList.csv
           echo "去重完成，处理了 $(wc -l < subList.csv) 个URL"
+          python deduplicate.py channels.csv channels.csv
+          echo "去重完成，处理了 $(wc -l < channels.csv) 个URL"
 
       - uses: actions/setup-go@v4
         with:
