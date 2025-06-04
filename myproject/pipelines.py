@@ -1,11 +1,13 @@
 import os
+import shutil
 from datetime import datetime
 
 class ProxyPipeline:
     def open_spider(self, spider):
-        # 确保results目录存在
+        # 每次都新建results目录
         self.results_dir = './results'
-        os.makedirs(self.results_dir, exist_ok=True)
+        shutil.rmtree( self.results_dir)
+        os.makedirs(self.results_dir)
         
         # 初始化各协议文件
         self.protocol_files = {
