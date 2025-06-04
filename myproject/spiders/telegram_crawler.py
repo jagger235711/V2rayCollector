@@ -3,6 +3,7 @@ import re
 import base64
 import json
 import time
+import os
 import pandas as pd
 from urllib.parse import urlparse
 from ..items import ProxyItem
@@ -10,7 +11,8 @@ from ..items import ProxyItem
 class TelegramCrawlerSpider(scrapy.Spider):
     name = "telegram_crawler"
     allowed_domains = ["t.me"]
-    channelsPath='./resource/channels.csv'
+    channelsPath='../resource/channels.csv'
+    print(os.getcwd())
     # start_urls = []  # 通过构造函数传入实际URL
     # 读取csv文件 将第一列转为list
     async def start(self):
