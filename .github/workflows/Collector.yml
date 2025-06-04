@@ -43,7 +43,7 @@ jobs:
           python deduplicate.py ./resource/channels.csv ./resource/channels.csv
           echo "去重完成，处理了 $(wc -l < channels.csv) 个URL"
           echo "备份文件:"
-          ls -la *.bak
+          ls -la ./resource/*.bak
 
       - name: Run Scrapy spider
         run: |

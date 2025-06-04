@@ -46,9 +46,12 @@ def deduplicate_file(input_path, output_path):
         
         # 检查是否有表头(第一行与其他行格式不同)
         # if len(rows) > 1 and len(rows[0]) != len(rows[1]):
-        if True:
+        if False:
             header = rows[0]
             rows = rows[1:]
+        else:
+            header
+            rows=rows
             
         total_urls = len(rows)
         logging.info(f"Total URLs to process: {total_urls}")
