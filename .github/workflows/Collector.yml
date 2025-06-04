@@ -79,12 +79,13 @@ jobs:
               echo "ERROR: Subconverter未在30秒内启动，终止流程"
               exit 1
           fi
-
-          if [ -f "subList.csv" ]; then
+          
+          RESOURCE_FILE="./resource/subList.csv"
+          if [ -f "$RESOURCE_FILE" ]; then
             MAX_PER_BATCH=5
             RESULT_FILE="./results/mixed_base64.txt"
             > "$RESULT_FILE"
-            readarray -t links < subList.csv
+            readarray -t links < $RESOURCE_FILE
 
             # 表头不算在内
             for ((i=0; i<${#links[@]}; i+=$MAX_PER_BATCH))
