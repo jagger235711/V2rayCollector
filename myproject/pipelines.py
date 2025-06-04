@@ -5,7 +5,7 @@ from datetime import datetime
 class ProxyPipeline:
     def open_spider(self, spider):
         # 每次都新建results目录
-        self.results_dir = './results'
+        self.results_dir = '../results'
         shutil.rmtree(self.results_dir,ignore_errors=True)
         os.makedirs(self.results_dir)
         
