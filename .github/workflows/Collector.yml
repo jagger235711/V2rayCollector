@@ -63,8 +63,8 @@ jobs:
             { echo "ERROR: Subconverter启动超时"; exit 1; }
 
           # 处理URL列表
-          [ -f "subList.csv" ] || { echo "subList.csv不存在"; exit 1; }
-          tail -n +1 subList.csv | xargs -n5 | while read batch; do
+          [ -f "./resource/subList.csv" ] || { echo "./resource/subList.csv不存在"; exit 1; }
+          tail -n +1 ./resource/subList.csv | xargs -n5 | while read batch; do
             url="http://localhost:25500/sub?target=mixed&url=$(echo $batch | tr ' ' '|')"
             curl -fs "$url" >> ./results/mixed_base64.txt || echo "处理批次失败: $batch"
             sleep 1
