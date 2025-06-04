@@ -111,10 +111,10 @@ func init() {
 	},
 	RegexPatterns: map[string]string{
 		"ss":        `(?m)(...ss:|^ss:)\/\/.+?(%3A%40|#)`,
-		"vmess":     `(?m)vmess:\/\/[A-Za-z0-9+/=]+`,  // 更严格的vmess匹配
-		"trojan":    `(?m)trojan:\/\/.+?(%3A%40|#)`,
-		"vless":     `(?m)vless:\/\/.+?(%3A%40|#)`,
-		"hysteria2": `(?m)hysteria2:\/\/.+?(%3A%40|#)`,
+		"vmess":     `(?m)(?<![\w-])(vmess://[^\s<>#]+)`,  // 更严格的vmess匹配
+		"trojan":    `(?m)(?<![\w-])(trojan://[^\s<>#]+)`,
+		"vless":     `(?m)(?<![\w-])(vless://(?:(?!=reality)[^\s<>#])+(?=[\s<>#]))`,
+		"hysteria2": `(?m)(?<![\w-])(hysteria2://[^\s<>#]+)`,
 	},
 		Sort: flag.Bool("sort", false, "sort from latest to oldest (default : false)"),
 	}
