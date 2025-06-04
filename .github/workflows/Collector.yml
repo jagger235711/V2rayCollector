@@ -75,7 +75,7 @@ jobs:
           echo "工作路径: $GITHUB_WORKSPACE"
           echo "当前路径: $(pwd)"
           echo "----------------"
-          ls -la $GITHUB_WORKSPACE
+          ls -R $GITHUB_WORKSPACE
           echo "----------------"
           base64 -d ./results/mixed_base64.txt >> ./results/mixed.txt
 
