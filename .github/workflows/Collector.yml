@@ -1,0 +1,112 @@
+name: Collector
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete old Releases and Workflows
+        uses: ophub/delete-releases-workflows@main
+        with:
+          gh_token: ${{secrets.GITHUB_TOKEN}}
+          delete_releases: true
+          releases_keep_latest: 3
+          delete_tags: true
+          delete_workflows: true
+          workflows_keep_day: 3
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Cleanup results directory
+        run: |
+          rm -rf results/*
+          mkdir -p results
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requirements.txt
+
+      - name: Deduplicate URLs
+        run: |
+          python deduplicate.py ./resource/subList.csv ./resource/subList.csv
+          echo "去重完成，处理了 $(wc -l < subList.csv) 个URL"
+          python deduplicate.py ./resource/channels.csv ./resource/channels.csv
+          echo "去重完成，处理了 $(wc -l < channels.csv) 个URL"
+          echo "备份文件:"
+          ls -la *.bak
+
+      - name: Run Scrapy spider
+        run: |
+          cd myproject
+          scrapy crawl telegram_crawler
+
+      - name: Start subconverter and process URLs
+        run: |
+          # 启动subconverter容器
+          docker run -d --name subconverter --rm \
+            -v $(pwd)/results:/subconverter/results \
+            -p 25500:25500 \
+            asdlokj1qpi23/subconverter:latest
+
+          # 等待服务就绪
+          timeout 30 bash -c 'until curl -s http://localhost:25500 >/dev/null; do sleep 1; done' || \
+            { echo "ERROR: Subconverter启动超时"; exit 1; }
+
+          # 处理URL列表
+          [ -f "subList.csv" ] || { echo "subList.csv不存在"; exit 1; }
+          tail -n +1 subList.csv | xargs -n5 | while read batch; do
+            url="http://localhost:25500/sub?target=mixed&url=$(echo $batch | tr ' ' '|')"
+            curl -fs "$url" >> ./results/mixed_base64.txt || echo "处理批次失败: $batch"
+            sleep 1
+          done
+
+      - name: Decode base64 and append to mixed.txt
+        run: |
+          base64 -d ./results/mixed_base64.txt >> ./results/mixed.txt
+
+      - name: Clean mixed.txt content
+        run: |
+          if [ ! -f "./results/mixed.txt" ]; then exit 1; fi
+          cat "./results/mixed.txt" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed '/^$/d' > "./results/mixed.txt.tmp"
+          mv "./results/mixed.txt.tmp" "./results/mixed.txt"
+          echo "清理后统计：$(wc -l ./results/m mixed.txt) 行 $(wc -c ./results/mixed.txt) 字节"
+
+      - name: Speedtest
+        run: |
+          if [ ! -f "./results/mixed.txt" ]; then exit 1; fi
+          ./tool/speedTest_singtools/singtools test -i ./results/mixed.txt -c ./tool/speedTest_singtools/config.json -o ./results/mixed_tested.json -e fatal -f ""
+          if [ ! -f "./results/mixed_tested.json" ]; then exit 1; fi
+
+      - name: Convert to mixed with base64encode
+        run: |
+          if [ ! -f "./results/mixed_tested.json" ]; then exit 1; fi
+          full_url="http://localhost:25500/sub?target=mixed&url=/subconverter/results/mixed_tested.json"
+          echo "正在请求: $full_url"
+          if ! curl -v -o ./results/mixed_tested.txt "$full_url"; then
+            echo "curl failed: $(docker exec subconverter_container ls -l /subconverter/results)"
+            exit 1
+          fi
+          if [ ! -s "./results/mixed_tested.txt" ]; then exit 1; fi
+
+      - name: Commit Changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git pull origin main
+          git add ./results/*
+          git commit -m "✔️ $(date '+%Y-%m-%d %H:%M:%S') Collected" || echo "No changes to commit"
+
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: main
