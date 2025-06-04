@@ -72,6 +72,10 @@ jobs:
 
       - name: Decode base64 and append to mixed.txt
         run: |
+          echo "工作路径: $GITHUB_WORKSPACE"
+          echo "----------------"
+          ls -la $GITHUB_WORKSPACE
+          echo "----------------"
           base64 -d ./results/mixed_base64.txt >> ./results/mixed.txt
 
       - name: Clean mixed.txt content
