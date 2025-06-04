@@ -73,6 +73,7 @@ jobs:
       - name: Decode base64 and append to mixed.txt
         run: |
           echo "工作路径: $GITHUB_WORKSPACE"
+          echo "当前路径: $(pwd)"
           echo "----------------"
           ls -la $GITHUB_WORKSPACE
           echo "----------------"
