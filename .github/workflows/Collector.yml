@@ -39,9 +39,9 @@ jobs:
       - name: Deduplicate URLs
         run: |
           python deduplicate.py ./resource/subList.csv ./resource/subList.csv
-          echo "去重完成，处理了 $(wc -l < subList.csv) 个URL"
+          echo "去重完成，处理了 $(wc -l < ./resource/subList.csv) 个URL"
           python deduplicate.py ./resource/channels.csv ./resource/channels.csv
-          echo "去重完成，处理了 $(wc -l < channels.csv) 个URL"
+          echo "去重完成，处理了 $(wc -l < ./resource/channels.csv) 个URL"
           echo "备份文件:"
           ls -la ./resource/*.bak
 
