@@ -48,27 +48,90 @@ jobs:
       - name: Run Scrapy spider
         run: |
           cd myproject
-          scrapy crawl telegram_crawler
+          scrapy crawl telegram_crawler -L ERROR
 
       - name: Start subconverter and process URLs
         run: |
-          # 启动subconverter容器
-          docker run -d --name subconverter --rm \
+          echo "=== 容器挂载调试开始 ==="
+          echo "当前工作目录: $(pwd)"
+          echo "宿主机挂载源目录: $(pwd)/results"
+          echo "容器内部目标目录: /subconverter/results"
+          docker run -d --name subconverter_container --restart=always \
             -v $(pwd)/results:/subconverter/results \
             -p 25500:25500 \
             asdlokj1qpi23/subconverter:latest
+          docker exec subconverter_container sh -c "ls -laR /subconverter"
+          echo "=== 容器挂载调试结束 ==="
 
-          # 等待服务就绪
-          timeout 30 bash -c 'until curl -s http://localhost:25500 >/dev/null; do sleep 1; done' || \
-            { echo "ERROR: Subconverter启动超时"; exit 1; }
-
-          # 处理URL列表
-          [ -f "./resource/subList.csv" ] || { echo "./resource/subList.csv不存在"; exit 1; }
-          tail -n +1 ./resource/subList.csv | xargs -n5 | while read batch; do
-            url="http://localhost:25500/sub?target=mixed&url=$(echo $batch | tr ' ' '|')"
-            curl -fs "$url" >> ./results/mixed_base64.txt || echo "处理批次失败: $url"
-            sleep 1
+          # 确认subconverter程序已启动
+          echo "等待subconverter容器启动..."
+          MAX_RETRY=30
+          COUNT=0
+          while [ $COUNT -lt $MAX_RETRY ]; do
+              if curl -s http://localhost:25500 >/dev/null; then
+                  echo "Subconverter服务已就绪"
+                  break
+              fi
+              sleep 1
+              COUNT=$((COUNT+1))
           done
+          if [ $COUNT -eq $MAX_RETRY ]; then
+              echo "ERROR: Subconverter未在30秒内启动，终止流程"
+              exit 1
+          fi
+
+          if [ -f "subList.csv" ]; then
+            MAX_PER_BATCH=5
+            RESULT_FILE="./results/mixed_base64.txt"
+            > "$RESULT_FILE"
+            readarray -t links < subList.csv
+
+            # 表头不算在内
+            for ((i=0; i<${#links[@]}; i+=$MAX_PER_BATCH))
+            do
+                batch=("${links[@]:i:$MAX_PER_BATCH}")
+                batch_url=$(IFS='|'; echo "${batch[*]}")
+                current_url="http://0.0.0.0:25500/sub?target=mixed&url=$batch_url"
+
+                echo "Processing batch $((i/$MAX_PER_BATCH + 1)) with URL: $current_url"
+                temp_response=$(mktemp -p ./results)
+
+                # 新增详细日志记录
+                echo ">>> 发送请求到 $current_url 临时文件: $temp_response"
+                if curl -fs -o "$temp_response" -L "$current_url"; then
+                    status=$?
+                    case $status in
+                        0)   echo "请求成功" ;;
+                        6)   echo "无法解析主机" ;;
+                        7)   echo "无法连接到主机" ;;
+                        28)  echo "请求超时" ;;
+                        56)  echo "接收数据失败" ;;
+                        *)   echo "未知错误: $status" ;;
+                    esac
+                fi
+
+                DELAY=0
+                while [ ! -s "$temp_response" ]; do
+                    echo "响应内容为空，等待 $DELAY 秒后重试..."
+                    sleep $DELAY
+                    DELAY=$((DELAY + 1))
+                    if [ $DELAY -gt 10 ]; then
+                        echo "重试次数过多，跳过批次"
+                        rm -f "$temp_response"
+                        continue 2
+                    fi
+                done
+
+                cat "$temp_response" >> "$RESULT_FILE"
+                rm -f "$temp_response"
+                echo "批次成功处理"
+                # 加个延迟，太快了subconverter反应不过来
+                sleep 2 
+            done
+          else
+            echo "subList.csv not found"
+            exit 1
+          fi
 
       - name: Decode base64 and append to mixed.txt
         run: |
