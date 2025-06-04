@@ -6,7 +6,7 @@ class ProxyPipeline:
     def open_spider(self, spider):
         # 每次都新建results目录
         self.results_dir = './results'
-        shutil.rmtree( self.results_dir)
+        shutil.rmtree(self.results_dir,ignore_errors=True)
         os.makedirs(self.results_dir)
         
         # 初始化各协议文件

@@ -13,7 +13,10 @@ class TelegramCrawlerSpider(scrapy.Spider):
     channelsPath='./resource/channels.csv'
     # start_urls = []  # 通过构造函数传入实际URL
     # 读取csv文件 将第一列转为list
-    start_urls = pd.read_csv(channelsPath, usecols=[0], header=None)[0].tolist()
+    async def start(self):
+        start_urls=pd.read_csv(self.channelsPath, usecols=[0], header=None)[0].tolist()
+        for url in start_urls:
+            yield scrapy.Request(self.change_url_to_telegram_web_url(url))
     
     custom_settings = {
         'LOG_LEVEL': 'DEBUG',
@@ -121,3 +124,11 @@ class TelegramCrawlerSpider(scrapy.Spider):
                 configs.append({'type': proto, 'config': config})
                 
         return configs
+   
+    def change_url_to_telegram_web_url(self,input_str):
+        if '/s/' not in input_str:
+            index = input_str.find('/t.me/')
+            if index != -1:
+                modified_url = input_str[:index + len('/t.me/')] + 's/' + input_str[index + len('/t.me/'):]
+                return modified_url
+        return input_str    
