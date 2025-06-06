@@ -170,6 +170,7 @@ jobs:
       - name: Speedtest
         run: |
           if [ ! -f "${{ env.RESOULTS_DIR }}/mixed.txt" ]; then exit 1; fi
+          chmod +x ${{ env.TOOLS_DIR }}/speedTest_singtools/singtools
           ${{ env.TOOLS_DIR }}/speedTest_singtools/singtools test -i ${{ env.RESOULTS_DIR }}/mixed.txt -c ${{ env.TOOLS_DIR }}/speedTest_singtools/config.json -o ${{ env.RESOULTS_DIR }}/mixed_tested.json -e fatal -f ""
           if [ ! -f "${{ env.RESOULTS_DIR }}/mixed_tested.json" ]; then exit 1; fi
 
