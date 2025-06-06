@@ -4,6 +4,23 @@ on:
   schedule:
     - cron: "0 */6 * * *"
 
+env:
+  # 输入文件配置
+  RESOURCE_DIR: $GITHUB_WORKSPACE/resource
+  # INPUT_SUBLIST: $GITHUB_WORKSPACE/resource/subList.csv
+  # INPUT_CHANNELS: $GITHUB_WORKSPACE/resource/channels.csv
+  
+  # 输出目录配置
+  RESOULTS_DIR: $GITHUB_WORKSPACE/results
+  # OUTPUT_MIXED: $GITHUB_WORKSPACE/results/mixed.txt
+  # OUTPUT_TESTED: $GITHUB_WORKSPACE/results/mixed_tested.json
+  
+  # 工具路径配置
+
+  TOOLS_DIR: $GITHUB_WORKSPACE/tool
+  # SPEEDTEST_TOOL: $GITHUB_WORKSPACE/tool/speedTest_singtools/singtools
+  # SPEEDTEST_CONFIG: $GITHUB_WORKSPACE/tool/speedTest_singtools/config.json
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,8 +40,8 @@ jobs:
 
       - name: Cleanup results directory
         run: |
-          rm -rf results/*
-          mkdir -p results
+          rm -rf ${{ env.RESOULTS_DIR }}/*
+          mkdir -p ${{ env.RESOULTS_DIR }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -38,12 +55,12 @@ jobs:
 
       - name: Deduplicate URLs
         run: |
-          python deduplicate.py ./resource/subList.csv ./resource/subList.csv
-          echo "去重完成，处理了 $(wc -l < subList.csv) 个URL"
-          python deduplicate.py ./resource/channels.csv ./resource/channels.csv
-          echo "去重完成，处理了 $(wc -l < ./resource/channels.csv) 个URL"
+          python deduplicate.py ${{ env.RESOURCE_DIR }}/subList.csv ${{ env.RESOURCE_DIR }}/subList.csv
+          echo "去重完成，处理了 $(wc -l < ${{ env.RESOURCE_DIR }}/subList.csv) 个URL"
+          python deduplicate.py ${{ env.RESOURCE_DIR }}/channels.csv ${{ env.RESOURCE_DIR }}/channels.csv
+          echo "去重完成，处理了 $(wc -l < ${{ env.RESOURCE_DIR }}/channels.csv) 个URL"
           echo "备份文件:"
-          ls -la ./resource/*.bak
+          ls -la ${{ env.RESOURCE_DIR }}/*.bak
 
       - name: Run Scrapy spider
         run: |
@@ -54,10 +71,10 @@ jobs:
         run: |
           echo "=== 容器挂载调试开始 ==="
           echo "当前工作目录: $(pwd)"
-          echo "宿主机挂载源目录: $(pwd)/results"
+          echo "宿主机挂载源目录: ${{ env.RESOULTS_DIR }}"
           echo "容器内部目标目录: /subconverter/results"
           docker run -d --name subconverter_container --restart=always \
-            -v $(pwd)/results:/subconverter/results \
+            -v ${{ env.RESOULTS_DIR }}:/subconverter/results \
             -p 25500:25500 \
             asdlokj1qpi23/subconverter:latest
           docker exec subconverter_container sh -c "ls -laR /subconverter"
@@ -80,10 +97,10 @@ jobs:
               exit 1
           fi
           
-          RESOURCE_FILE="./resource/subList.csv"
+          RESOURCE_FILE="${{ env.RESOURCE_DIR }}/subList.csv"
           if [ -f "$RESOURCE_FILE" ]; then
             MAX_PER_BATCH=5
-            RESULT_FILE="./results/mixed_base64.txt"
+            RESULT_FILE="${{ env.RESOULTS_DIR }}/mixed_base64.txt"
             > "$RESULT_FILE"
             readarray -t links < $RESOURCE_FILE
 
@@ -95,7 +112,7 @@ jobs:
                 current_url="http://0.0.0.0:25500/sub?target=mixed&url=$batch_url"
 
                 echo "Processing batch $((i/$MAX_PER_BATCH + 1)) with URL: $current_url"
-                temp_response=$(mktemp -p ./results)
+                temp_response=$(mktemp -p ${{ env.RESOULTS_DIR }})
 
                 # 新增详细日志记录
                 echo ">>> 发送请求到 $current_url 临时文件: $temp_response"
@@ -141,38 +158,38 @@ jobs:
           echo "----------------"
           ls -R $GITHUB_WORKSPACE
           echo "----------------"
-          base64 -d ./results/mixed_base64.txt >> ./results/mixed.txt
+          base64 -d ${{ env.RESOULTS_DIR }}/mixed_base64.txt >> ${{ env.RESOULTS_DIR }}/mixed.txt
 
       - name: Clean mixed.txt content
         run: |
-          if [ ! -f "./results/mixed.txt" ]; then exit 1; fi
-          cat "./results/mixed.txt" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed '/^$/d' > "./results/mixed.txt.tmp"
-          mv "./results/mixed.txt.tmp" "./results/mixed.txt"
-          echo "清理后统计：$(wc -l ./results/m mixed.txt) 行 $(wc -c ./results/mixed.txt) 字节"
+          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed.txt" ]; then exit 1; fi
+          cat "${{ env.RESOULTS_DIR }}/mixed.txt" | sed 's/^[ \t]*//;s/[ \t]*$//' | sed '/^$/d' > "${{ env.RESOULTS_DIR }}/mixed.txt.tmp"
+          mv "${{ env.RESOULTS_DIR }}/mixed.txt.tmp" "${{ env.RESOULTS_DIR }}/mixed.txt"
+          echo "清理后统计：$(wc -l ${{ env.RESOULTS_DIR }}/mixed.txt) 行 $(wc -c ${{ env.RESOULTS_DIR }}/mixed.txt) 字节"
 
       - name: Speedtest
         run: |
-          if [ ! -f "./results/mixed.txt" ]; then exit 1; fi
-          ./tool/speedTest_singtools/singtools test -i ./results/mixed.txt -c ./tool/speedTest_singtools/config.json -o ./results/mixed_tested.json -e fatal -f ""
-          if [ ! -f "./results/mixed_tested.json" ]; then exit 1; fi
+          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed.txt" ]; then exit 1; fi
+          ${{ env.TOOLS_DIR }}/speedTest_singtools/singtools test -i ${{ env.RESOULTS_DIR }}/mixed.txt -c ${{ env.TOOLS_DIR }}/speedTest_singtools/config.json -o ${{ env.RESOULTS_DIR }}/mixed_tested.json -e fatal -f ""
+          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed_tested.json" ]; then exit 1; fi
 
       - name: Convert to mixed with base64encode
         run: |
-          if [ ! -f "./results/mixed_tested.json" ]; then exit 1; fi
+          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed_tested.json" ]; then exit 1; fi
           full_url="http://localhost:25500/sub?target=mixed&url=/subconverter/results/mixed_tested.json"
           echo "正在请求: $full_url"
-          if ! curl -v -o ./results/mixed_tested.txt "$full_url"; then
+          if ! curl -v -o ${{ env.RESOULTS_DIR }}/mixed_tested.txt "$full_url"; then
             echo "curl failed: $(docker exec subconverter_container ls -l /subconverter/results)"
             exit 1
           fi
-          if [ ! -s "./results/mixed_tested.txt" ]; then exit 1; fi
+          if [ ! -s "${{ env.RESOULTS_DIR }}/mixed_tested.txt" ]; then exit 1; fi
 
       - name: Commit Changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git pull origin main
-          git add ./results/*
+          git add ${{ env.RESOULTS_DIR }}/*
           git commit -m "✔️ $(date '+%Y-%m-%d %H:%M:%S') Collected" || echo "No changes to commit"
 
       - name: Push Changes

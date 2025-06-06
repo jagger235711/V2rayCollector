@@ -1,3 +1,4 @@
+import logging
 import scrapy
 import re
 import base64
@@ -11,11 +12,21 @@ from ..items import ProxyItem
 class TelegramCrawlerSpider(scrapy.Spider):
     name = "telegram_crawler"
     allowed_domains = ["t.me"]
-    channelsPath='../resource/channels.csv'
-    print(os.getcwd())
+    
+        # 判断是否在 GitHub Actions 环境中
+    IS_GITHUB_ACTIONS = os.environ.get('GITHUB_ACTIONS') == 'true'
+
+    if IS_GITHUB_ACTIONS:
+        # GitHub Actions 路径
+        channelsPath=os.path.dirname(os.path.abspath(__file__))+'/results/channels.csv'
+    else:
+        # 本地开发路径
+        channelsPath='./resource/channels.csv'
+    
     # start_urls = []  # 通过构造函数传入实际URL
     # 读取csv文件 将第一列转为list
     async def start(self):
+        logging.info("os.getcwd"+os.getcwd())
         start_urls=pd.read_csv(self.channelsPath, usecols=[0], header=None)[0].tolist()
         for url in start_urls:
             yield scrapy.Request(self.change_url_to_telegram_web_url(url))

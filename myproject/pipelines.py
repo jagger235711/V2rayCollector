@@ -1,11 +1,23 @@
+import logging
 import os
 import shutil
 from datetime import datetime
 
 class ProxyPipeline:
     def open_spider(self, spider):
+        # 判断是否在 GitHub Actions 环境中
+        IS_GITHUB_ACTIONS = os.environ.get('GITHUB_ACTIONS') == 'true'
+
+        if IS_GITHUB_ACTIONS:
+            # GitHub Actions 路径
+            self.results_dir = os.path.dirname(os.path.abspath(__file__))+'/results'    
+        else:
+            # 本地开发路径
+            self.results_dir = '../results'
+        
+        
         # 每次都新建results目录
-        self.results_dir = '../results'
+        logging.info("results_dir:"+ self.results_dir)
         shutil.rmtree(self.results_dir,ignore_errors=True)
         os.makedirs(self.results_dir)
         
