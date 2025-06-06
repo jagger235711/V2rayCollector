@@ -64,7 +64,6 @@ jobs:
 
       - name: Run Scrapy spider
         run: |
-          cd myproject
           scrapy crawl telegram_crawler -L ERROR
 
       - name: Start subconverter and process URLs
