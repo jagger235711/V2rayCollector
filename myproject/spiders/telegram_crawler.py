@@ -18,7 +18,7 @@ class TelegramCrawlerSpider(scrapy.Spider):
 
     if IS_GITHUB_ACTIONS:
         # GitHub Actions 路径
-        channelsPath=os.path.dirname(os.path.abspath(__file__))+'/results/channels.csv'
+        channelsPath=os.path.dirname(os.path.abspath(__file__)).split("myproject")[0]+'results/channels.csv'
     else:
         # 本地开发路径
         channelsPath='./resource/channels.csv'
