@@ -95,7 +95,7 @@ jobs:
           RESULT_DIR="${{ env.RESOULTS_DIR }}"
           RESOURCE_FILE="${{ env.RESOURCE_DIR }}/subList.csv"
           RESULT_FILE="${RESULT_DIR}/mixed_base64.txt"
-          MAX_PER_BATCH=5
+          MAX_PER_BATCH=10
           MAX_CONCURRENT=4  # 并发处理的最大批次数
 
           docker run -d --name $CONTAINER_NAME --restart=always \
@@ -124,7 +124,7 @@ jobs:
           echo "读取资源列表..."
           mapfile -t links < "$RESOURCE_FILE"
           total=${#links[@]}
-          # echo "" > "$RESULT_FILE"
+          echo "" > "$RESULT_FILE"
           TMP_BATCH_DIR=$(mktemp -d)
 
           process_batch() {
@@ -171,11 +171,11 @@ jobs:
 
       - name: Decode base64 and append to mixed.txt
         run: |
-          echo "工作路径: $GITHUB_WORKSPACE"
-          echo "当前路径: $(pwd)"
-          echo "----------------"
-          ls -R $GITHUB_WORKSPACE
-          echo "----------------"
+          # echo "工作路径: $GITHUB_WORKSPACE"
+          # echo "当前路径: $(pwd)"
+          # echo "----------------"
+          # ls -R $GITHUB_WORKSPACE
+          # echo "----------------"
           base64 -d ${{ env.RESOULTS_DIR }}/mixed_base64.txt >> ${{ env.RESOULTS_DIR }}/mixed.txt
 
       - name: Clean mixed.txt content
