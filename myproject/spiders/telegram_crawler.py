@@ -12,16 +12,8 @@ from ..items import ProxyItem
 class TelegramCrawlerSpider(scrapy.Spider):
     name = "telegram_crawler"
     allowed_domains = ["t.me"]
+    channelsPath=os.path.dirname(os.path.abspath(__file__)).split("myproject")[0]+'resource/channels.csv'
     
-        # 判断是否在 GitHub Actions 环境中
-    IS_GITHUB_ACTIONS = os.environ.get('GITHUB_ACTIONS') == 'true'
-
-    if IS_GITHUB_ACTIONS:
-        # GitHub Actions 路径
-        channelsPath=os.path.dirname(os.path.abspath(__file__)).split("myproject")[0]+'resource/channels.csv'
-    else:
-        # 本地开发路径
-        channelsPath='./resource/channels.csv'
     
     # start_urls = []  # 通过构造函数传入实际URL
     # 读取csv文件 将第一列转为list

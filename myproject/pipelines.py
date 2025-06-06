@@ -7,13 +7,7 @@ class ProxyPipeline:
     def open_spider(self, spider):
         # 判断是否在 GitHub Actions 环境中
         IS_GITHUB_ACTIONS = os.environ.get('GITHUB_ACTIONS') == 'true'
-
-        if IS_GITHUB_ACTIONS:
-            # GitHub Actions 路径
-            self.results_dir = os.path.dirname(os.path.abspath(__file__)).split("myproject")[0]+'results'    
-        else:
-            # 本地开发路径
-            self.results_dir = '../results'
+        self.results_dir = os.path.dirname(os.path.abspath(__file__)).split("myproject")[0]+'results'    
         
         
         # 每次都新建results目录
