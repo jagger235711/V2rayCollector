@@ -64,7 +64,7 @@ jobs:
 
       - name: Run Scrapy spider
         run: |
-          scrapy crawl telegram_crawler -L ERROR
+          scrapy crawl telegram_crawler
 
       - name: Start subconverter and process URLs
         run: |
