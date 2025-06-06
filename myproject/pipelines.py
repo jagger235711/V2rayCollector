@@ -10,7 +10,7 @@ class ProxyPipeline:
 
         if IS_GITHUB_ACTIONS:
             # GitHub Actions 路径
-            self.results_dir = os.path.dirname(os.path.abspath(__file__))+'/results'    
+            self.results_dir = os.path.dirname(os.path.abspath(__file__)).split("myproject")[0]+'results'    
         else:
             # 本地开发路径
             self.results_dir = '../results'
