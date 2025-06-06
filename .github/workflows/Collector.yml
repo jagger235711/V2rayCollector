@@ -83,89 +83,91 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-docker-
 
-      - name: Start subconverter and process URLs
+      - name: Start subconverter and process URLs (并发版本)
         run: |
-          echo "=== 容器挂载调试开始 ==="
-          echo "当前工作目录: $(pwd)"
-          echo "宿主机挂载源目录: ${{ env.RESOULTS_DIR }}"
-          echo "容器内部目标目录: /subconverter/results"
-          docker run -d --name subconverter_container --restart=always \
-            -v ${{ env.RESOULTS_DIR }}:/subconverter/results \
-            -p 25500:25500 \
-            asdlokj1qpi23/subconverter:latest
-          docker exec subconverter_container sh -c "ls -laR /subconverter"
-          echo "=== 容器挂载调试结束 ==="
+          set -e
 
-          # 确认subconverter程序已启动
-          echo "等待subconverter容器启动..."
-          MAX_RETRY=30
-          COUNT=0
-          while [ $COUNT -lt $MAX_RETRY ]; do
-              if curl -s http://localhost:25500 >/dev/null; then
-                  echo "Subconverter服务已就绪"
-                  break
-              fi
-              sleep 1
-              COUNT=$((COUNT+1))
-          done
-          if [ $COUNT -eq $MAX_RETRY ]; then
-              echo "ERROR: Subconverter未在30秒内启动，终止流程"
-              exit 1
-          fi
-          
+          echo "=== 🐳 容器挂载调试开始 ==="
+          CONTAINER_NAME="subconverter_container"
+          CONTAINER_PORT=25500
+          HOST_PORT=25500
+          IMAGE_NAME="asdlokj1qpi23/subconverter:latest"
+          RESULT_DIR="${{ env.RESOULTS_DIR }}"
           RESOURCE_FILE="${{ env.RESOURCE_DIR }}/subList.csv"
-          if [ -f "$RESOURCE_FILE" ]; then
-            MAX_PER_BATCH=5
-            RESULT_FILE="${{ env.RESOULTS_DIR }}/mixed_base64.txt"
-            > "$RESULT_FILE"
-            readarray -t links < $RESOURCE_FILE
+          RESULT_FILE="${RESULT_DIR}/mixed_base64.txt"
+          MAX_PER_BATCH=5
+          MAX_CONCURRENT=4  # 并发处理的最大批次数
 
-            # 表头不算在内
-            for ((i=0; i<${#links[@]}; i+=$MAX_PER_BATCH))
-            do
-                batch=("${links[@]:i:$MAX_PER_BATCH}")
-                batch_url=$(IFS='|'; echo "${batch[*]}")
-                current_url="http://0.0.0.0:25500/sub?target=mixed&url=$batch_url"
+          docker run -d --name $CONTAINER_NAME --restart=always \
+            -v "$RESULT_DIR:/subconverter/results" \
+            -p ${HOST_PORT}:${CONTAINER_PORT} \
+            $IMAGE_NAME
 
-                echo "Processing batch $((i/$MAX_PER_BATCH + 1)) with URL: $current_url"
-                temp_response=$(mktemp -p ${{ env.RESOULTS_DIR }})
+          echo "等待 subconverter 启动..."
+          for i in {1..30}; do
+            if curl -s http://localhost:${HOST_PORT} >/dev/null; then
+              echo "✅ 服务已就绪"
+              break
+            fi
+            sleep 1
+            if [ $i -eq 30 ]; then
+              echo "❌ 启动失败"
+              exit 1
+            fi
+          done
 
-                # 新增详细日志记录
-                echo ">>> 发送请求到 $current_url 临时文件: $temp_response"
-                if curl -fs -o "$temp_response" -L "$current_url"; then
-                    status=$?
-                    case $status in
-                        0)   echo "请求成功" ;;
-                        6)   echo "无法解析主机" ;;
-                        7)   echo "无法连接到主机" ;;
-                        28)  echo "请求超时" ;;
-                        56)  echo "接收数据失败" ;;
-                        *)   echo "未知错误: $status" ;;
-                    esac
-                fi
-
-                DELAY=0
-                while [ ! -s "$temp_response" ]; do
-                    echo "响应内容为空，等待 $DELAY 秒后重试..."
-                    sleep $DELAY
-                    DELAY=$((DELAY + 1))
-                    if [ $DELAY -gt 10 ]; then
-                        echo "重试次数过多，跳过批次"
-                        rm -f "$temp_response"
-                        continue 2
-                    fi
-                done
-
-                cat "$temp_response" >> "$RESULT_FILE"
-                rm -f "$temp_response"
-                echo "批次成功处理"
-                # 加个延迟，太快了subconverter反应不过来
-                sleep 2 
-            done
-          else
-            echo "subList.csv not found"
+          if [ ! -f "$RESOURCE_FILE" ]; then
+            echo "❌ 资源文件不存在: $RESOURCE_FILE"
             exit 1
           fi
+
+          echo "读取资源列表..."
+          mapfile -t links < "$RESOURCE_FILE"
+          total=${#links[@]}
+          # echo "" > "$RESULT_FILE"
+          TMP_BATCH_DIR=$(mktemp -d)
+
+          process_batch() {
+            local index=$1
+            shift
+            local batch=("$@")
+            local batch_url
+            batch_url=$(IFS='|'; echo "${batch[*]}")
+            local request_url="http://localhost:${HOST_PORT}/sub?target=mixed&url=$batch_url"
+            local temp_file="${TMP_BATCH_DIR}/batch_${index}.txt"
+            
+            echo "🔧 批次 $index 请求: $request_url"
+            if curl -fsSL "$request_url" -o "$temp_file"; then
+              echo "✅ 批次 $index 完成"
+            else
+              echo "❌ 批次 $index 请求失败"
+              rm -f "$temp_file"
+            fi
+          }
+
+          echo "=== 🚀 开始并发处理 ==="
+          job_count=0
+          batch_index=1
+
+          for ((i = 1; i < total; i += MAX_PER_BATCH)); do
+            batch=("${links[@]:i:MAX_PER_BATCH}")
+            process_batch "$batch_index" "${batch[@]}" &
+            job_count=$((job_count + 1))
+            batch_index=$((batch_index + 1))
+
+            if (( job_count >= MAX_CONCURRENT )); then
+              wait
+              job_count=0
+            fi
+          done
+
+          wait  # 等待所有剩余后台任务完成
+
+          echo "🧩 合并所有批次结果"
+          sort -V "${TMP_BATCH_DIR}"/batch_*.txt >> "$RESULT_FILE"
+          rm -rf "$TMP_BATCH_DIR"
+
+          echo "🎉 所有处理完成，结果文件: $RESULT_FILE"
 
       - name: Decode base64 and append to mixed.txt
         run: |
