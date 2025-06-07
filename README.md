@@ -1,7 +1,7 @@
 # V2rayCollector - V2ray订阅收集与转换工具
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/username/V2rayCollector/Collector.yml)
-![GitHub License](https://img.shields.io/github/license/username/V2rayCollector)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jagger235711/V2rayCollector/Collector.yml)
+![GitHub License](https://img.shields.io/github/license/jagger235711/V2rayCollector)
 
 ## 项目简介
 
