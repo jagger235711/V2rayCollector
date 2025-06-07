@@ -209,11 +209,11 @@ jobs:
           git config --local user.name "GitHub Actions"
           git pull origin main
           git add ${{ env.RESOULTS_DIR }}/*
-          git add ${{ env.RESOURCE_DIR }}/subList.csv
-          git add ${{ env.RESOURCE_DIR }}/channels.csv
+          git add ${{ env.RESOURCE_DIR }}/*
           git commit -m "✔️ $(date '+%Y-%m-%d %H:%M:%S') Collected" || echo "No changes to commit"
 
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
-          branch: main
+          branch: ${{ github.ref }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
