@@ -137,12 +137,27 @@ jobs:
             local temp_file="${TMP_BATCH_DIR}/batch_${index}.txt"
             
             echo "🔧 批次 $index 请求: $request_url"
-            if curl -fsSL "$request_url" -o "$temp_file"; then
-              echo "✅ 批次 $index 完成"
-            else
-              echo "❌ 批次 $index 请求失败"
-              rm -f "$temp_file"
-            fi
+            
+            # 重试机制 - 最多3次尝试
+            local retry_count=0
+            local max_retries=3
+            local success=false
+            
+            while [ $retry_count -lt $max_retries ] && [ "$success" = false ]; do
+              if curl -fsSL "$request_url" -o "$temp_file"; then
+                echo "✅ 批次 $index 完成 (尝试 $((retry_count+1)))"
+                success=true
+              else
+                retry_count=$((retry_count+1))
+                if [ $retry_count -lt $max_retries ]; then
+                  echo "⚠️ 批次 $index 请求失败 (尝试 $retry_count/$max_retries)，等待1秒后重试..."
+                  sleep 1
+                else
+                  echo "❌ 批次 $index 请求失败 (尝试 $retry_count/$max_retries)"
+                  rm -f "$temp_file"
+                fi
+              fi
+            done
           }
 
           echo "=== 🚀 开始并发处理 ==="
