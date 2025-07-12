@@ -95,8 +95,8 @@ jobs:
           RESULT_DIR="${{ env.RESOULTS_DIR }}"
           RESOURCE_FILE="${{ env.RESOURCE_DIR }}/subList.csv"
           RESULT_FILE="${RESULT_DIR}/mixed_base64.txt"
-          MAX_PER_BATCH=10
-          MAX_CONCURRENT=4  # 并发处理的最大批次数
+          MAX_PER_BATCH=5
+          MAX_CONCURRENT=5  # 并发处理的最大批次数
 
           docker run -d --name $CONTAINER_NAME --restart=always \
             -v "$RESULT_DIR:/subconverter/results" \
