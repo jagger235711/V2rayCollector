@@ -9,6 +9,9 @@ import pandas as pd
 from urllib.parse import urlparse
 from ..items import ProxyItem
 
+# 设置根日志记录器的等级
+logging.basicConfig(level=logging.ERROR)
+
 class TelegramCrawlerSpider(scrapy.Spider):
     name = "telegram_crawler"
     allowed_domains = ["t.me"]
@@ -24,7 +27,7 @@ class TelegramCrawlerSpider(scrapy.Spider):
             yield scrapy.Request(self.change_url_to_telegram_web_url(url))
     
     custom_settings = {
-        'LOG_LEVEL': 'DEBUG',
+        'LOG_LEVEL': 'ERROR',
         'RETRY_TIMES': 3,
         'DOWNLOAD_TIMEOUT': 30,
     }
