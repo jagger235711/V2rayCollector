@@ -15,7 +15,7 @@ def deduplicate_file(input_path, output_path):
 
     logging.basicConfig(
         format='%(asctime)s [%(levelname)s] %(message)s',
-        level=logging.INFO,
+        level=logging.ERROR,
         datefmt='%Y-%m-%d %H:%M:%S'
     )
 
