@@ -16,7 +16,7 @@ class TelegramCrawlerSpider(scrapy.Spider):
     name = "telegram_crawler"
     allowed_domains = ["t.me"]
     channelsPath=os.path.dirname(os.path.abspath(__file__)).split("myproject")[0]+'resource/channels.csv'
-    
+    logging.info("channelsPath:"+channelsPath)
     
     # start_urls = []  # 通过构造函数传入实际URL
     # 读取csv文件 将第一列转为list
