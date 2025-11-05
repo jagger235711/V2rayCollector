@@ -7,9 +7,9 @@
     "pingMethod": "http",              
     "sortMethod": "speed",              
     "concurrency": 32,                  
-    "timeout": 5,                    
+    "timeout": 10,                    
     "bufferSize": 65536,              
-    "retryAttempts": 1,             
+    "retryAttempts": 2,             
     "retryDelay": 5 ,                 
     "detect": false,                   
     "removeDup": true,               
@@ -18,7 +18,7 @@
     "logLevel": "INFO",               
     "logFile": "speedtest.log",       
     "geoipDbPath": "GeoLite2-Country.mmdb",  
-    "downloadTimeout": 10,           
-    "downloadRetries": 1,             
+    "downloadTimeout": 30,           
+    "downloadRetries": 2,             
     "downloadBufferSize": 65536       
 }
