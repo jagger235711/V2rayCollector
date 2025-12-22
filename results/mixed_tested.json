@@ -5,13 +5,6 @@
 	"ntp": {},
 	"outbounds": [
 		{
-			"server": "103.90.75.252",
-			"server_port": 3001,
-			"tag": "103.90.75.252:3001",
-			"type": "vless",
-			"uuid": "61757901-3818-46c7-8482-683fa7f6ba10"
-		},
-		{
 			"alter_id": 0,
 			"security": "auto",
 			"server": "5.196.29.123",
@@ -28,11 +21,20 @@
 			"uuid": "112ac36f-3f53-4e26-8371-d25c028e1b9a"
 		},
 		{
-			"server": "78.47.66.175",
-			"server_port": 17080,
-			"tag": "78.47.66.175:17080",
+			"server": "85.9.216.145",
+			"server_port": 4655,
+			"tag": "85.9.216.145:4655",
 			"type": "vless",
-			"uuid": "3c53a875-557f-4ece-a0b1-8c3c8dfc0458"
+			"uuid": "2668fdee-331d-4770-8244-d2a4efbf6ef8"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "172.233.229.91",
+			"server_port": 14102,
+			"tag": "🎄52@oneclickvpnkeys",
+			"type": "vmess",
+			"uuid": "27ba87fc-583f-4763-9060-83cf0b9264db"
 		},
 		{
 			"alter_id": 0,
@@ -49,6 +51,15 @@
 			},
 			"type": "vmess",
 			"uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "85.195.101.122",
+			"server_port": 40878,
+			"tag": "🇩🇪 DE | 🔒 VMESS | @mowjproxy [5]",
+			"type": "vmess",
+			"uuid": "f3d4167e-b15e-4e46-82e9-9286ef93fda7"
 		},
 		{
 			"alter_id": 0,
@@ -74,51 +85,18 @@
 		{
 			"alter_id": 0,
 			"security": "auto",
-			"server": "hgtrojan.zabc.net",
-			"server_port": 2083,
-			"tag": "🏁RELAY-104.18.17.77-2813",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "hgtrojan.zabc.net"
-			},
+			"server": "51.79.102.253",
+			"server_port": 80,
+			"tag": "🇨🇦CA-51.79.102.253-0968",
 			"transport": {
 				"headers": {
-					"Host": "hgtrojan.zabc.net"
+					"Host": "51.79.102.253"
 				},
-				"path": "/e6395c20",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "e6395c20-4571-4b34-d6b1-55a5d36e49ea"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "15.235.41.200",
-			"server_port": 80,
-			"tag": "🇨🇦CA-15.235.41.200-2795",
-			"transport": {
-				"headers": {},
 				"path": "/IOebhLMhl1CTbFHbL95myfRX2",
 				"type": "ws"
 			},
 			"type": "vmess",
 			"uuid": "58fe1542-5290-40ad-815a-77707a81afe5"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "8.218.199.111",
-			"server_port": 8080,
-			"tag": "🇭🇰HK-8.218.199.111-7885",
-			"transport": {
-				"headers": {},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "f55db42d-ee52-4a47-880b-6f7b123ab222"
 		},
 		{
 			"alter_id": 0,
@@ -141,159 +119,155 @@
 			"password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV",
 			"server": "216.250.97.82",
 			"server_port": 38388,
-			"tag": "11|🇭🇰 香港2|@ripaojiedian",
+			"tag": "中国 - 香港 - HostHatch - 1",
 			"type": "shadowsocks"
 		},
 		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "58.152.110.104",
+			"method": "aes-256-cfb",
+			"password": "amazonskr05",
+			"server": "15.157.66.237",
 			"server_port": 443,
-			"tag": "11,12,13|HK_speednode_0016",
+			"tag": "加拿大 - 多伦多 - Amazon.com, Inc. - 2",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm",
+			"server": "193.203.203.66",
+			"server_port": 443,
+			"tag": "加拿大 - 多伦多 - Tangram Canada Inc. - 1",
+			"type": "shadowsocks"
+		},
+		{
+			"server": "162.159.4.135",
+			"server_port": 2087,
+			"tag": "新加坡 - 新加坡 - Cloudflare, Inc. - 2",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "www.nintendogames.net"
+				"server_name": "qqq-3t8.pages.dev"
 			},
-			"type": "trojan"
+			"transport": {
+				"headers": {
+					"Host": "qqq-3t8.pages.dev"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "e258977b-e413-4718-a3af-02d75492c349"
 		},
 		{
-			"password": "BxceQaOe",
-			"server": "58.152.25.71",
-			"server_port": 443,
-			"tag": "11,12|香港4|@ripaojiedian",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "t.me%2Fripaojiedian"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "BxceQaOe",
-			"server": "58.152.26.107",
-			"server_port": 443,
-			"tag": "11,12|香港5|@ripaojiedian",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "t.me%2Fripaojiedian"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "160.16.242.183",
-			"server_port": 3093,
-			"tag": "11,12|日本3|@ripaojiedian",
+			"server": "www.gov.se",
+			"server_port": 2053,
+			"tag": "美国 - 东洛杉矶 - Cloudflare, Inc. - 2",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "www.nintendogames.net"
+				"server_name": "saas.netlib.ccwu.cc"
 			},
-			"type": "trojan"
+			"transport": {
+				"headers": {
+					"Host": "saas.netlib.ccwu.cc"
+				},
+				"path": "/proxyip=sjc.o00o.ooo",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "6945f532-64d5-2d4e-43c1-b93633387534"
 		},
 		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "153.121.39.240",
-			"server_port": 2760,
-			"tag": "11,12|新加坡|@ripaojiedian",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "www.nintendogames.net"
-			},
-			"type": "trojan"
+			"method": "chacha20-ietf-poly1305",
+			"password": "2DGq3jvVRg5n3CcxmysGK2kmrgJeSNof12A76cZvVxqPpetyC1XEciCFufq5xKvRWGGnKVembpThuUSQhbZ7GMsZY4UVxEBw",
+			"server": "208.67.106.73",
+			"server_port": 44884,
+			"tag": "荷兰 - 阿姆斯特丹 - Serverion LLC - 1",
+			"type": "shadowsocks"
 		},
 		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "160.16.63.16",
-			"server_port": 2760,
-			"tag": "11,12|新加坡2|@ripaojiedian",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "www.nintendogames.net"
-			},
-			"type": "trojan"
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "45.154.204.7",
+			"server_port": 990,
+			"tag": "SS-阿塞拜疆-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-45.154.204.7:990",
+			"type": "shadowsocks"
 		},
 		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "160.16.63.16",
-			"server_port": 2890,
-			"tag": "11,12|美国|@ripaojiedian",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "www.nintendogames.net"
-			},
-			"type": "trojan"
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "23.95.76.59",
+			"server_port": 990,
+			"tag": "SS-美国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-23.95.76.59:990",
+			"type": "shadowsocks"
 		},
 		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "153.121.39.240",
-			"server_port": 4054,
-			"tag": "11,12|美国2|@ripaojiedian",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "www.nintendogames.net"
+			"alter_id": 0,
+			"security": "auto",
+			"server": "51.79.102.253",
+			"server_port": 80,
+			"tag": "VMESS-加拿大-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-51.79.102.253:80",
+			"transport": {
+				"headers": {},
+				"path": "/IOebhLMhl1CTbFHbL95myfRX2",
+				"type": "ws"
 			},
-			"type": "trojan"
+			"type": "vmess",
+			"uuid": "58fe1542-5290-40ad-815a-77707a81afe5"
 		},
 		{
-			"password": "ef76d08c-9841-47e8-92a6-5b74df5d58ac",
-			"server": "green2.cdntencentmusic.com",
-			"server_port": 34411,
-			"tag": "[Trojan] 🇨🇳 台湾省台中市 中华电信",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "green2.cdntencentmusic.com"
-			},
-			"type": "trojan"
+			"method": "rc4-md5",
+			"password": "14fFPrbezE3HDZzsMOr6",
+			"server": "107.151.182.253",
+			"server_port": 8080,
+			"tag": "SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-107.151.182.253:8080",
+			"type": "shadowsocks"
 		},
 		{
-			"password": "3846a29b-57d5-40f2-8acd-13855aa025cd",
-			"server": "green2.cdntencentmusic.com",
-			"server_port": 31104,
-			"tag": "[Trojan] 🇨🇳 台湾省台中市 中华电信 2",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "green2.cdntencentmusic.com"
-			},
-			"type": "trojan"
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "79.127.233.170",
+			"server_port": 990,
+			"tag": "SS-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:990",
+			"type": "shadowsocks"
 		},
 		{
-			"password": "a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e",
-			"server": "green2.cdntencentmusic.com",
-			"server_port": 31102,
-			"tag": "[Trojan] 🇨🇳 台湾省台中市 中华电信 3",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "green2.cdntencentmusic.com"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "BxceQaOe",
-			"server": "58.152.25.71",
+			"alter_id": 0,
+			"security": "auto",
+			"server": "v2ray.codefyinc.com",
 			"server_port": 443,
-			"tag": "[Trojan] 🇭🇰 香港 电讯盈科有限公司 2",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "t.me%252Fripaojiedian"
+			"tag": "VMESS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-v2ray.codefyinc.com:443",
+			"transport": {
+				"headers": {
+					"Host": "v2ray.codefyinc.com"
+				},
+				"path": "/vmessws",
+				"type": "ws"
 			},
-			"type": "trojan"
+			"type": "vmess",
+			"uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "NDRySIABARbErNIVsCNVkyYAHiBzhveT",
+			"server": "23.95.75.146",
+			"server_port": 443,
+			"tag": "SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-23.95.75.146:443",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "79.127.233.170",
+			"server_port": 989,
+			"tag": "SSR-英国-NF解锁加拿大地区非自制剧-ChatGPT-TikTok-YouTube-79.127.233.170:989",
+			"type": "shadowsocks"
 		},
 		{
 			"alter_id": 0,
 			"security": "auto",
 			"server": "sy4.620720.xyz",
 			"server_port": 443,
-			"tag": "[VMess] 🇺🇸 美国 CloudFlare节点",
+			"tag": "VMESS-未知\u003e澳大利亚-NF解锁澳大利亚自制剧-ChatGPT-TikTok-YouTube-sy4.620720.xyz:443",
 			"tls": {
 				"enabled": true,
 				"insecure": false
@@ -309,108 +283,83 @@
 			"uuid": "516d8a7a-3f0b-41d3-bad0-246116381516"
 		},
 		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "8.218.116.26",
-			"server_port": 32228,
-			"tag": "中国 阿里云",
-			"type": "vmess",
-			"uuid": "e4767e9f-ed00-4f31-a984-a918bdd9b09c"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "37.19.198.244",
+			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
+			"server": "58.152.110.104",
 			"server_port": 443,
-			"tag": "US-37.19.198.244-0964",
-			"type": "shadowsocks"
+			"tag": "12,13,14|HK_speednode_0016",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "www.nintendogames.net"
+			},
+			"type": "trojan"
 		},
 		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "37.19.198.160",
+			"password": "BxceQaOe",
+			"server": "58.152.25.71",
 			"server_port": 443,
-			"tag": "US-37.19.198.160-0962",
-			"type": "shadowsocks"
+			"tag": "12,13|香港4|@ripaojiedian",
+			"tls": {
+				"enabled": true,
+				"insecure": true,
+				"server_name": "t.me%2Fripaojiedian"
+			},
+			"type": "trojan"
 		},
 		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "37.19.198.243",
+			"password": "BxceQaOe",
+			"server": "58.152.26.107",
 			"server_port": 443,
-			"tag": "US-37.19.198.243-0963",
-			"type": "shadowsocks"
+			"tag": "12,13|香港5|@ripaojiedian",
+			"tls": {
+				"enabled": true,
+				"insecure": true,
+				"server_name": "t.me%2Fripaojiedian"
+			},
+			"type": "trojan"
 		},
 		{
-			"method": "aes-128-gcm",
+			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
+			"server": "153.121.39.240",
+			"server_port": 2760,
+			"tag": "12,13|新加坡|@ripaojiedian",
+			"tls": {
+				"enabled": true,
+				"insecure": true,
+				"server_name": "www.nintendogames.net"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
+			"server": "160.16.63.16",
+			"server_port": 2760,
+			"tag": "12,13|新加坡2|@ripaojiedian",
+			"tls": {
+				"enabled": true,
+				"insecure": true,
+				"server_name": "www.nintendogames.net"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
+			"server": "153.121.39.240",
+			"server_port": 4054,
+			"tag": "12,13|美国2|@ripaojiedian",
+			"tls": {
+				"enabled": true,
+				"insecure": true,
+				"server_name": "www.nintendogames.net"
+			},
+			"type": "trojan"
+		},
+		{
+			"method": "aes-128-cfb",
 			"password": "shadowsocks",
-			"server": "156.146.38.170",
+			"server": "109.201.152.181",
 			"server_port": 443,
-			"tag": "US-156.146.38.170-1087",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "156.146.38.168",
-			"server_port": 443,
-			"tag": "US-156.146.38.168-1089",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "156.146.38.169",
-			"server_port": 443,
-			"tag": "US-156.146.38.169-1040",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "156.146.38.167",
-			"server_port": 443,
-			"tag": "US-156.146.38.167-1068",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "173.244.56.6",
-			"server_port": 443,
-			"tag": "US-173.244.56.6-0966",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "1RWwXhwfAB5gAEozU4G2Pg",
-			"server": "45.87.175.171",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.171-1157",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.181",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.181-0219",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "45.87.175.199",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.199-0989",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "195.181.160.6",
-			"server_port": 990,
-			"tag": "CZ-195.181.160.6-1009",
+			"tag": "NL-109.201.152.181-0711",
 			"type": "shadowsocks"
 		},
 		{
@@ -418,220 +367,16 @@
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "37.143.129.230",
 			"server_port": 989,
-			"tag": "FI-37.143.129.230-0998",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "beesyar.org",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.192-0227",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-cfb",
-			"password": "shadowsocks",
-			"server": "109.201.152.181",
-			"server_port": 443,
-			"tag": "NL-109.201.152.181-0981",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "149.22.87.241",
-			"server_port": 443,
-			"tag": "JP-149.22.87.241-1053",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "149.22.87.240",
-			"server_port": 443,
-			"tag": "JP-149.22.87.240-1055",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "rc4-md5",
-			"password": "14fFPrbezE3HDZzsMOr6",
-			"server": "68.183.227.4",
-			"server_port": 8080,
-			"tag": "SG-68.183.227.4-1061",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "JIhN6rBKkaEboLNXVSv5rq",
-			"server": "ca225.vpnbook.com",
-			"server_port": 80,
-			"tag": "CA-142.4.216.225-1078",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "JIhN6rBKkaEboLNXVSv5rq",
-			"server": "142.4.216.225",
-			"server_port": 80,
-			"tag": "CA-142.4.216.225-1090",
+			"tag": "FI-37.143.129.230-6000",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "192.71.249.78",
-			"server_port": 989,
-			"tag": "BE-192.71.249.78-1099",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "S7KwUu7yBy58S3Ga",
+			"password": "GeregetR8cvQHzYr",
 			"server": "5.188.181.201",
-			"server_port": 9042,
-			"tag": "ES-5.188.181.201-6131",
+			"server_port": 9030,
+			"tag": "ES-5.188.181.201-0769",
 			"type": "shadowsocks"
-		},
-		{
-			"server": "www.4chan.org",
-			"server_port": 8080,
-			"tag": "201.58vtg99l.workers.dev_1",
-			"transport": {
-				"headers": {
-					"Host": "201.58vtg99l.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "4c9541c7-5fa1-403c-84af-175e3b25a27f"
-		},
-		{
-			"server": "www.4chan.org",
-			"server_port": 8080,
-			"tag": "feng4_1",
-			"transport": {
-				"headers": {
-					"Host": "feng4.l1ut8bi9.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
-		},
-		{
-			"server": "www.ipget.net",
-			"server_port": 8080,
-			"tag": "201.58vtg99l.workers.dev_2",
-			"transport": {
-				"headers": {
-					"Host": "201.58vtg99l.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "4c9541c7-5fa1-403c-84af-175e3b25a27f"
-		},
-		{
-			"server": "www.ipget.net",
-			"server_port": 8080,
-			"tag": "feng4_2",
-			"transport": {
-				"headers": {
-					"Host": "feng4.l1ut8bi9.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
-		},
-		{
-			"server": "xn--b6gac.eu.org",
-			"server_port": 8080,
-			"tag": "201.58vtg99l.workers.dev_3",
-			"transport": {
-				"headers": {
-					"Host": "201.58vtg99l.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "4c9541c7-5fa1-403c-84af-175e3b25a27f"
-		},
-		{
-			"server": "xn--b6gac.eu.org",
-			"server_port": 8080,
-			"tag": "feng4_3",
-			"transport": {
-				"headers": {
-					"Host": "feng4.l1ut8bi9.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
-		},
-		{
-			"server": "www.gov.ua",
-			"server_port": 8080,
-			"tag": "201.58vtg99l.workers.dev_4",
-			"transport": {
-				"headers": {
-					"Host": "201.58vtg99l.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "4c9541c7-5fa1-403c-84af-175e3b25a27f"
-		},
-		{
-			"server": "www.gov.ua",
-			"server_port": 8080,
-			"tag": "feng4_4",
-			"transport": {
-				"headers": {
-					"Host": "feng4.l1ut8bi9.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
-		},
-		{
-			"server": "ip.sb",
-			"server_port": 8080,
-			"tag": "201.58vtg99l.workers.dev_5",
-			"transport": {
-				"headers": {
-					"Host": "201.58vtg99l.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "4c9541c7-5fa1-403c-84af-175e3b25a27f"
-		},
-		{
-			"server": "ip.sb",
-			"server_port": 8080,
-			"tag": "feng4_5",
-			"transport": {
-				"headers": {
-					"Host": "feng4.l1ut8bi9.workers.dev"
-				},
-				"path": "/?ed=2048",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
 		},
 		{
 			"method": "aes-256-cfb",
@@ -642,413 +387,9 @@
 			"type": "shadowsocks"
 		},
 		{
-			"password": "BxceQaOe",
-			"server": "219.79.214.159",
-			"server_port": 443,
-			"tag": "香港4|@stairnode",
-			"tls": {
-				"enabled": true,
-				"insecure": true,
-				"server_name": "t.me%2Fripaojiedian"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": ".ie4rghJuMkcf0oF",
-			"server": "38.96.254.102",
-			"server_port": 18509,
-			"tag": "[🇨🇦] [tr-tl-ra] [251222-102911.372]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "shoppingmall.electricbanana.click"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "6pRjKQJ0CWyFtG.9",
-			"server": "198.57.27.27",
-			"server_port": 12990,
-			"tag": "[🇨🇦] [tr-tl-ra] [251222-102913.696]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "diningtable.electricbanana.click"
-			},
-			"type": "trojan"
-		},
-		{
-			"server": "104.26.5.60",
-			"server_port": 2096,
-			"tag": "[🇨🇦] [vl-tl-ws] [251222-103046.801]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "cf-worker-ws-dev.kingo1923.workers.dev"
-			},
-			"transport": {
-				"headers": {
-					"Host": "cf-worker-ws-dev.kingo1923.workers.dev"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "1b6c1745-992e-4aac-8685-266c090e50ea"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "51.79.103.76",
-			"server_port": 80,
-			"tag": "[🇨🇦] [vm-no-ws] [251222-103743.632]",
-			"transport": {
-				"headers": {
-					"Host": "google.com"
-				},
-				"path": "/IOebhLMhl1CTbFHbL95myfRX2",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "58fe1542-5290-40ad-815a-77707a81afe5"
-		},
-		{
-			"server": "us7.candyfans.win",
-			"server_port": 443,
-			"tag": "[🇨🇭] [vl-tl-ws] [251222-103003.300]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "us7.candyfans.win"
-			},
-			"transport": {
-				"headers": {
-					"Host": "us7.candyfans.win"
-				},
-				"path": "/jqliws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "0062f09d-9579-4722-9bd3-d5438970d54a"
-		},
-		{
-			"server": "212.192.31.146",
-			"server_port": 443,
-			"tag": "[🇩🇪] [vl-no-ws] [251222-103044.618]",
-			"transport": {
-				"headers": {},
-				"path": "/panika",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "199a78a5-b4d4-4064-a0db-bb37c5839134"
-		},
-		{
-			"server": "37.120.186.241",
-			"server_port": 80,
-			"tag": "[🇩🇪] [vl-no-ws] [251222-103203.225]",
-			"transport": {
-				"headers": {
-					"Host": "cdn.ir"
-				},
-				"path": "/news",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "53fff6cc-b4ec-43e8-ade5-e0c42972fc33"
-		},
-		{
-			"server": "go.inmobi.com",
-			"server_port": 8080,
-			"tag": "[🇩🇪] [vl-no-ws] [251222-103255.391]",
-			"transport": {
-				"headers": {
-					"Host": "spring-flower-3254.magicnight101.workers.dev"
-				},
-				"path": "/9PnUgtdLG8Br?ed=2560",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "7d47ff30-74b2-47c7-b5bd-b06ef8b8f80e"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "cpanel.navar1.ir",
-			"server_port": 100,
-			"tag": "[🇩🇪] [vm-no-ra] [251222-103802.412]",
-			"type": "vmess",
-			"uuid": "26402bc7-7895-4dd0-ae6e-151a00c71145"
-		},
-		{
-			"server": "www.visa.com.sg",
-			"server_port": 2052,
-			"tag": "[🇫🇮] [vl-no-ws] [251222-103035.964]",
-			"transport": {
-				"headers": {
-					"Host": "parking-nfchbwa1-v2.parking-1ab.workers.dev"
-				},
-				"path": "/?ed=2560",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "12d75b7d-8fdf-4785-8d62-d836854e7e63"
-		},
-		{
-			"server": "fn11.irsbv2.ir",
-			"server_port": 443,
-			"tag": "[🇫🇮] [vl-no-ws] [251222-103145.520]",
-			"transport": {
-				"headers": {
-					"Host": "cloudflare.com"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "47867494-9509-4c32-a90a-e9253b033279"
-		},
-		{
-			"server": "www.visaeurope.at",
-			"server_port": 2082,
-			"tag": "[🇫🇮] [vl-no-ws] [251222-103449.556]",
-			"transport": {
-				"headers": {
-					"Host": "amiroo-l43dac88-v2.amiroo-d8b.workers.dev"
-				},
-				"path": "/?ed=2560",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "cb213db5-803d-49dd-a7e2-46d938af0751"
-		},
-		{
-			"server": "tfl.gov.uk",
-			"server_port": 443,
-			"tag": "[🇬🇧] [vl-tl-ws] [251222-103203.366]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "rAyAn-cOnFiG-uk-1.pAriSa.dPdNs.oRg"
-			},
-			"transport": {
-				"headers": {
-					"Host": "rAyAn-cOnFiG-uk-1.pAriSa.dPdNs.oRg"
-				},
-				"path": "/ws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5408b813-0a75-41de-9a4f-d5df4c10087b"
-		},
-		{
-			"server": "173.245.59.217",
-			"server_port": 443,
-			"tag": "[🇬🇧] [vl-tl-ws] [251222-103532.758]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "azizoarjmand.info"
-			},
-			"transport": {
-				"headers": {
-					"Host": "azizoarjmand.info"
-				},
-				"path": "/yhowcws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee122f13-9b54-49b6-abc5-aa47b464fdb3"
-		},
-		{
-			"server": "n1761184278.74qxv.top",
-			"server_port": 443,
-			"tag": "[🇭🇰] [vl-tl-ws] [251222-103046.661]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "n1761184278.74qxv.top"
-			},
-			"transport": {
-				"headers": {
-					"Host": "n1761184278.74qxv.top"
-				},
-				"path": "/1b451930-1211-4ffe-90a8-80ca5bb801b4",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "1b451930-1211-4ffe-90a8-80ca5bb801b4"
-		},
-		{
-			"server": "n1761184282.74qxv.top",
-			"server_port": 443,
-			"tag": "[🇭🇰] [vl-tl-ws] [251222-103301.657]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "n1761184282.74qxv.top"
-			},
-			"transport": {
-				"headers": {
-					"Host": "n1761184282.74qxv.top"
-				},
-				"path": "/824dc1b1-e35b-4121-ad73-9acaf13d6410",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "824dc1b1-e35b-4121-ad73-9acaf13d6410"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "47.242.140.52",
-			"server_port": 48219,
-			"tag": "[🇭🇰] [vm-no-ws] [251222-103608.673]",
-			"transport": {
-				"headers": {},
-				"path": "/arki",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "006893c6-79b1-4c44-94ff-b8bbea065f1f"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "47.242.140.52",
-			"server_port": 34815,
-			"tag": "[🇭🇰] [vm-no-ws] [251222-103608.753]",
-			"transport": {
-				"headers": {},
-				"path": "/arki",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "1a46b66c-6ba9-4e9c-aa0b-0ebac2b69e32"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "47.242.140.52",
-			"server_port": 9756,
-			"tag": "[🇭🇰] [vm-no-ws] [251222-103608.834]",
-			"transport": {
-				"headers": {},
-				"path": "/arki",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "c77628dd-51e7-4996-a408-aaab8baaf79e"
-		},
-		{
-			"server": "www.visa.com.tw",
-			"server_port": 2053,
-			"tag": "[🇭🇺] [vl-tl-ws] [251222-103229.996]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "74mnh-wszak9po-v3.74mnh.workers.dev"
-			},
-			"transport": {
-				"headers": {
-					"Host": "74mnh-wszak9po-v3.74mnh.workers.dev"
-				},
-				"path": "/?ed=2560",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6777871b-9cec-48d6-8c82-9741c8d848c8"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "node4.rtxconfigz.com",
-			"server_port": 443,
-			"tag": "[🇮🇳] [vm-tl-ws] [251222-103731.736]",
-			"tls": {
-				"enabled": true,
-				"insecure": false
-			},
-			"transport": {
-				"headers": {
-					"Host": "node4.rtxconfigz.com"
-				},
-				"path": "/@Malinda6104",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "44e57485-eccc-46ef-808f-cd17ac810018"
-		},
-		{
-			"server": "57.180.50.81",
-			"server_port": 37390,
-			"tag": "[🇯🇵] [vl-tl-ws] [251222-103422.167]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "xxh.ipipip.im"
-			},
-			"transport": {
-				"headers": {
-					"Host": "xxh.ipipip.im"
-				},
-				"path": "/xxhjphome",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "b52fac66-fd92-47ae-b1f6-332aa1c353d9"
-		},
-		{
-			"server": "188.114.98.112",
-			"server_port": 80,
-			"tag": "[🇳🇱] [vl-no-ws] [251222-103017.560]",
-			"transport": {
-				"headers": {
-					"Host": "elenaaaaaaaaaa.cloudns.pro."
-				},
-				"path": "/ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "0991a0c4-0ee5-4213-af89-7ad589f853f3"
-		},
-		{
-			"server": "172.67.203.94",
-			"server_port": 2086,
-			"tag": "[🇳🇱] [vl-no-ws] [251222-103251.228]",
-			"transport": {
-				"headers": {
-					"Host": "iioo.iioou.workers.dev"
-				},
-				"path": "/?ed=2560",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "7890ce31-9a25-4fd4-90e7-80e5823ff510"
-		},
-		{
-			"server": "172.64.33.91",
-			"server_port": 443,
-			"tag": "[🇳🇱] [vl-tl-ws] [251222-103008.248]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "redlabell.info"
-			},
-			"transport": {
-				"headers": {
-					"Host": "redlabell.info"
-				},
-				"path": "/aafeuws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "02e46039-200d-4ae4-ac90-b0d619f72034"
-		},
-		{
 			"server": "172.66.45.18",
 			"server_port": 443,
-			"tag": "[🇳🇱] [vl-tl-ws] [251222-103324.078]",
+			"tag": "_美国 3",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -1058,182 +399,16 @@
 				"headers": {
 					"Host": "ef87bb2b.meti-e9q.pages.dev"
 				},
-				"path": "/ck2vlelfdajoybac?ed=2560",
+				"path": "/",
 				"type": "ws"
 			},
 			"type": "vless",
 			"uuid": "923509aa-bfb0-4758-a5a1-a6c2d0468169"
 		},
 		{
-			"server": "www.speedtest.net",
-			"server_port": 443,
-			"tag": "[🇳🇱] [vl-tl-ws] [251222-103455.376]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "002.eLEctroCeLLco-cf-002.WOrkErs.DEv"
-			},
-			"transport": {
-				"headers": {
-					"Host": "002.eLEctroCeLLco-cf-002.WOrkErs.DEv"
-				},
-				"path": "/eyJqdW5rIjoidlRpR1pRejlqWGUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "cfd5af3d-8ef5-4f24-b8a3-47cd63409340"
-		},
-		{
-			"server": "1password.com",
-			"server_port": 443,
-			"tag": "[🇳🇱] [vl-tl-ws] [251222-103458.508]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "rAyAn-007.fOtOn.dPdNs.oRg"
-			},
-			"transport": {
-				"headers": {
-					"Host": "rAyAn-007.fOtOn.dPdNs.oRg"
-				},
-				"path": "/?ed=2560",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "d2d0f796-edb0-427a-af32-ae360679f9e7"
-		},
-		{
-			"server": "delilah.ns.cloudflare.com",
-			"server_port": 443,
-			"tag": "[🇳🇱] [vl-tl-ws] [251222-103459.264]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "hazmkardan.info"
-			},
-			"transport": {
-				"headers": {
-					"Host": "hazmkardan.info"
-				},
-				"path": "/fwgisws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "d37d61da-e50d-4f7f-9969-7f0136f97953"
-		},
-		{
-			"server": "betty.ns.cloudflare.com",
-			"server_port": 443,
-			"tag": "[🇳🇱] [vl-tl-ws] [251222-103502.647]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "639014902535774186.supra-amsjh.info"
-			},
-			"transport": {
-				"headers": {
-					"Host": "639014902535774186.supra-amsjh.info"
-				},
-				"path": "/rdwnyews",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "d64620c6-2ec3-4da7-a151-febd14d7824e"
-		},
-		{
-			"server": "138.124.14.37",
-			"server_port": 44053,
-			"tag": "[🇷🇺] [vl-no-ws] [251222-103542.767]",
-			"transport": {
-				"headers": {},
-				"path": "/@mrconfig_group@mrconfig_group@mrconfig_group@mrconfig_group@mrconfig_group",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "f437b574-5f4a-4298-84bb-e5f4db213ea2"
-		},
-		{
-			"password": "BaeSzHdfJIR13l67",
-			"server": "70.34.218.149",
-			"server_port": 11930,
-			"tag": "[🇸🇪] [tr-tl-ra] [251222-102915.019]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "softpillow.silentrocket.click"
-			},
-			"type": "trojan"
-		},
-		{
-			"server": "104.16.65.1",
-			"server_port": 443,
-			"tag": "[🇹🇼] [vl-tl-ws] [251222-103212.308]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
-		},
-		{
-			"server": "185.146.173.185",
-			"server_port": 2052,
-			"tag": "[🇺🇸] [vl-no-ws] [251222-103048.391]",
-			"transport": {
-				"headers": {
-					"Host": "fggvggvvvv.fggghbvhh-ghvghggg-fgvg-mahdi-net-irancel.BLOG"
-				},
-				"path": "Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "1cf5ce63-6c7c-49b6-9168-aa017f0aa498"
-		},
-		{
-			"server": "185.146.173.185",
-			"server_port": 2052,
-			"tag": "[🇺🇸] [vl-no-ws] [251222-103531.272]",
-			"transport": {
-				"headers": {
-					"Host": "fggvggvvvv.fggghbvhh-ghvghggg-fgvg-mahdi-net-irancel.BLOG"
-				},
-				"path": "Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ece892f2-5ff7-43d9-8a1b-ca76c63ed157"
-		},
-		{
-			"server": "208.103.161.33",
-			"server_port": 2053,
-			"tag": "[🇺🇸] [vl-tl-ws] [251222-103045.230]",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "sni.111000.dynv6.net"
-			},
-			"transport": {
-				"headers": {
-					"Host": "sni.111000.dynv6.net"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a"
-		},
-		{
 			"server": "162.159.153.2",
 			"server_port": 443,
-			"tag": "[🇺🇸] [vl-tl-ws] [251222-103148.369]",
+			"tag": "未知 11",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -1250,47 +425,99 @@
 			"uuid": "495c0dad-3268-4470-ac57-887c5089db0d"
 		},
 		{
-			"server": "ovhwuxian.pai50288.uk",
-			"server_port": 8443,
-			"tag": "[🇺🇸] [vl-tl-ws] [251222-103209.568]",
+			"server": "162.159.152.2",
+			"server_port": 443,
+			"tag": "未知 18",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "ovhwuxian.pai50288.uk"
+				"server_name": "ziyong.boringdad.netlib.re"
 			},
 			"transport": {
 				"headers": {
-					"Host": "ovhwuxian.pai50288.uk"
+					"Host": "ziyong.boringdad.netlib.re"
 				},
-				"path": "/57ba2ab1",
+				"path": "/",
 				"type": "ws"
 			},
 			"type": "vless",
-			"uuid": "57ba2ab1-a283-42eb-82ee-dc3561a805b8"
+			"uuid": "495c0dad-3268-4470-ac57-887c5089db0d"
 		},
 		{
-			"server": "139.162.83.82",
-			"server_port": 32225,
-			"tag": "[🇺🇸] [vl-tl-ws] [251222-103409.168]",
+			"server": "47.79.89.145",
+			"server_port": 8433,
+			"tag": "_美国 9",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "vless3.datatestvless.click"
+				"server_name": "jp-99k.pages.dev"
 			},
 			"transport": {
 				"headers": {
-					"Host": "vless3.datatestvless.click"
+					"Host": "jp-99k.pages.dev"
 				},
-				"path": "/?ed=2560",
+				"path": "/",
 				"type": "ws"
 			},
 			"type": "vless",
-			"uuid": "aa7f42cc-616f-4550-9a87-4b85bb409121"
+			"uuid": "e258977b-e413-4718-a3af-02d75492c349"
+		},
+		{
+			"server": "visa.com",
+			"server_port": 443,
+			"tag": "未知 28",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "ziyong.boringdad.netlib.re"
+			},
+			"transport": {
+				"headers": {
+					"Host": "ziyong.boringdad.netlib.re"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "495c0dad-3268-4470-ac57-887c5089db0d"
+		},
+		{
+			"server": "n1761184282.74qxv.top",
+			"server_port": 443,
+			"tag": "_香港",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "n1761184282.74qxv.top"
+			},
+			"transport": {
+				"headers": {
+					"Host": "n1761184282.74qxv.top"
+				},
+				"path": "/824dc1b1-e35b-4121-ad73-9acaf13d6410",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "824dc1b1-e35b-4121-ad73-9acaf13d6410"
+		},
+		{
+			"server": "45.150.128.215",
+			"server_port": 80,
+			"tag": "_泰国",
+			"transport": {
+				"headers": {
+					"Host": "t.me%2Fv2Line"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "65094902-5425-464d-9171-d3a69d9e1cbc"
 		},
 		{
 			"server": "us2.candyfans.win",
 			"server_port": 443,
-			"tag": "[🇺🇸] [vl-tl-ws] [251222-103535.060]",
+			"tag": "未知 39",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -1307,1622 +534,400 @@
 			"uuid": "efe47594-d246-4823-9bb8-d828160720ab"
 		},
 		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "165.140.216.141",
-			"server_port": 443,
-			"tag": "[🇺🇸] [vm-no-ra] [251222-103754.538]",
-			"type": "vmess",
-			"uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "38.14.99.179",
-			"server_port": 59807,
-			"tag": "[🇺🇸] [vm-no-ra] [251222-103758.934]",
-			"type": "vmess",
-			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "v2ray.codefyinc.com",
-			"server_port": 443,
-			"tag": "[🇺🇸] [vm-no-ws] [251222-103724.639]",
+			"server": "89.23.103.60",
+			"server_port": 5443,
+			"tag": "_荷兰 4",
 			"transport": {
 				"headers": {
-					"Host": "v2ray.codefyinc.com"
+					"Host": "noda3.mcqueenconnection.ru"
 				},
-				"path": "/vmessws",
+				"path": "/vless",
 				"type": "ws"
 			},
-			"type": "vmess",
-			"uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7"
+			"type": "vless",
+			"uuid": "8f631f3f-5854-4d77-961a-ad33e10e29bb"
 		},
 		{
 			"alter_id": 0,
 			"security": "auto",
-			"server": "hgtrojan.zabc.net",
-			"server_port": 2083,
-			"tag": "[🇺🇸] [vm-tl-ws] [251222-103729.956]",
-			"tls": {
-				"enabled": true,
-				"insecure": false
-			},
+			"server": "40.160.231.239",
+			"server_port": 443,
+			"tag": "_美国 15",
 			"transport": {
-				"headers": {
-					"Host": "hgtrojan.zabc.net"
-				},
-				"path": "/e6395c20",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "e6395c20-4571-4b34-d6b1-55a5d36e49ea"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "192.71.166.100",
-			"server_port": 989,
-			"tag": "AT 3 → tg@nicevpn123",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "46.183.184.60",
-			"server_port": 989,
-			"tag": "LT 3 → tg@nicevpn123",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "192.71.244.150",
-			"server_port": 989,
-			"tag": "SI 1 → tg@nicevpn123",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "46.183.185.37",
-			"server_port": 989,
-			"tag": "@LuxyNet💎❖🇲🇰❖MK❖686",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "192.36.27.94",
-			"server_port": 989,
-			"tag": "@LuxyNet💎❖🇩🇰❖DK❖1049",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "103.163.218.2",
-			"server_port": 989,
-			"tag": "@LuxyNet💎❖🇻🇳❖VN❖2004",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "rc4-md5",
-			"password": "14fFPrbezE3HDZzsMOr6",
-			"server": "137.184.174.93",
-			"server_port": 8080,
-			"tag": "CA-137.184.174.93-0959",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "79.127.200.169",
-			"server_port": 990,
-			"tag": "CA-79.127.200.169-0063",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "amazonskr05",
-			"server": "15.157.66.237",
-			"server_port": 443,
-			"tag": "CA-15.157.66.237-1368",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "79.127.200.162",
-			"server_port": 990,
-			"tag": "CA-79.127.200.162-1664",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "SS2QvbC9nqLp2sXXZo0BVy4slcErRuCt",
-			"server": "103.35.189.136",
-			"server_port": 443,
-			"tag": "US-103.35.189.136-0053",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "64.74.163.82",
-			"server_port": 990,
-			"tag": "US-64.74.163.82-2071",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "64.74.163.218",
-			"server_port": 990,
-			"tag": "US-64.74.163.218-1662",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "173.234.29.2",
-			"server_port": 990,
-			"tag": "US-173.234.29.2-0241",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "37.19.198.236",
-			"server_port": 443,
-			"tag": "US-37.19.198.236-1663",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "79.127.200.162",
-			"server_port": 989,
-			"tag": "CA-79.127.200.162-1665",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "79.127.233.170",
-			"server_port": 989,
-			"tag": "CA-79.127.233.170-0032",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "167.160.90.178",
-			"server_port": 990,
-			"tag": "US-167.160.90.178-0235",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "45.87.175.165",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.165-0405",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "151.242.251.144",
-			"server_port": 8080,
-			"tag": "AE-151.242.251.144-1157",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "rc4-md5",
-			"password": "14fFPrbezE3HDZzsMOr6",
-			"server": "146.70.61.37",
-			"server_port": 8080,
-			"tag": "GB-146.70.61.37-0062",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "45.87.175.188",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.188-0098",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "45.87.175.175",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.175-0407",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.205",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.205-0624",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "45.87.175.92",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.92-0727",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "45.87.175.69",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.69-2443",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.150",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.150-0696",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "151.242.251.152",
-			"server_port": 8080,
-			"tag": "AE-151.242.251.152-0058",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.190",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.190-1634",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.185",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.185-0517",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.188",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.188-0834",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.140",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.140-0693",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "45.87.175.65",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.65-0724",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.199",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.199-2895",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "151.242.251.147",
-			"server_port": 8080,
-			"tag": "AE-151.242.251.147-0984",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.210",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.210-0637",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "193.29.139.199",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.199-0858",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "193.29.139.157",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.157-0859",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.214",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.214-0649",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.151",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.151-0697",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "45.87.175.192",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.192-0409",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "o5osZg269v5zHpYjr1xY9s",
-			"server": "151.242.251.137",
-			"server_port": 8080,
-			"tag": "AE-151.242.251.137-0970",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.187",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.187-0520",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.152",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.152-0700",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "193.29.139.227",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.227-0404",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.193",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.193-0525",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "51.15.17.169",
-			"server_port": 989,
-			"tag": "FR-51.15.17.169-0980",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "151.242.251.142",
-			"server_port": 8080,
-			"tag": "AE-151.242.251.142-1167",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "45.87.175.58",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.58-0721",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.194",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.194-0611",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.202",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.202-2211",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.204",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.204-1138",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.235",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.235-0712",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.200",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.200-0531",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.217",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.217-0652",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.251",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.251-0714",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.191",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.191-0707",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.154",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.154-0513",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "193.29.139.179",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.179-0512",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "193.29.139.217",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.217-0973",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "193.29.139.189",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.189-1032",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "45.87.175.171",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.171-0097",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "9AET6ZCfi1p9FCZ25AgEcP",
-			"server": "51.195.202.129",
-			"server_port": 5223,
-			"tag": "FR-51.195.202.129-0125",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "45.87.175.178",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.178-0985",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "151.242.251.133",
-			"server_port": 8080,
-			"tag": "AE-151.242.251.133-0989",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "104.192.226.106",
-			"server_port": 989,
-			"tag": "US-104.192.226.106-0987",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "79.127.233.170",
-			"server_port": 990,
-			"tag": "CA-79.127.233.170-2047",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "151.242.251.153",
-			"server_port": 8080,
-			"tag": "AE-151.242.251.153-0966",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "104.192.226.106",
-			"server_port": 990,
-			"tag": "US-104.192.226.106-2015",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "45.87.175.155",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.155-0574",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "45.87.175.174",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.174-2904",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "173.244.56.9",
-			"server_port": 443,
-			"tag": "US-173.244.56.9-1660",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.208",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.208-0632",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "51.15.23.108",
-			"server_port": 989,
-			"tag": "FR-51.15.23.108-1671",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "6a85b249286a74a9",
-			"server": "212.224.125.154",
-			"server_port": 57456,
-			"tag": "DE-212.224.125.154-0109",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo",
-			"server": "95.164.10.228",
-			"server_port": 443,
-			"tag": "DK-95.164.10.228-0419",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.191",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.191-0601",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "212.102.54.45",
-			"server_port": 990,
-			"tag": "IT-212.102.54.45-0881",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "151.242.251.131",
-			"server_port": 8080,
-			"tag": "AE-151.242.251.131-0979",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "VqQ91RXEQlzAekTzHF6boM",
-			"server": "51.178.42.187",
-			"server_port": 5223,
-			"tag": "FR-51.178.42.187-1136",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.176",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.176-0589",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "45.87.175.177",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.177-0583",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.177",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.177-0703",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "amazonskr05",
-			"server": "15.236.142.160",
-			"server_port": 443,
-			"tag": "FR-15.236.142.160-1452",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.184",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.184-0705",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "51.159.106.175",
-			"server_port": 989,
-			"tag": "FR-51.159.106.175-0060",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "amazonskr05",
-			"server": "15.237.246.157",
-			"server_port": 443,
-			"tag": "FR-15.237.246.157-0802",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "amazonskr05",
-			"server": "35.180.172.53",
-			"server_port": 443,
-			"tag": "FR-35.180.172.53-1371",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "6VAcll4P8xPTUVVtHeST3onRmLoVIBSU",
-			"server": "94.131.104.147",
-			"server_port": 443,
-			"tag": "LV-94.131.104.147-0108",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "amazonskr05",
-			"server": "35.180.209.169",
-			"server_port": 443,
-			"tag": "FR-35.180.209.169-1182",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.199",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.199-0530",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "17ZDORWIliQHuO6WRGHChXYMzdRtAYVP",
-			"server": "45.14.245.2",
-			"server_port": 443,
-			"tag": "NL-45.14.245.2-0864",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.183",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.183-0516",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "amazonskr05",
-			"server": "15.236.122.197",
-			"server_port": 443,
-			"tag": "FR-15.236.122.197-1002",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh",
-			"server": "178.23.190.238",
-			"server_port": 443,
-			"tag": "NL-178.23.190.238-0055",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.177",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.177-0514",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC",
-			"server": "45.83.131.43",
-			"server_port": 443,
-			"tag": "SI-45.83.131.43-0334",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "89.163.140.136",
-			"server_port": 989,
-			"tag": "DE-89.163.140.136-1668",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "Fuu6XL6x7NoinrCnrCImmp",
-			"server": "57.128.219.105",
-			"server_port": 5223,
-			"tag": "PL-57.128.219.105-0323",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "38.165.231.25",
-			"server_port": 990,
-			"tag": "EC-38.165.231.25-0065",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "amazonskr05",
-			"server": "51.44.178.195",
-			"server_port": 443,
-			"tag": "FR-51.44.178.195-1896",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "rc4-md5",
-			"password": "14fFPrbezE3HDZzsMOr6",
-			"server": "107.151.182.253",
-			"server_port": 8080,
-			"tag": "US-107.151.182.253-0026",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "S2QudBxi0vRySw4YRLloPq",
-			"server": "77.238.224.29",
-			"server_port": 55702,
-			"tag": "NL-77.238.224.29-0417",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "141.98.101.179",
-			"server_port": 443,
-			"tag": "GB-141.98.101.179-1639",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "45.87.175.180",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.180-0408",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "45.87.175.164",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.164-0095",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "gXOXk2FJwsz9P6nXIICuDNOqF9gWX1dn",
-			"server": "185.156.110.92",
-			"server_port": 443,
-			"tag": "HR-185.156.110.92-1104",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "_bypfvq6ra7g4n5yCCR9DoVeGya2XUUS",
-			"server": "185.82.73.212",
-			"server_port": 8444,
-			"tag": "NL-185.82.73.212-0482",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "45.87.175.28",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.28-0719",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "138.186.142.81",
-			"server_port": 990,
-			"tag": "PA-138.186.142.81-0082",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "141.98.101.178",
-			"server_port": 443,
-			"tag": "GB-141.98.101.178-1005",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "45.87.175.10",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.10-0091",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "yXoiEDFMVorGUeKla77k7sEXCeSE5r2A",
-			"server": "45.15.127.49",
-			"server_port": 443,
-			"tag": "US-45.15.127.49-0214",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "rc4-md5",
-			"password": "14fFPrbezE3HDZzsMOr6",
-			"server": "138.199.42.68",
-			"server_port": 8080,
-			"tag": "US-138.199.42.68-1700",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "45.87.175.197",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.197-0585",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm",
-			"server": "193.203.203.66",
-			"server_port": 443,
-			"tag": "CA-193.203.203.66-1223",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "l668XHPejoSNNuD66BYzyehaCpZexiF7",
-			"server": "45.12.136.170",
-			"server_port": 443,
-			"tag": "CY-45.12.136.170-1705",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "LQyAUItafUmmO3EZZx9UbiX6IGydSBgL",
-			"server": "45.12.144.18",
-			"server_port": 443,
-			"tag": "ES-45.12.144.18-0364",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "141.98.101.181",
-			"server_port": 443,
-			"tag": "GB-141.98.101.181-0791",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR",
-			"server": "5.182.37.87",
-			"server_port": 443,
-			"tag": "RO-5.182.37.87-0395",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.190",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.190-0599",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "51.15.23.166",
-			"server_port": 989,
-			"tag": "FR-51.15.23.166-1684",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ixPymFma6P7U41wk9MNP7znPnvax3mjd",
-			"server": "45.89.55.173",
-			"server_port": 443,
-			"tag": "RS-45.89.55.173-0569",
-			"type": "shadowsocks"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "141.227.131.75",
-			"server_port": 443,
-			"tag": "FR-141.227.131.75-1973",
-			"transport": {
-				"headers": {
-					"Host": "141.227.131.75"
-				},
+				"headers": {},
 				"path": "/",
 				"type": "ws"
 			},
 			"type": "vmess",
-			"uuid": "d16cfe38-f994-4382-876d-5c16ef410248"
+			"uuid": "af85739f-3552-422f-b151-10d9a29b15b9"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.184",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.184-0591",
-			"type": "shadowsocks"
+			"server": "138.124.14.37",
+			"server_port": 44053,
+			"tag": "_西班牙 2",
+			"transport": {
+				"headers": {},
+				"path": "/@mrconfig_group@mrconfig_group@mrconfig_group@mrconfig_group@mrconfig_group",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "f437b574-5f4a-4298-84bb-e5f4db213ea2"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu",
-			"server": "213.159.66.206",
+			"alter_id": 0,
+			"security": "auto",
+			"server": "40.160.233.134",
 			"server_port": 443,
-			"tag": "MD-213.159.66.206-0743",
-			"type": "shadowsocks"
+			"tag": "_美国 17",
+			"transport": {
+				"headers": {},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "6f3a9d2c-7f3d-4c2a-9b3f-8f6a1c9e4d21"
 		},
 		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "149.22.95.183",
+			"server": "norman.ns.cloudflare.com",
 			"server_port": 443,
-			"tag": "CA-149.22.95.183-1659",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.218",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.218-0662",
-			"type": "shadowsocks"
-		},
-		{
-			"password": "Szb=-Zguo53QhmivcJqEAWtpdPX6Y",
-			"server": "95.179.183.126",
-			"server_port": 13345,
-			"tag": "NL-95.179.183.126-2642",
+			"tag": "_美国 19",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "infiniteinjera.semanticstrainer.click"
+				"server_name": "azizoarjmand.info"
 			},
-			"type": "trojan"
+			"transport": {
+				"headers": {
+					"Host": "azizoarjmand.info"
+				},
+				"path": "/yhowcws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee122f13-9b54-49b6-abc5-aa47b464fdb3"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.179",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.179-0590",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "109.61.39.28",
-			"server_port": 990,
-			"tag": "KZ-109.61.39.28-0226",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "JQcc2rIZtXamatRYAINIddMom3MBu7zF",
-			"server": "37.221.125.38",
+			"server": "108.162.193.217",
 			"server_port": 443,
-			"tag": "GB-37.221.125.38-1702",
-			"type": "shadowsocks"
+			"tag": "_美国 21",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "azizoarjmand.info"
+			},
+			"transport": {
+				"headers": {
+					"Host": "azizoarjmand.info"
+				},
+				"path": "/yhowcws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee122f13-9b54-49b6-abc5-aa47b464fdb3"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "Vmsf06YTMqtAYdhwMqdSuGqgdVkm0yddi4kYaAEVQWYj9iHA",
-			"server": "89.223.93.176",
-			"server_port": 41348,
-			"tag": "PL-89.223.93.176-0444",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "141.98.101.182",
+			"server": "delilah.ns.cloudflare.com",
 			"server_port": 443,
-			"tag": "GB-141.98.101.182-0041",
-			"type": "shadowsocks"
+			"tag": "未知 43",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "hazmkardan.info"
+			},
+			"transport": {
+				"headers": {
+					"Host": "hazmkardan.info"
+				},
+				"path": "/fwgisws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "d37d61da-e50d-4f7f-9969-7f0136f97953"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "OMOpV2XCoMOBYsKGAjLDmsKkw6bDpMOkdVhtD15fwpQqw70AN8Krw6AyH8OaCQ==",
-			"server": "51.195.203.247",
+			"server": "transferwise.com",
+			"server_port": 443,
+			"tag": "未知 44",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg"
+			},
+			"transport": {
+				"headers": {
+					"Host": "rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg"
+				},
+				"path": "/ws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "5408b813-0a75-41de-9a4f-d5df4c10087b"
+		},
+		{
+			"server": "us7.candyfans.win",
+			"server_port": 443,
+			"tag": "_美国 22",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "us7.candyfans.win"
+			},
+			"transport": {
+				"headers": {
+					"Host": "us7.candyfans.win"
+				},
+				"path": "/jqliws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "0062f09d-9579-4722-9bd3-d5438970d54a"
+		},
+		{
+			"server": "172.64.33.91",
+			"server_port": 443,
+			"tag": "_美国 23",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "redlabell.info"
+			},
+			"transport": {
+				"headers": {
+					"Host": "redlabell.info"
+				},
+				"path": "/aafeuws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "02e46039-200d-4ae4-ac90-b0d619f72034"
+		},
+		{
+			"server": "clyde.ns.cloudflare.com",
+			"server_port": 443,
+			"tag": "_美国 25",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "redlabell.info"
+			},
+			"transport": {
+				"headers": {
+					"Host": "redlabell.info"
+				},
+				"path": "/aafeuws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "02e46039-200d-4ae4-ac90-b0d619f72034"
+		},
+		{
+			"server": "108.162.193.91",
+			"server_port": 443,
+			"tag": "_美国 27",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "redlabell.info"
+			},
+			"transport": {
+				"headers": {
+					"Host": "redlabell.info"
+				},
+				"path": "/aafeuws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "02e46039-200d-4ae4-ac90-b0d619f72034"
+		},
+		{
+			"server": "betty.ns.cloudflare.com",
+			"server_port": 443,
+			"tag": "_美国 28",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "639014902535774186.supra-amsjh.info"
+			},
+			"transport": {
+				"headers": {
+					"Host": "639014902535774186.supra-amsjh.info"
+				},
+				"path": "/rdwnyews",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "d64620c6-2ec3-4da7-a151-febd14d7824e"
+		},
+		{
+			"server": "104.26.1.221",
+			"server_port": 443,
+			"tag": "未知 47",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "dabaius2.sylu.net"
+			},
+			"transport": {
+				"headers": {
+					"Host": "dabaius2.sylu.net"
+				},
+				"path": "/db10240eb751d6ab",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "3f9c8463-8610-3ed8-86c8-a26713067825"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "165.140.216.141",
+			"server_port": 443,
+			"tag": "_美国 31",
+			"type": "vmess",
+			"uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+		},
+		{
+			"server": "194.113.73.136",
+			"server_port": 4655,
+			"tag": "_美国 32",
+			"type": "vless",
+			"uuid": "2668fdee-331d-4770-8244-d2a4efbf6ef8"
+		},
+		{
+			"server": "81.27.108.239",
+			"server_port": 4657,
+			"tag": "_马恩岛",
+			"type": "vless",
+			"uuid": "2668fdee-331d-4770-8244-d2a4efbf6ef8"
+		},
+		{
+			"server": "89.187.174.121",
 			"server_port": 8443,
-			"tag": "FR-51.195.203.247-0389",
-			"type": "shadowsocks"
-		},
-		{
-			"password": "Szb=-Zguo53QhmivcJqEAWtpdPX6Y",
-			"server": "95.179.184.71",
-			"server_port": 13345,
-			"tag": "NL-95.179.184.71-1689",
+			"tag": "_荷兰 8",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "infiniteinjera.semanticstrainer.click"
+				"server_name": "ams1.fromblancwithlove.com"
+			},
+			"type": "vless",
+			"uuid": "a207569d-bf8f-43dd-81fd-2c847c7870c4"
+		},
+		{
+			"server": "ams1.fromblancwithlove.com",
+			"server_port": 8443,
+			"tag": "_英国 5",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "ams1.fromblancwithlove.com"
+			},
+			"type": "vless",
+			"uuid": "a207569d-bf8f-43dd-81fd-2c847c7870c4"
+		},
+		{
+			"password": "a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e",
+			"server": "green2.cdntencentmusic.com",
+			"server_port": 35501,
+			"tag": "_中国台湾省 4",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "green2.cdntencentmusic.com"
 			},
 			"type": "trojan"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "147.78.0.182",
-			"server_port": 990,
-			"tag": "AE-147.78.0.182-0228",
-			"type": "shadowsocks"
+			"alter_id": 0,
+			"security": "auto",
+			"server": "v30.hdacd.com",
+			"server_port": 30830,
+			"tag": "_香港 3",
+			"type": "vmess",
+			"uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "185.231.233.173",
-			"server_port": 990,
-			"tag": "PT-185.231.233.173-2574",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "195.154.119.77",
-			"server_port": 989,
-			"tag": "FR-195.154.119.77-1010",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp",
-			"server": "213.159.67.124",
+			"flow": "xtls-rprx-vision",
+			"server": "51.250.10.228",
 			"server_port": 443,
-			"tag": "MD-213.159.67.124-0676",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "rc4-md5",
-			"password": "14fFPrbezE3HDZzsMOr6",
-			"server": "68.183.235.122",
-			"server_port": 8080,
-			"tag": "SG-68.183.235.122-1679",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "shadowsocks",
-			"server": "149.22.87.204",
-			"server_port": 443,
-			"tag": "JP-149.22.87.204-1004",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "185.231.233.173",
-			"server_port": 989,
-			"tag": "PT-185.231.233.173-1688",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "156.38.168.58",
-			"server_port": 990,
-			"tag": "ZA-156.38.168.58-0232",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "rc4-md5",
-			"password": "14fFPrbezE3HDZzsMOr6",
-			"server": "128.199.172.224",
-			"server_port": 8080,
-			"tag": "SG-128.199.172.224-1680",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "176.123.5.253",
-			"server_port": 990,
-			"tag": "MD-176.123.5.253-0064",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "95.173.218.203",
-			"server_port": 990,
-			"tag": "SG-95.173.218.203-0898",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "46.183.217.204",
-			"server_port": 990,
-			"tag": "LV-46.183.217.204-0087",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "156.59.243.6",
-			"server_port": 990,
-			"tag": "PK-156.59.243.6-0888",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa",
-			"server": "95.111.222.113",
-			"server_port": 443,
-			"tag": "AU-95.111.222.113-2711",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "rc4-md5",
-			"password": "14fFPrbezE3HDZzsMOr6",
-			"server": "172.105.199.111",
-			"server_port": 8080,
-			"tag": "JP-172.105.199.111-0035",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "23.95.76.147",
-			"server_port": 990,
-			"tag": "US-23.95.76.147-0257",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "45.154.204.7",
-			"server_port": 990,
-			"tag": "CA-45.154.204.7-0022",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "138.186.142.80",
-			"server_port": 990,
-			"tag": "PA-138.186.142.80-0277",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "185.113.143.186",
-			"server_port": 990,
-			"tag": "PT-185.113.143.186-0247",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "245f2c1d-a317-45a8-b230-e420566a7f62",
-			"server": "69.30.251.122",
-			"server_port": 51004,
-			"tag": "US-69.30.251.122-0150",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "185.213.23.63",
-			"server_port": 990,
-			"tag": "NO-185.213.23.63-0885",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "23.95.76.59",
-			"server_port": 990,
-			"tag": "US-23.95.76.59-0025",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "193.29.139.206",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.206-2841",
-			"type": "shadowsocks"
-		},
-		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "153.121.67.215",
-			"server_port": 3093,
-			"tag": "JP-153.121.67.215-1351",
+			"tag": "_俄罗斯 5",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "www.nintendogames.net"
+				"reality": {
+					"enabled": true,
+					"public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+					"short_id": "65c7748be8"
+				},
+				"server_name": "sun6-21.userapi.com",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
 			},
-			"type": "trojan"
+			"type": "vless",
+			"uuid": "fd4b0117-d752-46fd-9a94-21a21e360fdb"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "185.237.185.89",
-			"server_port": 990,
-			"tag": "LT-185.237.185.89-0083",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "185.126.237.38",
-			"server_port": 990,
-			"tag": "RO-185.126.237.38-0926",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "rc4-md5",
-			"password": "14fFPrbezE3HDZzsMOr6",
-			"server": "68.183.227.236",
-			"server_port": 8080,
-			"tag": "SG-68.183.227.236-1681",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "38.89.142.56",
-			"server_port": 990,
-			"tag": "US-38.89.142.56-0897",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "190.103.176.32",
-			"server_port": 990,
-			"tag": "AR-190.103.176.32-0891",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "185.192.124.188",
-			"server_port": 990,
-			"tag": "BR-185.192.124.188-1217",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "45.15.185.70",
-			"server_port": 990,
-			"tag": "CY-45.15.185.70-1712",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh",
-			"server": "103.75.118.125",
+			"flow": "xtls-rprx-vision",
+			"server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
 			"server_port": 443,
-			"tag": "JP-103.75.118.125-0457",
-			"type": "shadowsocks"
+			"tag": "_以色列",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
+					"short_id": "55e6af1a35e64a98"
+				},
+				"server_name": "i2pd.website",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "UAMVtHm54uahd6SiN5WcD16rsPSdabPG",
-			"server": "23.95.72.81",
-			"server_port": 443,
-			"tag": "US-23.95.72.81-1023",
-			"type": "shadowsocks"
+			"alter_id": 0,
+			"security": "auto",
+			"server": "8.218.116.26",
+			"server_port": 32228,
+			"tag": "中国 阿里云",
+			"type": "vmess",
+			"uuid": "e4767e9f-ed00-4f31-a984-a918bdd9b09c"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "45.154.206.192",
-			"server_port": 990,
-			"tag": "ES-45.154.206.192-2517",
-			"type": "shadowsocks"
+			"flow": "xtls-rprx-vision",
+			"server": "116.80.44.144",
+			"server_port": 27724,
+			"tag": "_JP_日本",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w",
+					"short_id": ""
+				},
+				"server_name": "www.yahoo.co.jp",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
+			},
+			"type": "vless",
+			"uuid": "ebd8539d-e249-4a39-8f90-e8585e8cc35e"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "176.123.1.175",
-			"server_port": 990,
-			"tag": "MD-176.123.1.175-0243",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "rNa753BcUuPBL8YxXx9Bx5b4dfVFu45QkzorwqZizTl6Af3N",
-			"server": "103.253.74.94",
-			"server_port": 31348,
-			"tag": "TH-103.253.74.94-2823",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk",
-			"server": "194.246.114.101",
-			"server_port": 443,
-			"tag": "MD-194.246.114.101-0333",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "NDRySIABARbErNIVsCNVkyYAHiBzhveT",
-			"server": "23.95.75.146",
-			"server_port": 443,
-			"tag": "US-23.95.75.146-0031",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "185.192.124.188",
-			"server_port": 989,
-			"tag": "BR-185.192.124.188-1693",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.202",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.202-1056",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "fG2artUmHfNT2cX7",
-			"server": "217.30.10.70",
-			"server_port": 9018,
-			"tag": "PL-217.30.10.70-1709",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-128-gcm",
-			"password": "93498539-7838-4836-b9b3-8311ffc79bcf",
-			"server": "82.180.146.173",
-			"server_port": 35652,
-			"tag": "IN-82.180.146.173-1699",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "51.15.23.63",
-			"server_port": 989,
-			"tag": "FR-51.15.23.63-1027",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz",
-			"server": "167.150.100.115",
-			"server_port": 443,
-			"tag": "US-167.150.100.115-1026",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "37.143.129.98",
-			"server_port": 990,
-			"tag": "FI-37.143.129.98-1701",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "176.126.83.158",
-			"server_port": 990,
-			"tag": "DE-176.126.83.158-0246",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "595HLF3fHUuw0McM51tpvPygSIB1uf4D",
-			"server": "107.174.114.71",
-			"server_port": 443,
-			"tag": "US-107.174.114.71-0105",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "gKYygTcRYhc3skc2x6tZ073lYz0DnieX",
-			"server": "5.181.21.246",
-			"server_port": 443,
-			"tag": "AT-5.181.21.246-0993",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "38.165.233.93",
-			"server_port": 989,
-			"tag": "PY-38.165.233.93-1028",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-gcm",
-			"password": "8JCsPssfgS8tiRwiMlhARg==",
-			"server": "144.217.164.29",
-			"server_port": 12000,
-			"tag": "CA-144.217.164.29-0021",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "JdmRK9gMEqFgs8nP",
-			"server": "217.30.10.18",
-			"server_port": 9003,
-			"tag": "PL-217.30.10.18-1638",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "jP4Z9J3S6tAldCaSdCtaZR7gZtV7rQg0",
-			"server": "64.31.63.92",
-			"server_port": 443,
-			"tag": "FR-64.31.63.92-1706",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "Lp27rqyJq72bZsqX",
-			"server": "217.30.10.18",
-			"server_port": 9045,
-			"tag": "PL-217.30.10.18-1657",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "FG5ddLsMPbV5CutE",
-			"server": "217.30.10.18",
-			"server_port": 9050,
-			"tag": "PL-217.30.10.18-1658",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "185.193.49.88",
-			"server_port": 989,
-			"tag": "EE-185.193.49.88-1715",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "103.163.218.2",
-			"server_port": 990,
-			"tag": "VN-103.163.218.2-2698",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8npKgNzdkss2ytn",
-			"server": "217.30.10.18",
-			"server_port": 9088,
-			"tag": "PL-217.30.10.18-1262",
-			"type": "shadowsocks"
+			"alter_id": 2,
+			"security": "auto",
+			"server": "v36.hdacd.com",
+			"server_port": 30836,
+			"tag": "英国 - Slough - DigitalOcean, LLC - 1",
+			"type": "vmess",
+			"uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
@@ -2949,13 +954,6 @@
 			"type": "shadowsocks"
 		},
 		{
-			"server": "46.224.152.184",
-			"server_port": 55484,
-			"tag": "【机场推荐：https://a0a.xyz/】45",
-			"type": "vless",
-			"uuid": "1d03fcc7-8af7-4277-9a6d-bf8f1f0eb6e4"
-		},
-		{
 			"method": "chacha20-ietf-poly1305",
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "185.47.255.22",
@@ -2965,343 +963,127 @@
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "p78naCf2EfOlRSLTX0wFVx",
-			"server": "71.19.148.143",
-			"server_port": 443,
-			"tag": "SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-71.19.148.143:443",
+			"password": "VQhct3pJXkASHgKQcQcliw",
+			"server": "46.224.157.198",
+			"server_port": 1080,
+			"tag": "【机场推荐：https://a0a.xyz/】43",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "p78naCf2EfOlRSLTX0wFVx",
-			"server": "pupas-shirting-unsung.freesocks.work",
+			"password": "uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh",
+			"server": "178.23.190.238",
 			"server_port": 443,
-			"tag": "SS-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-pupas-shirting-unsung.freesocks.work:443",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "qwerREWQ@@",
-			"server": "218.237.185.230",
-			"server_port": 4652,
-			"tag": "_KR_韩国 2",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "qwerREWQ@@",
-			"server": "p141.panda001.net",
-			"server_port": 4652,
-			"tag": "_KR_韩国_1",
-			"type": "shadowsocks"
-		},
-		{
-			"server": "104.19.49.192",
-			"server_port": 443,
-			"tag": "加拿大 - 多伦多 - Cloudflare, Inc. - 6",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
-		},
-		{
-			"server": "nrtcfdns.zone.id",
-			"server_port": 443,
-			"tag": "加拿大 - 多伦多 - Cloudflare, Inc. - 7",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
-		},
-		{
-			"server": "162.159.4.135",
-			"server_port": 2087,
-			"tag": "新加坡 - 新加坡 - Cloudflare, Inc. - 2",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "qqq-3t8.pages.dev"
-			},
-			"transport": {
-				"headers": {
-					"Host": "qqq-3t8.pages.dev"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "e258977b-e413-4718-a3af-02d75492c349"
-		},
-		{
-			"server": "172.64.53.226",
-			"server_port": 443,
-			"tag": "日本 - 成田市 - Cloudflare, Inc. - 1",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
-		},
-		{
-			"server": "108.162.198.185",
-			"server_port": 443,
-			"tag": "日本 - 成田市 - Cloudflare, Inc. - 2",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
-		},
-		{
-			"server": "www.gov.se",
-			"server_port": 2053,
-			"tag": "美国 - 东洛杉矶 - Cloudflare, Inc. - 2",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "saas.netlib.ccwu.cc"
-			},
-			"transport": {
-				"headers": {
-					"Host": "saas.netlib.ccwu.cc"
-				},
-				"path": "/proxyip=sjc.o00o.ooo",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "6945f532-64d5-2d4e-43c1-b93633387534"
-		},
-		{
-			"server": "104.17.202.10",
-			"server_port": 443,
-			"tag": "美国 - 聖荷西 - Cloudflare, Inc. - 4",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "2DGq3jvVRg5n3CcxmysGK2kmrgJeSNof12A76cZvVxqPpetyC1XEciCFufq5xKvRWGGnKVembpThuUSQhbZ7GMsZY4UVxEBw",
-			"server": "208.67.106.73",
-			"server_port": 44884,
-			"tag": "荷兰 - 阿姆斯特丹 - Serverion LLC - 1",
+			"tag": "【机场推荐：https://a0a.xyz/】51",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.171",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.171-0273",
+			"password": "HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk",
+			"server": "194.246.114.101",
+			"server_port": 443,
+			"tag": "【机场推荐：https://a0a.xyz/】6",
 			"type": "shadowsocks"
 		},
 		{
-			"method": "aes-256-cfb",
-			"password": "amazonskr05",
-			"server": "35.180.54.218",
+			"password": "b4006da3-2631-4c1c-8a2e-663e9a07d7d4",
+			"server": "green2.cdntencentmusic.com",
+			"server_port": 31102,
+			"tag": "台湾省台中市 中华电信",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "green2.cdntencentmusic.com"
+			},
+			"type": "trojan"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "216.167.107.61",
+			"server_port": 44805,
+			"tag": "美国 科罗拉多州NTT(美国)通信公司",
+			"type": "vmess",
+			"uuid": "f7d62526-9e06-455e-82bd-241d368002e8"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "156.146.38.170",
 			"server_port": 443,
-			"tag": "FR-35.180.54.218-0294",
+			"tag": "US-156.146.38.170-0248",
 			"type": "shadowsocks"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "pNqnYf3kHesOpCchRvUZxfwTafRsOj7g",
-			"server": "213.159.76.21",
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "156.146.38.168",
 			"server_port": 443,
-			"tag": "MD-213.159.76.21-0319",
+			"tag": "US-156.146.38.168-0249",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "156.146.38.167",
+			"server_port": 443,
+			"tag": "US-156.146.38.167-0250",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "156.146.38.169",
+			"server_port": 443,
+			"tag": "US-156.146.38.169-0251",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "62.100.205.100",
+			"server": "79.127.200.169",
 			"server_port": 990,
-			"tag": "GB-62.100.205.100-0340",
+			"tag": "CA-79.127.200.169-0252",
 			"type": "shadowsocks"
 		},
 		{
-			"method": "chacha20-ietf",
-			"password": "asd123456",
-			"server": "103.141.221.88",
-			"server_port": 8388,
-			"tag": "HK-103.141.221.88-0352",
+			"method": "rc4-md5",
+			"password": "14fFPrbezE3HDZzsMOr6",
+			"server": "137.184.174.93",
+			"server_port": 8080,
+			"tag": "CA-137.184.174.93-0253",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "SS2QvbC9nqLp2sXXZo0BVy4slcErRuCt",
+			"server": "103.35.189.136",
+			"server_port": 443,
+			"tag": "MD-103.35.189.136-0255",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "193.135.174.135",
+			"server": "173.234.29.2",
 			"server_port": 990,
-			"tag": "LT-193.135.174.135-0360",
+			"tag": "US-173.234.29.2-0256",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "1RWwXhwfAB5gAEozU4G2Pg",
-			"server": "45.87.175.166",
-			"server_port": 443,
-			"tag": "LT-45.87.175.166-0366",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "rNBfNuuANFCAk7KB",
-			"server": "217.30.10.18",
-			"server_port": 9056,
-			"tag": "PL-217.30.10.18-0368",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "VpKABcOpNNA0l5G2AVOmw8",
-			"server": "213.109.147.242",
-			"server_port": 62685,
-			"tag": "NL-213.109.147.242-0370",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "45.87.175.35",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.35-0372",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "rpgbNnU9rDDU4aWZ",
-			"server": "217.30.10.18",
-			"server_port": 9094,
-			"tag": "PL-217.30.10.18-0374",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "1RWwXhwfAB5gAEozU4G2Pg",
-			"server": "45.87.175.164",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.164-0376",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "XPtzA9sCug3SPR4c",
-			"server": "217.30.10.18",
-			"server_port": 9025,
-			"tag": "PL-217.30.10.18-0377",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "qFAJdBEqsI71jaSML67nHoPBCGhX94uk",
-			"server": "45.138.157.162",
-			"server_port": 443,
-			"tag": "RU-45.138.157.162-0379",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.187",
-			"server_port": 8080,
-			"tag": "GB-82.38.31.187-0380",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "FAdUvMJUq5vDgKEq",
-			"server": "217.30.10.18",
-			"server_port": 9006,
-			"tag": "PL-217.30.10.18-0381",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "UkXRsXvR6buDMG2Y",
-			"server": "217.30.10.18",
-			"server_port": 9001,
-			"tag": "PL-217.30.10.18-0382",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "M3t2ZEQcMGRWBjRa",
-			"server": "217.30.10.18",
-			"server_port": 9011,
-			"tag": "PL-217.30.10.18-0383",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "45.87.175.166",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.166-0384",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "104.192.226.106",
+			"server_port": 990,
+			"tag": "US-104.192.226.106-0261",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "185.255.123.166",
+			"server": "38.165.231.25",
 			"server_port": 990,
-			"tag": "NG-185.255.123.166-0385",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "45.87.175.168",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.168-0386",
+			"tag": "EC-38.165.231.25-0263",
 			"type": "shadowsocks"
 		},
 		{
@@ -3309,95 +1091,159 @@
 			"password": "1RWwXhwfAB5gAEozU4G2Pg",
 			"server": "45.87.175.199",
 			"server_port": 8080,
-			"tag": "LT-45.87.175.199-0393",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "154.223.16.212",
-			"server_port": 989,
-			"tag": "CO-154.223.16.212-0396",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "ZET59LF6DvCC8KVt",
-			"server": "217.30.10.18",
-			"server_port": 9005,
-			"tag": "PL-217.30.10.18-0399",
+			"tag": "LT-45.87.175.199-0264",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "38.60.247.151",
-			"server_port": 990,
-			"tag": "BG-38.60.247.151-0401",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "38.165.233.18",
-			"server_port": 990,
-			"tag": "PY-38.165.233.18-0405",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "360e21d21977dc11",
-			"server": "103.111.114.29",
-			"server_port": 57456,
-			"tag": "IN-103.111.114.29-0406",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "171.22.254.17",
-			"server_port": 989,
-			"tag": "MT-171.22.254.17-0407",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "154.90.63.177",
-			"server_port": 989,
-			"tag": "KR-154.90.63.177-0408",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "203.23.128.33",
-			"server_port": 990,
-			"tag": "HK-203.23.128.33-0409",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "1RWwXhwfAB5gAEozU4G2Pg",
-			"server": "45.87.175.192",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.205",
 			"server_port": 8080,
-			"tag": "LT-45.87.175.192-0411",
+			"tag": "GB-82.38.31.205-0265",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
 			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.188",
+			"server": "45.87.175.171",
 			"server_port": 8080,
-			"tag": "LT-45.87.175.188-0414",
+			"tag": "LT-45.87.175.171-0266",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "45.87.175.174",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.174-0267",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "rc4-md5",
+			"password": "14fFPrbezE3HDZzsMOr6",
+			"server": "146.70.61.37",
+			"server_port": 8080,
+			"tag": "GB-146.70.61.37-0268",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "45.87.175.181",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.181-0269",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
 			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "45.158.171.70",
+			"server": "193.29.139.177",
 			"server_port": 8080,
-			"tag": "LT-45.158.171.70-0418",
+			"tag": "NL-193.29.139.177-0270",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "51.15.17.169",
+			"server_port": 989,
+			"tag": "NL-51.15.17.169-0271",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "45.87.175.154",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.154-0272",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "193.29.139.179",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.179-0273",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.176",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.176-0274",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "4a2rfixophdjffa8KVA4Aa",
+			"server": "beesyar.org",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.178-0275",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "151.242.251.142",
+			"server_port": 8080,
+			"tag": "AE-151.242.251.142-0276",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "45.87.175.58",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.58-0277",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.179",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.179-0278",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "4a2rfixophdjffa8KVA4Aa",
+			"server": "193.29.139.157",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.157-0280",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "212.102.54.45",
+			"server_port": 990,
+			"tag": "IT-212.102.54.45-0281",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "4a2rfixophdjffa8KVA4Aa",
+			"server": "151.242.251.144",
+			"server_port": 8080,
+			"tag": "AE-151.242.251.144-0282",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "151.242.251.153",
+			"server_port": 8080,
+			"tag": "AE-151.242.251.153-0283",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.218",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.218-0284",
 			"type": "shadowsocks"
 		},
 		{
@@ -3405,31 +1251,671 @@
 			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
 			"server": "193.29.139.190",
 			"server_port": 8080,
-			"tag": "NL-193.29.139.190-0420",
+			"tag": "NL-193.29.139.190-0285",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "45.158.171.66",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "45.87.175.197",
 			"server_port": 8080,
-			"tag": "LT-45.158.171.66-0423",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
-			"server": "193.29.139.240",
-			"server_port": 8080,
-			"tag": "NL-193.29.139.240-0424",
+			"tag": "LT-45.87.175.197-0286",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "45.159.250.190",
+			"server": "138.186.142.81",
 			"server_port": 990,
-			"tag": "KZ-45.159.250.190-0427",
+			"tag": "PA-138.186.142.81-0287",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.194",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.194-0288",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "151.242.251.147",
+			"server_port": 8080,
+			"tag": "AE-151.242.251.147-0289",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "45.87.175.92",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.92-0290",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "o5osZg269v5zHpYjr1xY9s",
+			"server": "151.242.251.137",
+			"server_port": 8080,
+			"tag": "AE-151.242.251.137-0291",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "193.29.139.251",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.251-0292",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.210",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.210-0294",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "1RWwXhwfAB5gAEozU4G2Pg",
+			"server": "45.87.175.164",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.164-0295",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "151.242.251.152",
+			"server_port": 8080,
+			"tag": "AE-151.242.251.152-0296",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "195.181.160.6",
+			"server_port": 990,
+			"tag": "CZ-195.181.160.6-0297",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "149.22.87.204",
+			"server_port": 443,
+			"tag": "JP-149.22.87.204-0298",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "193.29.139.202",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.202-0299",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "45.87.175.28",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.28-0300",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "rc4-md5",
+			"password": "14fFPrbezE3HDZzsMOr6",
+			"server": "172.105.199.111",
+			"server_port": 8080,
+			"tag": "JP-172.105.199.111-0301",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "45.87.175.65",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.65-0302",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "45.87.175.155",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.155-0303",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "45.87.175.178",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.178-0304",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "193.29.139.217",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.217-0305",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "45.87.175.177",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.177-0306",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "51.159.106.175",
+			"server_port": 989,
+			"tag": "FR-51.159.106.175-0307",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "6VAcll4P8xPTUVVtHeST3onRmLoVIBSU",
+			"server": "94.131.104.147",
+			"server_port": 443,
+			"tag": "MD-94.131.104.147-0310",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "amazonskr05",
+			"server": "51.44.165.171",
+			"server_port": 443,
+			"tag": "FR-51.44.165.171-0311",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "amazonskr05",
+			"server": "15.236.122.197",
+			"server_port": 443,
+			"tag": "FR-15.236.122.197-0313",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo",
+			"server": "95.164.10.228",
+			"server_port": 443,
+			"tag": "BG-95.164.10.228-0316",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "amazonskr05",
+			"server": "35.180.57.2",
+			"server_port": 443,
+			"tag": "FR-35.180.57.2-0318",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "amazonskr05",
+			"server": "35.180.54.60",
+			"server_port": 443,
+			"tag": "FR-35.180.54.60-0323",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "gKYygTcRYhc3skc2x6tZ073lYz0DnieX",
+			"server": "5.181.21.246",
+			"server_port": 443,
+			"tag": "GB-5.181.21.246-0324",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC",
+			"server": "45.83.131.43",
+			"server_port": 443,
+			"tag": "SI-45.83.131.43-0325",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "gXOXk2FJwsz9P6nXIICuDNOqF9gWX1dn",
+			"server": "185.156.110.92",
+			"server_port": 443,
+			"tag": "HR-185.156.110.92-0327",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "amazonskr05",
+			"server": "15.236.142.160",
+			"server_port": 443,
+			"tag": "FR-15.236.142.160-0328",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "141.98.101.182",
+			"server_port": 443,
+			"tag": "GB-141.98.101.182-0329",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "Oy4TsrxfaJExUIhlcSqHpVQIWIFM2jZR",
+			"server": "5.182.37.87",
+			"server_port": 443,
+			"tag": "RU-5.182.37.87-0331",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "104.192.226.106",
+			"server_port": 989,
+			"tag": "US-104.192.226.106-0332",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "qFAJdBEqsI71jaSML67nHoPBCGhX94uk",
+			"server": "45.138.157.162",
+			"server_port": 443,
+			"tag": "RU-45.138.157.162-0333",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.191",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.191-0334",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.217",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.217-0335",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "JIhN6rBKkaEboLNXVSv5rq",
+			"server": "142.4.216.225",
+			"server_port": 80,
+			"tag": "CA-142.4.216.225-0336",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "141.98.101.178",
+			"server_port": 443,
+			"tag": "GB-141.98.101.178-0337",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ixPymFma6P7U41wk9MNP7znPnvax3mjd",
+			"server": "45.89.55.173",
+			"server_port": 443,
+			"tag": "RU-45.89.55.173-0338",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "193.29.139.151",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.151-0339",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.214",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.214-0340",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "rc4-md5",
+			"password": "14fFPrbezE3HDZzsMOr6",
+			"server": "68.183.227.4",
+			"server_port": 8080,
+			"tag": "SG-68.183.227.4-0342",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa",
+			"server": "95.111.222.113",
+			"server_port": 443,
+			"tag": "AU-95.111.222.113-0343",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "JIhN6rBKkaEboLNXVSv5rq",
+			"server": "ca225.vpnbook.com",
+			"server_port": 80,
+			"tag": "CA-142.4.216.225-0346",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "109.61.39.28",
+			"server_port": 990,
+			"tag": "KZ-109.61.39.28-0347",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "6pRjKQJ0CWyFtG.9",
+			"server": "198.57.27.27",
+			"server_port": 12990,
+			"tag": "CA-198.57.27.27-0348",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "diningtable.electricbanana.click"
+			},
+			"type": "trojan"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "pNqnYf3kHesOpCchRvUZxfwTafRsOj7g",
+			"server": "213.159.76.21",
+			"server_port": 443,
+			"tag": "MD-213.159.76.21-0350",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "156.59.243.6",
+			"server_port": 990,
+			"tag": "PK-156.59.243.6-0352",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "BaeSzHdfJIR13l67",
+			"server": "70.34.218.149",
+			"server_port": 11930,
+			"tag": "SE-70.34.218.149-0354",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "softpillow.silentrocket.click"
+			},
+			"type": "trojan"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "156.38.168.58",
+			"server_port": 990,
+			"tag": "ZA-156.38.168.58-0355",
+			"type": "shadowsocks"
+		},
+		{
+			"alter_id": 2,
+			"security": "auto",
+			"server": "dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net",
+			"server_port": 80,
+			"tag": "HK-219.79.209.100-0356",
+			"transport": {
+				"headers": {
+					"Host": "dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net"
+				},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "d18bcaf4-1323-11ec-a0fc-f23c913c8d2b"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp",
+			"server": "213.159.67.124",
+			"server_port": 443,
+			"tag": "MD-213.159.67.124-0357",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "176.123.5.253",
+			"server_port": 990,
+			"tag": "MD-176.123.5.253-0358",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "147.78.0.182",
+			"server_port": 990,
+			"tag": "AE-147.78.0.182-0359",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "46.183.217.204",
+			"server_port": 990,
+			"tag": "LV-46.183.217.204-0363",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "245f2c1d-a317-45a8-b230-e420566a7f62",
+			"server": "69.30.251.122",
+			"server_port": 51004,
+			"tag": "US-69.30.251.122-0364",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "195.154.119.77",
+			"server_port": 989,
+			"tag": "FR-195.154.119.77-0365",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "185.213.23.63",
+			"server_port": 990,
+			"tag": "NO-185.213.23.63-0370",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "185.126.237.38",
+			"server_port": 990,
+			"tag": "RO-185.126.237.38-0371",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "185.113.143.186",
+			"server_port": 990,
+			"tag": "PT-185.113.143.186-0372",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
+			"server": "153.121.67.215",
+			"server_port": 3093,
+			"tag": "JP-153.121.67.215-0373",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "www.nintendogames.net"
+			},
+			"type": "trojan"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "185.192.124.188",
+			"server_port": 990,
+			"tag": "BR-185.192.124.188-0377",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "ZET59LF6DvCC8KVt",
+			"server": "217.30.10.18",
+			"server_port": 9005,
+			"tag": "PL-217.30.10.18-0378",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "rNa753BcUuPBL8YxXx9Bx5b4dfVFu45QkzorwqZizTl6Af3N",
+			"server": "103.253.74.94",
+			"server_port": 31348,
+			"tag": "TH-103.253.74.94-0379",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "45.154.206.192",
+			"server_port": 990,
+			"tag": "ES-45.154.206.192-0382",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "UAMVtHm54uahd6SiN5WcD16rsPSdabPG",
+			"server": "23.95.72.81",
+			"server_port": 443,
+			"tag": "US-23.95.72.81-0383",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "XLOrvLWkCBBBxLqSEe9S8lnC5PLsNfRh",
+			"server": "103.75.118.125",
+			"server_port": 443,
+			"tag": "JP-103.75.118.125-0384",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "138.186.142.80",
+			"server_port": 990,
+			"tag": "PA-138.186.142.80-0386",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "rNBfNuuANFCAk7KB",
+			"server": "217.30.10.18",
+			"server_port": 9056,
+			"tag": "PL-217.30.10.18-0389",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "qwerREWQ@@",
+			"server": "p141.panda001.net",
+			"server_port": 4652,
+			"tag": "KR-218.237.185.230-0390",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "176.123.1.175",
+			"server_port": 990,
+			"tag": "MD-176.123.1.175-0391",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "595HLF3fHUuw0McM51tpvPygSIB1uf4D",
+			"server": "107.174.114.71",
+			"server_port": 443,
+			"tag": "NO-107.174.114.71-0394",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "3846a29b-57d5-40f2-8acd-13855aa025cd",
+			"server": "green2.cdntencentmusic.com",
+			"server_port": 31104,
+			"tag": "TW-220.130.58.138-0395",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "green2.cdntencentmusic.com"
+			},
+			"type": "trojan"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "51.15.23.63",
+			"server_port": 989,
+			"tag": "NL-51.15.23.63-0396",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "UTJA57ypk2XKQpnm",
+			"server": "217.30.10.18",
+			"server_port": 9033,
+			"tag": "PL-217.30.10.18-0397",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "38.165.233.93",
+			"server_port": 989,
+			"tag": "PY-38.165.233.93-0398",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "M3t2ZEQcMGRWBjRa",
+			"server": "217.30.10.18",
+			"server_port": 9011,
+			"tag": "PL-217.30.10.18-0399",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "192.36.27.94",
+			"server_port": 989,
+			"tag": "DK-192.36.27.94-0400",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "45.87.175.187",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.187-0401",
 			"type": "shadowsocks"
 		},
 		{
@@ -3437,7 +1923,123 @@
 			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
 			"server": "45.87.175.22",
 			"server_port": 8080,
-			"tag": "LT-45.87.175.22-0429",
+			"tag": "LT-45.87.175.22-0402",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "XPtzA9sCug3SPR4c",
+			"server": "217.30.10.18",
+			"server_port": 9025,
+			"tag": "PL-217.30.10.18-0405",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "103.163.218.2",
+			"server_port": 989,
+			"tag": "VN-103.163.218.2-0409",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "FAdUvMJUq5vDgKEq",
+			"server": "217.30.10.18",
+			"server_port": 9006,
+			"tag": "PL-217.30.10.18-0411",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e",
+			"server": "green2.cdntencentmusic.com",
+			"server_port": 34411,
+			"tag": "TW-220.130.58.138-0412",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "green2.cdntencentmusic.com"
+			},
+			"type": "trojan"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "95.173.218.203",
+			"server_port": 990,
+			"tag": "SG-95.173.218.203-0414",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "193.135.174.135",
+			"server_port": 990,
+			"tag": "LT-193.135.174.135-0422",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu",
+			"server": "213.159.66.206",
+			"server_port": 443,
+			"tag": "MD-213.159.66.206-0425",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "62.100.205.100",
+			"server_port": 990,
+			"tag": "GB-62.100.205.100-0427",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "154.90.63.177",
+			"server_port": 989,
+			"tag": "KR-154.90.63.177-0428",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "46.183.184.60",
+			"server_port": 989,
+			"tag": "HR-46.183.184.60-0429",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "192.71.166.100",
+			"server_port": 989,
+			"tag": "GR-192.71.166.100-0430",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.199",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.199-0431",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "103.163.218.2",
+			"server_port": 990,
+			"tag": "VN-103.163.218.2-0433",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "46.183.185.37",
+			"server_port": 989,
+			"tag": "MK-46.183.185.37-0434",
 			"type": "shadowsocks"
 		},
 		{
@@ -3445,47 +2047,71 @@
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "154.90.62.168",
 			"server_port": 989,
-			"tag": "KR-154.90.62.168-0433",
+			"tag": "KR-154.90.62.168-0436",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "103.57.251.240",
-			"server_port": 990,
-			"tag": "AE-103.57.251.240-0440",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "37.143.130.203",
-			"server_port": 990,
-			"tag": "ES-37.143.130.203-0441",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "188.214.157.58",
-			"server_port": 990,
-			"tag": "MA-188.214.157.58-0442",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "147.78.1.230",
-			"server_port": 990,
-			"tag": "MX-147.78.1.230-0444",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
 			"password": "f8f7aCzcPKbsF8p3",
-			"server": "134.209.147.198",
-			"server_port": 989,
-			"tag": "IN-134.209.147.198-0445",
+			"server": "203.23.128.33",
+			"server_port": 990,
+			"tag": "HK-203.23.128.33-0437",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "193.29.139.189",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.189-0438",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "190.103.176.32",
+			"server_port": 990,
+			"tag": "AR-190.103.176.32-0439",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz",
+			"server": "167.150.100.115",
+			"server_port": 443,
+			"tag": "SG-167.150.100.115-0440",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "45.159.250.190",
+			"server_port": 990,
+			"tag": "KZ-45.159.250.190-0441",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "1RWwXhwfAB5gAEozU4G2Pg",
+			"server": "45.87.175.192",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.192-0442",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf",
+			"password": "asd123456",
+			"server": "103.36.91.23",
+			"server_port": 8388,
+			"tag": "SG-103.36.91.23-0443",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "45.87.175.35",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.35-0444",
 			"type": "shadowsocks"
 		},
 		{
@@ -3493,81 +2119,42 @@
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "154.223.20.79",
 			"server_port": 989,
-			"tag": "TW-154.223.20.79-0446",
+			"tag": "TW-154.223.20.79-0445",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "38.54.45.129",
-			"server_port": 990,
-			"tag": "AR-38.54.45.129-0447",
+			"password": "VpKABcOpNNA0l5G2AVOmw8",
+			"server": "213.109.147.242",
+			"server_port": 62685,
+			"tag": "NL-213.109.147.242-0446",
 			"type": "shadowsocks"
 		},
 		{
-			"password": "04a6a322-b08e-4635-99af-219c01ade7dd",
-			"server": "green2.cdntencentmusic.com",
-			"server_port": 33301,
-			"tag": "TW-220.130.58.138-0902",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "green2.cdntencentmusic.com"
-			},
-			"type": "trojan"
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "38.60.247.151",
+			"server_port": 990,
+			"tag": "BG-38.60.247.151-0447",
+			"type": "shadowsocks"
 		},
 		{
-			"password": "ef76d08c-9841-47e8-92a6-5b74df5d58ac",
-			"server": "green2.cdntencentmusic.com",
-			"server_port": 35502,
-			"tag": "TW-220.130.58.138-0905",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "green2.cdntencentmusic.com"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "160.16.151.196",
-			"server_port": 4054,
-			"tag": "JP-160.16.151.196-0917",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "www.nintendogames.net"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "160.16.81.84",
-			"server_port": 2890,
-			"tag": "JP-160.16.81.84-0918",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "www.nintendogames.net"
-			},
-			"type": "trojan"
-		},
-		{
-			"password": "5a2c16f9",
-			"server": "104.17.162.3",
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "173.244.56.6",
 			"server_port": 443,
-			"tag": "RELAY-104.17.162.3-0923",
+			"tag": "US-173.244.56.6-0865",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
+			"server": "153.121.39.240",
+			"server_port": 4054,
+			"tag": "JP-153.121.39.240-0917",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "%252F",
-				"type": "ws"
+				"server_name": "www.nintendogames.net"
 			},
 			"type": "trojan"
 		},
@@ -3575,7 +2162,7 @@
 			"password": "5a2c16f9",
 			"server": "104.19.220.22",
 			"server_port": 443,
-			"tag": "RELAY-104.19.220.22-0925",
+			"tag": "RELAY-104.19.220.22-0920",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -3592,9 +2179,9 @@
 		},
 		{
 			"password": "5a2c16f9",
-			"server": "104.26.1.110",
+			"server": "172.64.229.205",
 			"server_port": 443,
-			"tag": "RELAY-104.26.1.110-0933",
+			"tag": "RELAY-172.64.229.205-0921",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -3613,34 +2200,7 @@
 			"password": "5a2c16f9",
 			"server": "cf.130519.xyz",
 			"server_port": 443,
-			"tag": "RELAY-104.21.94.161-0935",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "%252F",
-				"type": "ws"
-			},
-			"type": "trojan"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "185.47.254.87",
-			"server_port": 990,
-			"tag": "GT-185.47.254.87-0936",
-			"type": "shadowsocks"
-		},
-		{
-			"password": "5a2c16f9",
-			"server": "104.17.167.134",
-			"server_port": 443,
-			"tag": "RELAY-104.17.167.134-0937",
+			"tag": "RELAY-172.67.138.17-0924",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -3657,9 +2217,9 @@
 		},
 		{
 			"password": "5a2c16f9",
-			"server": "777.ai7777777.xyz",
+			"server": "104.19.55.205",
 			"server_port": 443,
-			"tag": "RELAY-172.64.229.225-0938",
+			"tag": "RELAY-104.19.55.205-0927",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -3676,46 +2236,42 @@
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "2DGq3jvVRg5n3CcxmysGK2kmrgJeSNof12A76cZvVxqPpetyC1XEciCFufq5xKvRWGGnKVembpThuUSQhbZ7GMsZY4UVxEBw",
-			"server": "backup.fleetfoxi.link",
-			"server_port": 44884,
-			"tag": "NL-208.67.106.73-0944",
+			"password": "9tqhMdIrTkgQ46PvhyAtMH",
+			"server": "switcher-nick-croquet.freesocks.work",
+			"server_port": 443,
+			"tag": "NL-92.112.126.90-0932",
 			"type": "shadowsocks"
 		},
 		{
-			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
-			"server": "153.121.39.240",
-			"server_port": 4054,
-			"tag": "JP-153.121.39.240-1830",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "www.nintendogames.net"
-			},
-			"type": "trojan"
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "192.71.244.150",
+			"server_port": 989,
+			"tag": "SI-192.71.244.150-4793",
+			"type": "shadowsocks"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
+			"method": "aes-256-cfb",
 			"password": "f8f7aCzcPKbsF8p3",
-			"server": "134.255.210.49",
-			"server_port": 990,
-			"tag": "CY-134.255.210.49-4874",
+			"server": "192.71.249.78",
+			"server_port": 989,
+			"tag": "BE-192.71.249.78-4794",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "f8f7aCzcPKbsF8p3",
-			"server": "185.47.253.227",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "37.143.130.203",
 			"server_port": 990,
-			"tag": "EC-185.47.253.227-4885",
+			"tag": "ES-37.143.130.203-4825",
 			"type": "shadowsocks"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
+			"method": "aes-256-cfb",
 			"password": "f8f7aCzcPKbsF8p3",
-			"server": "223.165.4.173",
-			"server_port": 990,
-			"tag": "TW-223.165.4.173-4895",
+			"server": "154.223.16.212",
+			"server_port": 989,
+			"tag": "CO-154.223.16.212-4840",
 			"type": "shadowsocks"
 		},
 		{
@@ -3723,15 +2279,71 @@
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "134.209.147.198",
 			"server_port": 990,
-			"tag": "IN-134.209.147.198-4896",
+			"tag": "IN-134.209.147.198-4846",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "45.87.175.181",
+			"password": "360e21d21977dc11",
+			"server": "103.111.114.29",
+			"server_port": 57456,
+			"tag": "IN-103.111.114.29-4847",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "qwerREWQ@@",
+			"server": "218.237.185.230",
+			"server_port": 4652,
+			"tag": "KR-218.237.185.230-4859",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "4a2rfixophdjffa8KVA4Aa",
+			"server": "45.87.175.166",
 			"server_port": 8080,
-			"tag": "LT-45.87.175.181-4921",
+			"tag": "LT-45.87.175.166-4861",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "1RWwXhwfAB5gAEozU4G2Pg",
+			"server": "45.87.175.188",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.188-4867",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "45.87.175.193",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.193-4876",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "1RWwXhwfAB5gAEozU4G2Pg",
+			"server": "45.87.175.166",
+			"server_port": 443,
+			"tag": "LT-45.87.175.166-4877",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "45.158.171.70",
+			"server_port": 8080,
+			"tag": "LT-45.158.171.70-4879",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "45.87.175.69",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.69-4880",
 			"type": "shadowsocks"
 		},
 		{
@@ -3739,7 +2351,15 @@
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
 			"server": "185.93.173.60",
 			"server_port": 990,
-			"tag": "BO-185.93.173.60-4936",
+			"tag": "BO-185.93.173.60-4886",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "188.214.157.58",
+			"server_port": 990,
+			"tag": "MA-188.214.157.58-4887",
 			"type": "shadowsocks"
 		},
 		{
@@ -3747,15 +2367,39 @@
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "38.54.57.90",
 			"server_port": 989,
-			"tag": "BR-38.54.57.90-4953",
+			"tag": "BR-38.54.57.90-4903",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj",
-			"server": "exchange.gameaurela.click",
-			"server_port": 52952,
-			"tag": "NL-141.98.4.67-4975",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "38.54.45.129",
+			"server_port": 990,
+			"tag": "AR-38.54.45.129-4906",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "38.165.233.18",
+			"server_port": 990,
+			"tag": "PY-38.165.233.18-4911",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "45.158.171.66",
+			"server_port": 8080,
+			"tag": "LT-45.158.171.66-4926",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "102.207.216.176",
+			"server_port": 990,
+			"tag": "DZ-102.207.216.176-4937",
 			"type": "shadowsocks"
 		},
 		{
@@ -3763,15 +2407,51 @@
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "185.231.233.112",
 			"server_port": 989,
-			"tag": "PT-185.231.233.112-4992",
+			"tag": "PT-185.231.233.112-4942",
 			"type": "shadowsocks"
+		},
+		{
+			"password": "c80870af-749e-406c-bdbd-7aafa46de71d",
+			"server": "green2.cdntencentmusic.com",
+			"server_port": 31103,
+			"tag": "TW-220.130.58.138-4980",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "green2.cdntencentmusic.com"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "a5049baa-eadf-4523-bcac-33139e4a99ea",
+			"server": "green2.cdntencentmusic.com",
+			"server_port": 35501,
+			"tag": "TW-220.130.58.138-4982",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "green2.cdntencentmusic.com"
+			},
+			"type": "trojan"
+		},
+		{
+			"password": "c80870af-749e-406c-bdbd-7aafa46de71d",
+			"server": "green2.cdntencentmusic.com",
+			"server_port": 35502,
+			"tag": "TW-220.130.58.138-4984",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "green2.cdntencentmusic.com"
+			},
+			"type": "trojan"
 		},
 		{
 			"method": "aes-256-cfb",
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "185.47.255.22",
 			"server_port": 989,
-			"tag": "PR-185.47.255.22-5035",
+			"tag": "PR-185.47.255.22-4985",
 			"type": "shadowsocks"
 		},
 		{
@@ -3779,7 +2459,7 @@
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
 			"server": "38.60.250.107",
 			"server_port": 990,
-			"tag": "DE-38.60.250.107-5038",
+			"tag": "DE-38.60.250.107-4988",
 			"type": "shadowsocks"
 		},
 		{
@@ -3787,39 +2467,55 @@
 			"password": "4SaCIazlgumYkM8FkPzlmwjpyWBDZFBk",
 			"server": "103.106.3.82",
 			"server_port": 443,
-			"tag": "KZ-103.106.3.82-5048",
+			"tag": "KZ-103.106.3.82-4998",
 			"type": "shadowsocks"
 		},
 		{
-			"method": "chacha20-ietf",
-			"password": "asd123456",
-			"server": "103.149.182.79",
-			"server_port": 8388,
-			"tag": "HK-103.149.182.79-5083",
+			"method": "aes-256-cfb",
+			"password": "amazonskr05",
+			"server": "13.38.79.160",
+			"server_port": 443,
+			"tag": "FR-13.38.79.160-5010",
 			"type": "shadowsocks"
-		},
-		{
-			"alter_id": 2,
-			"security": "auto",
-			"server": "dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net",
-			"server_port": 80,
-			"tag": "HK-219.79.209.100-5089",
-			"transport": {
-				"headers": {
-					"Host": "dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "d18bcaf4-1323-11ec-a0fc-f23c913c8d2b"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "103.97.203.227",
+			"server": "185.255.123.166",
 			"server_port": 990,
-			"tag": "IN-103.97.203.227-5098",
+			"tag": "NG-185.255.123.166-5014",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.202",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.202-5018",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.187",
+			"server_port": 8080,
+			"tag": "GB-82.38.31.187-5027",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "134.209.147.198",
+			"server_port": 989,
+			"tag": "IN-134.209.147.198-5047",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "45.87.175.168",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.168-5055",
 			"type": "shadowsocks"
 		},
 		{
@@ -3827,7 +2523,7 @@
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
 			"server": "154.70.207.97",
 			"server_port": 990,
-			"tag": "MA-154.70.207.97-5107",
+			"tag": "MA-154.70.207.97-5057",
 			"type": "shadowsocks"
 		},
 		{
@@ -3835,7 +2531,15 @@
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
 			"server": "188.214.157.30",
 			"server_port": 990,
-			"tag": "MA-188.214.157.30-5108",
+			"tag": "MA-188.214.157.30-5058",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "147.78.1.230",
+			"server_port": 990,
+			"tag": "MX-147.78.1.230-5060",
 			"type": "shadowsocks"
 		},
 		{
@@ -3843,7 +2547,23 @@
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "147.78.1.230",
 			"server_port": 989,
-			"tag": "MX-147.78.1.230-5111",
+			"tag": "MX-147.78.1.230-5061",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "4a2rfixophdjffa8KVA4Aa",
+			"server": "193.29.139.206",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.206-5064",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "193.29.139.240",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.240-5068",
 			"type": "shadowsocks"
 		},
 		{
@@ -3851,7 +2571,7 @@
 			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
 			"server": "138.186.143.32",
 			"server_port": 990,
-			"tag": "PE-138.186.143.32-5124",
+			"tag": "PE-138.186.143.32-5074",
 			"type": "shadowsocks"
 		},
 		{
@@ -3859,31 +2579,15 @@
 			"password": "f8f7aCzcPKbsF8p3",
 			"server": "138.186.143.32",
 			"server_port": 989,
-			"tag": "PE-138.186.143.32-5125",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "f63gg8EruDnUrmz4",
-			"server": "217.30.10.70",
-			"server_port": 9010,
-			"tag": "PL-217.30.10.70-5128",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "wfLC2y7rzZyCmuyt",
-			"server": "217.30.10.70",
-			"server_port": 9093,
-			"tag": "PL-217.30.10.70-5130",
+			"tag": "PE-138.186.143.32-5075",
 			"type": "shadowsocks"
 		},
 		{
 			"method": "chacha20-ietf-poly1305",
-			"password": "dAHM1pm8ag7KdlrUylQi6t",
-			"server": "promo18v.bystrivpn.ru",
-			"server_port": 443,
-			"tag": "FI-38.244.136.233-5151",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "38.54.59.180",
+			"server_port": 990,
+			"tag": "EG-38.54.59.180-5100",
 			"type": "shadowsocks"
 		},
 		{
@@ -3891,146 +2595,20 @@
 			"password": "g5RQoxQuVtnFv3Xxsa8edPisXNPnyWKy",
 			"server": "45.83.20.206",
 			"server_port": 443,
-			"tag": "CY-45.83.20.206-5153",
+			"tag": "CY-45.83.20.206-5103",
 			"type": "shadowsocks"
 		},
 		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
-			"server": "171.22.254.129",
-			"server_port": 990,
-			"tag": "‍☠@FreakConfig",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "0NeN5ta7FLa5B9DLytU0um",
-			"server": "212.34.140.184",
-			"server_port": 443,
-			"tag": "I 11 (@Outline_Vpn) free",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "yODLXVLz2FWNTFeSSng3Fm",
-			"server": "136.244.100.113",
-			"server_port": 443,
-			"tag": "https://t.me/ShadowsocksM78",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "45.87.175.166",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.166-0312",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "QCXDxuDlTTMD7jtgHUjIoj",
-			"server": "45.87.175.167",
-			"server_port": 8080,
-			"tag": "⇝@Gp_Config 🚧 گروه ما",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "1RWwXhwfAB5gAEozU4G2Pg",
-			"server": "45.87.175.181",
-			"server_port": 8080,
-			"tag": "LT-45.87.175.181-0240",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "aes-256-cfb",
-			"password": "c3NtHJ5ujV2tGDfj",
-			"server": "217.30.10.18",
-			"server_port": 9084,
-			"tag": "https://t.me/ShadowsocksM27",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "k1dBOmOB4oqi7Ump37a1bQ",
-			"server": "82.38.31.186",
-			"server_port": 8080,
-			"tag": "https://t.me/ShadowsocksM40",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "trHRlVpNsEOLj55IOAiELw",
-			"server": "45.95.232.236",
-			"server_port": 4248,
-			"tag": "https://t.me/ShadowsocksM73",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "RFK38Cg7APneSB5cWDcpbm",
-			"server": "92.112.126.90",
-			"server_port": 443,
-			"tag": "https://t.me/ShadowsocksM100",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "4a2rfixophdjffa8KVA4Aa",
-			"server": "45.87.175.181",
-			"server_port": 8080,
-			"tag": "_DE_德国 10",
-			"type": "shadowsocks"
-		},
-		{
-			"method": "chacha20-ietf-poly1305",
-			"password": "cvII85TrW6n0OGyfpHVS1u",
-			"server": "45.87.175.192",
-			"server_port": 8080,
-			"tag": "@Awlix_ir",
-			"type": "shadowsocks"
-		},
-		{
-			"alter_id": 32,
-			"security": "auto",
-			"server": "vc.fly.dev",
-			"server_port": 443,
-			"tag": "TW台湾(mibei77.com 米贝节点分享)",
-			"tls": {
-				"enabled": true,
-				"insecure": false
-			},
-			"transport": {
-				"headers": {
-					"Host": "vc.fly.dev"
-				},
-				"path": "/vc",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "35379219-6535-4f2e-a4fe-3e44f61e0eee"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "de.cdn.stun.su",
-			"server_port": 443,
-			"tag": "AU_speednode_0001",
+			"password": "b06e8208-d522-41b7-a840-6b8b7731b308",
+			"server": "green2.cdntencentmusic.com",
+			"server_port": 31103,
+			"tag": "TW台湾 74.3KB/s",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA",
-					"short_id": "dcd27eb15ebed5f2"
-				},
-				"server_name": "de.cdn.stun.su",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
+				"server_name": "green2.cdntencentmusic.com"
 			},
-			"type": "vless",
-			"uuid": "9a5414b6-20b7-4313-8cd4-693d3c19ec05"
+			"type": "trojan"
 		},
 		{
 			"server": "167.234.255.2",
@@ -4096,72 +2674,6 @@
 			"uuid": "1a539db6-d162-42f4-9b56-687bd57bfbc2"
 		},
 		{
-			"packet_encoding": "xudp",
-			"server": "157.173.127.227",
-			"server_port": 443,
-			"tag": "DE_speednode_0009",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "q70yFMTo4Dz6IWwVcL9icqgJPgyIuv3j3n5fZxym6kg",
-					"short_id": "40e3350da285"
-				},
-				"server_name": "analytics.google.com",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "7bda027c-cbc8-488f-864f-cfb415cd8d77"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
-			"server_port": 443,
-			"tag": "IL_speednode_0018",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
-					"short_id": "55e6af1a35e64a98"
-				},
-				"server_name": "i2pd.website",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "77.110.113.219",
-			"server_port": 443,
-			"tag": "LB_speednode_0019",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
-					"short_id": "8453e5fd9af927"
-				},
-				"server_name": "www.kinopoisk.ru",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "d44e93de-4a8c-464f-81f2-eb0d384b1ab2"
-		},
-		{
 			"server": "94.232.247.168",
 			"server_port": 41360,
 			"tag": "MD_speednode_0020",
@@ -4181,72 +2693,6 @@
 			},
 			"type": "vless",
 			"uuid": "e16a35ea-6715-4e75-9845-d20358bd0876"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "158.160.197.118",
-			"server_port": 443,
-			"tag": "RU_speednode_0022",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "TrAxIFIhSCc4C5IWnGvvAs2cSD_mVag1MlTCJPeLkGg",
-					"short_id": "b9ceed646f470d2d"
-				},
-				"server_name": "ya.ru",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "4d7a559b-6379-41a7-9e51-41ef759846aa"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "51.250.65.209",
-			"server_port": 443,
-			"tag": "RU_speednode_0024",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
-					"short_id": "2476f063981ffd92"
-				},
-				"server_name": "api-maps.yandex.ru",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "76f385df-bb5c-4e92-b60b-fce540b0a6a0"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "158.160.201.80",
-			"server_port": 443,
-			"tag": "RU_speednode_0025",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc",
-					"short_id": "1929ef620e9b34f5"
-				},
-				"server_name": "m.vk.com",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "b27c7007-9a35-43cb-ab1e-8c5c0a7e3c34"
 		},
 		{
 			"server": "89.23.113.137",
@@ -4270,28 +2716,419 @@
 			"uuid": "9f721f50-e015-5ea3-8bb0-22428307e9c0"
 		},
 		{
-			"server": "cf.zhetengsha.eu.org",
-			"server_port": 443,
-			"tag": "免费VPN：https://tt.vg/gwaAy",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
+			"server": "www.4chan.org",
+			"server_port": 8080,
+			"tag": "feng4_1",
 			"transport": {
 				"headers": {
-					"Host": "snippets.kkii.eu.org"
+					"Host": "feng4.l1ut8bi9.workers.dev"
+				},
+				"path": "/?ed=2048",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
+		},
+		{
+			"server": "www.ipget.net",
+			"server_port": 8080,
+			"tag": "feng4_2",
+			"transport": {
+				"headers": {
+					"Host": "feng4.l1ut8bi9.workers.dev"
+				},
+				"path": "/?ed=2048",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
+		},
+		{
+			"server": "xn--b6gac.eu.org",
+			"server_port": 8080,
+			"tag": "feng4_3",
+			"transport": {
+				"headers": {
+					"Host": "feng4.l1ut8bi9.workers.dev"
+				},
+				"path": "/?ed=2048",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
+		},
+		{
+			"server": "www.gov.ua",
+			"server_port": 8080,
+			"tag": "feng4_4",
+			"transport": {
+				"headers": {
+					"Host": "feng4.l1ut8bi9.workers.dev"
+				},
+				"path": "/?ed=2048",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
+		},
+		{
+			"server": "ip.sb",
+			"server_port": 8080,
+			"tag": "feng4_5",
+			"transport": {
+				"headers": {
+					"Host": "feng4.l1ut8bi9.workers.dev"
+				},
+				"path": "/?ed=2048",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "d6ff33a6-03bf-4338-8a63-62ab284a9466"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "0NeN5ta7FLa5B9DLytU0um",
+			"server": "212.34.140.184",
+			"server_port": 443,
+			"tag": "I 11 (@Outline_Vpn) free",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "yODLXVLz2FWNTFeSSng3Fm",
+			"server": "136.244.100.113",
+			"server_port": 443,
+			"tag": "https://t.me/ShadowsocksM78",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "45.87.175.166",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.166-0312",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "45.87.175.10",
+			"server_port": 8080,
+			"tag": "34🌝@oneclickvpnkeys",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "45.87.175.167",
+			"server_port": 8080,
+			"tag": "⇝@Gp_Config 🚧 گروه ما",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "45.87.175.190",
+			"server_port": 8080,
+			"tag": "@Gp_Config 🚀 کانال تلگرام ما",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "45.87.175.180",
+			"server_port": 8080,
+			"tag": "آلمان 🇩🇪 @V2xay",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "1RWwXhwfAB5gAEozU4G2Pg",
+			"server": "45.87.175.181",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.181-0240",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "45.87.175.165",
+			"server_port": 8080,
+			"tag": "⇝@Gp_Config 🐌 سرور های بیشتر در گپ",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "JdmRK9gMEqFgs8nP",
+			"server": "217.30.10.18",
+			"server_port": 9003,
+			"tag": "@Hope_Net",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "c3NtHJ5ujV2tGDfj",
+			"server": "217.30.10.18",
+			"server_port": 9084,
+			"tag": "https://t.me/ShadowsocksM27",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.190",
+			"server_port": 8080,
+			"tag": "https://t.me/ShadowsocksM38",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "82.38.31.186",
+			"server_port": 8080,
+			"tag": "https://t.me/ShadowsocksM40",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "k1dBOmOB4oqi7Ump37a1bQ",
+			"server": "45.87.175.177",
+			"server_port": 8080,
+			"tag": "https://t.me/ShadowsocksM43",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "dAHM1pm8ag7KdlrUylQi6t",
+			"server": "38.244.136.233",
+			"server_port": 443,
+			"tag": "https://t.me/ShadowsocksM72",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "RFK38Cg7APneSB5cWDcpbm",
+			"server": "92.112.126.90",
+			"server_port": 443,
+			"tag": "https://t.me/ShadowsocksM100",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "37.19.198.243",
+			"server_port": 443,
+			"tag": "_UA_乌克兰",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "141.98.101.179",
+			"server_port": 443,
+			"tag": "_GB_英国 4",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "4a2rfixophdjffa8KVA4Aa",
+			"server": "45.87.175.181",
+			"server_port": 8080,
+			"tag": "_DE_德国 10",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "SwTShXYSQd404FISs8NFeJ",
+			"server": "promo19v.bystrivpn.ru",
+			"server_port": 443,
+			"tag": "IT  @ConfigV2RayNG—406",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "RFK38Cg7APneSB5cWDcpbm",
+			"server": "switcher-nick-croquet.freesocks.work",
+			"server_port": 443,
+			"tag": "NL  @ConfigV2RayNG—405",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "amazonskr05",
+			"server": "51.44.178.195",
+			"server_port": 443,
+			"tag": "@Network_442_ ss 03",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "45.87.175.192",
+			"server_port": 8080,
+			"tag": "@Awlix_ir",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "GA9KzeEgvfxNrgmM",
+			"server": "217.30.10.18",
+			"server_port": 9019,
+			"tag": "RU 51 → tg@nicevpn123",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "Lp27rqyJq72bZsqX",
+			"server": "217.30.10.18",
+			"server_port": 9045,
+			"tag": "_RU_俄罗斯_1",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "FG5ddLsMPbV5CutE",
+			"server": "217.30.10.18",
+			"server_port": 9050,
+			"tag": "_RU_俄罗斯_4",
+			"type": "shadowsocks"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "51.79.103.76",
+			"server_port": 80,
+			"tag": "[🇨🇦] [vm-no-ws] [251222-192536.570]",
+			"transport": {
+				"headers": {
+					"Host": "google.com"
+				},
+				"path": "/IOebhLMhl1CTbFHbL95myfRX2",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "58fe1542-5290-40ad-815a-77707a81afe5"
+		},
+		{
+			"server": "212.192.31.146",
+			"server_port": 443,
+			"tag": "[🇩🇪] [vl-no-ws] [251222-191842.318]",
+			"transport": {
+				"headers": {},
+				"path": "/panika",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "199a78a5-b4d4-4064-a0db-bb37c5839134"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "54.38.220.132",
+			"server_port": 443,
+			"tag": "[🇩🇪] [vm-no-ws] [251222-192540.854]",
+			"transport": {
+				"headers": {},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "61591181-2529-4104-8dd8-b7e5843bef8f"
+		},
+		{
+			"server": "fn11.irsbv2.ir",
+			"server_port": 443,
+			"tag": "[🇫🇮] [vl-no-ws] [251222-191943.296]",
+			"transport": {
+				"headers": {
+					"Host": "cloudflare.com"
 				},
 				"path": "/",
 				"type": "ws"
 			},
 			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
+			"uuid": "47867494-9509-4c32-a90a-e9253b033279"
+		},
+		{
+			"server": "tfl.gov.uk",
+			"server_port": 443,
+			"tag": "[🇬🇧] [vl-tl-ws] [251222-192000.766]",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "rAyAn-cOnFiG-uk-1.pAriSa.dPdNs.oRg"
+			},
+			"transport": {
+				"headers": {
+					"Host": "rAyAn-cOnFiG-uk-1.pAriSa.dPdNs.oRg"
+				},
+				"path": "/ws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "5408b813-0a75-41de-9a4f-d5df4c10087b"
+		},
+		{
+			"server": "173.245.59.217",
+			"server_port": 443,
+			"tag": "[🇬🇧] [vl-tl-ws] [251222-192328.420]",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "azizoarjmand.info"
+			},
+			"transport": {
+				"headers": {
+					"Host": "azizoarjmand.info"
+				},
+				"path": "/yhowcws",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "ee122f13-9b54-49b6-abc5-aa47b464fdb3"
+		},
+		{
+			"server": "n1761184278.74qxv.top",
+			"server_port": 443,
+			"tag": "[🇭🇰] [vl-tl-ws] [251222-191844.321]",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "n1761184278.74qxv.top"
+			},
+			"transport": {
+				"headers": {
+					"Host": "n1761184278.74qxv.top"
+				},
+				"path": "/1b451930-1211-4ffe-90a8-80ca5bb801b4",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "1b451930-1211-4ffe-90a8-80ca5bb801b4"
+		},
+		{
+			"server": "57.180.50.81",
+			"server_port": 37390,
+			"tag": "[🇯🇵] [vl-tl-ws] [251222-192217.672]",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "xxh.ipipip.im"
+			},
+			"transport": {
+				"headers": {
+					"Host": "xxh.ipipip.im"
+				},
+				"path": "/xxhjphome",
+				"type": "ws"
+			},
+			"type": "vless",
+			"uuid": "b52fac66-fd92-47ae-b1f6-332aa1c353d9"
 		},
 		{
 			"server": "172.66.45.18",
 			"server_port": 443,
-			"tag": "_美国 3",
+			"tag": "[🇳🇱] [vl-tl-ws] [251222-192120.948]",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
@@ -4301,81 +3138,97 @@
 				"headers": {
 					"Host": "ef87bb2b.meti-e9q.pages.dev"
 				},
-				"path": "/",
+				"path": "/ck2vlelfdajoybac?ed=2560",
 				"type": "ws"
 			},
 			"type": "vless",
 			"uuid": "923509aa-bfb0-4758-a5a1-a6c2d0468169"
 		},
 		{
-			"server": "104.19.212.207",
+			"alter_id": 0,
+			"security": "auto",
+			"server": "141.227.131.75",
 			"server_port": 443,
-			"tag": "未知 13",
+			"tag": "[🇳🇱] [vm-no-ws] [251222-192547.216]",
+			"transport": {
+				"headers": {},
+				"path": "/",
+				"type": "ws"
+			},
+			"type": "vmess",
+			"uuid": "d16cfe38-f994-4382-876d-5c16ef410248"
+		},
+		{
+			"password": "a5049baa-eadf-4523-bcac-33139e4a99ea",
+			"server": "green2.cdntencentmusic.com",
+			"server_port": 33301,
+			"tag": "[🇸🇬] [tr-tl-ra] [251222-191713.840]",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
+				"server_name": "green2.cdntencentmusic.com"
 			},
+			"type": "trojan"
+		},
+		{
+			"server": "104.16.122.4",
+			"server_port": 8080,
+			"tag": "[🇸🇬] [vl-no-ws] [251222-192225.041]",
 			"transport": {
 				"headers": {
-					"Host": "snippets.kkii.eu.org"
+					"Host": "support.sslzoom.us"
 				},
 				"path": "/",
 				"type": "ws"
 			},
 			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
+			"uuid": "bb6e0719-3d1a-4896-bddc-ddc86d682609"
 		},
 		{
-			"server": "172.67.204.84",
-			"server_port": 443,
-			"tag": "_美国 6",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev"
-			},
+			"server": "185.146.173.185",
+			"server_port": 2052,
+			"tag": "[🇺🇸] [vl-no-ws] [251222-191846.037]",
 			"transport": {
 				"headers": {
-					"Host": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev"
+					"Host": "fggvggvvvv.fggghbvhh-ghvghggg-fgvg-mahdi-net-irancel.BLOG"
 				},
-				"path": "/@V2rayBaaz?ed",
+				"path": "Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-",
 				"type": "ws"
 			},
 			"type": "vless",
-			"uuid": "169221de-6408-4143-9e66-6f77de385e94"
+			"uuid": "1cf5ce63-6c7c-49b6-9168-aa017f0aa498"
 		},
 		{
-			"server": "104.17.69.244",
-			"server_port": 443,
-			"tag": "未知 19",
+			"server": "208.103.161.33",
+			"server_port": 2053,
+			"tag": "[🇺🇸] [vl-tl-ws] [251222-191842.888]",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
+				"server_name": "sni.111000.dynv6.net"
 			},
 			"transport": {
 				"headers": {
-					"Host": "snippets.kkii.eu.org"
+					"Host": "sni.111000.dynv6.net"
 				},
 				"path": "/",
 				"type": "ws"
 			},
 			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
+			"uuid": "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a"
 		},
 		{
 			"server": "162.159.152.2",
 			"server_port": 443,
-			"tag": "未知 22",
+			"tag": "[🇺🇸] [vl-tl-ws] [251222-191946.079]",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "ziyong.boringdad.netlib.re"
+				"server_name": "asuka.boringdad.netlib.re"
 			},
 			"transport": {
 				"headers": {
-					"Host": "ziyong.boringdad.netlib.re"
+					"Host": "asuka.boringdad.netlib.re"
 				},
 				"path": "/",
 				"type": "ws"
@@ -4384,403 +3237,718 @@
 			"uuid": "495c0dad-3268-4470-ac57-887c5089db0d"
 		},
 		{
-			"server": "104.21.47.6",
-			"server_port": 443,
-			"tag": "未知 24",
+			"server": "139.162.83.82",
+			"server_port": 32225,
+			"tag": "[🇺🇸] [vl-tl-ws] [251222-192204.897]",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "v2ray-vmess-free.irnoen.workers.dev"
+				"server_name": "vless3.datatestvless.click"
 			},
 			"transport": {
 				"headers": {
-					"Host": "v2ray-vmess-free.irnoen.workers.dev"
+					"Host": "vless3.datatestvless.click"
 				},
-				"path": "/?@V2rayBaaz------@V2rayBaaz",
+				"path": "/?ed=2560",
 				"type": "ws"
 			},
 			"type": "vless",
-			"uuid": "161fa2ac-9618-4a3c-bc9b-5420ecc1826e"
-		},
-		{
-			"server": "visa.com",
-			"server_port": 443,
-			"tag": "未知 32",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "ziyong.boringdad.netlib.re"
-			},
-			"transport": {
-				"headers": {
-					"Host": "ziyong.boringdad.netlib.re"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "495c0dad-3268-4470-ac57-887c5089db0d"
-		},
-		{
-			"server": "cdn.204910.best",
-			"server_port": 443,
-			"tag": "_美国 11",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
-		},
-		{
-			"server": "ali.nonull.pp.ua",
-			"server_port": 443,
-			"tag": "未知 41",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
-		},
-		{
-			"server": "45.150.128.215",
-			"server_port": 80,
-			"tag": "_泰国",
-			"transport": {
-				"headers": {
-					"Host": "t.me%2Fv2Line"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "65094902-5425-464d-9171-d3a69d9e1cbc"
-		},
-		{
-			"server": "138.124.14.37",
-			"server_port": 34841,
-			"tag": "_西班牙",
-			"transport": {
-				"headers": {},
-				"path": "/@mrconfig_group@mrconfig_group@mrconfig_group@mrconfig_group@mrconfig_group",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "7d109bff-4a3e-4505-8827-bbf1858c099a"
+			"uuid": "aa7f42cc-616f-4550-9a87-4b85bb409121"
 		},
 		{
 			"alter_id": 0,
 			"security": "auto",
-			"server": "40.160.231.239",
-			"server_port": 443,
-			"tag": "_美国 15",
+			"server": "38.14.99.179",
+			"server_port": 59807,
+			"tag": "[🇺🇸] [vm-no-ra] [251222-192552.994]",
+			"type": "vmess",
+			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "154.201.76.172",
+			"server_port": 20521,
+			"tag": "[🇺🇸] [vm-no-ws] [251222-192547.786]",
 			"transport": {
 				"headers": {},
 				"path": "/",
 				"type": "ws"
 			},
 			"type": "vmess",
-			"uuid": "af85739f-3552-422f-b151-10d9a29b15b9"
+			"uuid": "496cec71-a0fd-4f25-bba1-cba9e9d5a52f"
 		},
 		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "40.160.233.134",
+			"password": "BxceQaOe",
+			"server": "219.79.214.159",
 			"server_port": 443,
-			"tag": "_美国 17",
-			"transport": {
-				"headers": {},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "6f3a9d2c-7f3d-4c2a-9b3f-8f6a1c9e4d21"
-		},
-		{
-			"server": "norman.ns.cloudflare.com",
-			"server_port": 443,
-			"tag": "_美国 19",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "azizoarjmand.info"
-			},
-			"transport": {
-				"headers": {
-					"Host": "azizoarjmand.info"
-				},
-				"path": "/yhowcws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee122f13-9b54-49b6-abc5-aa47b464fdb3"
-		},
-		{
-			"server": "108.162.193.217",
-			"server_port": 443,
-			"tag": "_美国 21",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "azizoarjmand.info"
-			},
-			"transport": {
-				"headers": {
-					"Host": "azizoarjmand.info"
-				},
-				"path": "/yhowcws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "ee122f13-9b54-49b6-abc5-aa47b464fdb3"
-		},
-		{
-			"server": "104.19.39.97",
-			"server_port": 443,
-			"tag": "未知 46",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "snippets.kkii.eu.org"
-			},
-			"transport": {
-				"headers": {
-					"Host": "snippets.kkii.eu.org"
-				},
-				"path": "/",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5a2c16f9-e365-4080-8d38-6924c3835586"
-		},
-		{
-			"server": "transferwise.com",
-			"server_port": 443,
-			"tag": "未知 48",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg"
-			},
-			"transport": {
-				"headers": {
-					"Host": "rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg"
-				},
-				"path": "/ws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "5408b813-0a75-41de-9a4f-d5df4c10087b"
-		},
-		{
-			"server": "clyde.ns.cloudflare.com",
-			"server_port": 443,
-			"tag": "_美国 25",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "redlabell.info"
-			},
-			"transport": {
-				"headers": {
-					"Host": "redlabell.info"
-				},
-				"path": "/aafeuws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "02e46039-200d-4ae4-ac90-b0d619f72034"
-		},
-		{
-			"server": "108.162.193.91",
-			"server_port": 443,
-			"tag": "_美国 27",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "redlabell.info"
-			},
-			"transport": {
-				"headers": {
-					"Host": "redlabell.info"
-				},
-				"path": "/aafeuws",
-				"type": "ws"
-			},
-			"type": "vless",
-			"uuid": "02e46039-200d-4ae4-ac90-b0d619f72034"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "5.101.82.158",
-			"server_port": 4443,
-			"tag": "_俄罗斯",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE",
-					"short_id": "aa7e96542880027a"
-				},
-				"server_name": "github.com",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "680c950c-417b-4388-8d57-5cd6a65c3cd1"
-		},
-		{
-			"server": "turk.mahfan.xyz",
-			"server_port": 8081,
-			"tag": "_土耳其 2",
-			"type": "vless",
-			"uuid": "ee5576a5-d0d7-4c83-9656-f11c85238014"
-		},
-		{
-			"password": "17d3bf89-d2f0-4827-bcd0-c199fe54cd2a",
-			"server": "green2.cdntencentmusic.com",
-			"server_port": 31102,
-			"tag": "_中国台湾省 2",
+			"tag": "香港4|@stairnode 2",
 			"tls": {
 				"enabled": true,
 				"insecure": true,
-				"server_name": "green2.cdntencentmusic.com"
+				"server_name": "t.me%2Fripaojiedian"
 			},
 			"type": "trojan"
 		},
 		{
-			"password": "3846a29b-57d5-40f2-8acd-13855aa025cd",
-			"server": "green2.cdntencentmusic.com",
-			"server_port": 31103,
-			"tag": "_中国台湾省 3",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "green2.cdntencentmusic.com"
-			},
-			"type": "trojan"
-		},
-		{
-			"server": "89.187.174.121",
-			"server_port": 8443,
-			"tag": "_荷兰 8",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "ams1.fromblancwithlove.com"
-			},
-			"type": "vless",
-			"uuid": "a207569d-bf8f-43dd-81fd-2c847c7870c4"
-		},
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "62.60.148.21",
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "37.19.198.236",
 			"server_port": 443,
-			"tag": "_伊朗 2",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho",
-					"short_id": "ee6f3e8f44b1f0b6"
+			"tag": "US-37.19.198.236-1415",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "37.19.198.244",
+			"server_port": 443,
+			"tag": "US-37.19.198.244-1367",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "37.19.198.160",
+			"server_port": 443,
+			"tag": "US-37.19.198.160-1368",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "79.127.200.162",
+			"server_port": 990,
+			"tag": "CA-79.127.200.162-1410",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "64.74.163.82",
+			"server_port": 990,
+			"tag": "US-64.74.163.82-0530",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "64.74.163.218",
+			"server_port": 990,
+			"tag": "US-64.74.163.218-1413",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "79.127.200.162",
+			"server_port": 989,
+			"tag": "CA-79.127.200.162-1416",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "173.244.56.9",
+			"server_port": 443,
+			"tag": "US-173.244.56.9-1472",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "193.29.139.233",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.233-1777",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "45.87.175.181",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.181-0491",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "193.29.139.235",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.235-0698",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "45.87.175.185",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.185-0493",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "cvII85TrW6n0OGyfpHVS1u",
+			"server": "45.87.175.183",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.183-0492",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "45.87.175.192",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.192-0388",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ds6EV9pexkUGfT5TfUDH20",
+			"server": "78.129.140.11",
+			"server_port": 443,
+			"tag": "GB-78.129.140.11-0522",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "193.29.139.204",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.204-0696",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "9AET6ZCfi1p9FCZ25AgEcP",
+			"server": "51.195.202.129",
+			"server_port": 5223,
+			"tag": "FR-51.195.202.129-0099",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "89.163.140.136",
+			"server_port": 989,
+			"tag": "DE-89.163.140.136-1498",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "amazonskr05",
+			"server": "13.39.112.212",
+			"server_port": 443,
+			"tag": "FR-13.39.112.212-1924",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "149.22.95.183",
+			"server_port": 443,
+			"tag": "CA-149.22.95.183-1527",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "vXtXcKeKlazMBvKPsjk6Ba",
+			"server": "62.210.88.22",
+			"server_port": 443,
+			"tag": "FR-62.210.88.22-0166",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "nxgsmHkP3JU7hbQkJfxgpXh5tlvXe1en",
+			"server": "45.83.142.237",
+			"server_port": 443,
+			"tag": "CY-45.83.142.237-0679",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "PgJV4yRPpGpoV-40PS8N0G6gS4BpBRkF",
+			"server": "89.23.103.60",
+			"server_port": 1234,
+			"tag": "NL-89.23.103.60-0377",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "LQyAUItafUmmO3EZZx9UbiX6IGydSBgL",
+			"server": "45.12.144.18",
+			"server_port": 443,
+			"tag": "ES-45.12.144.18-0341",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "51.15.23.166",
+			"server_port": 989,
+			"tag": "FR-51.15.23.166-1522",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "VqQ91RXEQlzAekTzHF6boM",
+			"server": "51.178.42.187",
+			"server_port": 5223,
+			"tag": "FR-51.178.42.187-1480",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "141.98.101.181",
+			"server_port": 443,
+			"tag": "GB-141.98.101.181-0770",
+			"type": "shadowsocks"
+		},
+		{
+			"alter_id": 0,
+			"security": "auto",
+			"server": "141.227.131.75",
+			"server_port": 443,
+			"tag": "FR-141.227.131.75-1524",
+			"transport": {
+				"headers": {
+					"Host": "141.227.131.75"
 				},
-				"server_name": "st.ozone.ru",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
+				"path": "/",
+				"type": "ws"
 			},
-			"type": "vless",
-			"uuid": "39e5cc2f-1294-4a42-bb58-306a8be785e1"
+			"type": "vmess",
+			"uuid": "d16cfe38-f994-4382-876d-5c16ef410248"
 		},
 		{
-			"server": "ams1.fromblancwithlove.com",
+			"method": "chacha20-ietf-poly1305",
+			"password": "Fuu6XL6x7NoinrCnrCImmp",
+			"server": "57.128.219.105",
+			"server_port": 5223,
+			"tag": "PL-57.128.219.105-0303",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "Szb=-Zguo53QhmivcJqEAWtpdPX6Y",
+			"server": "95.179.183.126",
+			"server_port": 13345,
+			"tag": "NL-95.179.183.126-1529",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "infiniteinjera.semanticstrainer.click"
+			},
+			"type": "trojan"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "149.22.87.241",
+			"server_port": 443,
+			"tag": "JP-149.22.87.241-1382",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "shadowsocks",
+			"server": "149.22.87.240",
+			"server_port": 443,
+			"tag": "JP-149.22.87.240-0813",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "Szb=-Zguo53QhmivcJqEAWtpdPX6Y",
+			"server": "95.179.184.71",
+			"server_port": 13345,
+			"tag": "NL-95.179.184.71-1536",
+			"tls": {
+				"enabled": true,
+				"insecure": false,
+				"server_name": "infiniteinjera.semanticstrainer.click"
+			},
+			"type": "trojan"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "yXoiEDFMVorGUeKla77k7sEXCeSE5r2A",
+			"server": "45.15.127.49",
+			"server_port": 443,
+			"tag": "US-45.15.127.49-0184",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "UaOsjVrnDkHy7Tu4A2OIyV",
+			"server": "74.119.193.40",
+			"server_port": 5223,
+			"tag": "HK-74.119.193.40-0417",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "_bypfvq6ra7g4n5yCCR9DoVeGya2XUUS",
+			"server": "185.82.73.212",
+			"server_port": 8444,
+			"tag": "NL-185.82.73.212-0462",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "51.15.23.108",
+			"server_port": 989,
+			"tag": "FR-51.15.23.108-1474",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "Vmsf06YTMqtAYdhwMqdSuGqgdVkm0yddi4kYaAEVQWYj9iHA",
+			"server": "89.223.93.176",
+			"server_port": 41348,
+			"tag": "PL-89.223.93.176-0430",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "rc4-md5",
+			"password": "14fFPrbezE3HDZzsMOr6",
+			"server": "68.183.235.122",
+			"server_port": 8080,
+			"tag": "SG-68.183.235.122-1541",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "185.231.233.173",
+			"server_port": 990,
+			"tag": "PT-185.231.233.173-2419",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "rc4-md5",
+			"password": "14fFPrbezE3HDZzsMOr6",
+			"server": "128.199.172.224",
+			"server_port": 8080,
+			"tag": "SG-128.199.172.224-1545",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "185.231.233.173",
+			"server_port": 989,
+			"tag": "PT-185.231.233.173-1543",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "OMOpV2XCoMOBYsKGAjLDmsKkw6bDpMOkdVhtD15fwpQqw70AN8Krw6AyH8OaCQ==",
+			"server": "51.195.203.247",
 			"server_port": 8443,
-			"tag": "_英国 5",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"server_name": "ams1.fromblancwithlove.com"
-			},
-			"type": "vless",
-			"uuid": "a207569d-bf8f-43dd-81fd-2c847c7870c4"
+			"tag": "FR-51.195.203.247-0363",
+			"type": "shadowsocks"
 		},
 		{
-			"password": "a213e1a5-3c5a-40f2-b70e-98ffa63ffc8e",
-			"server": "green2.cdntencentmusic.com",
-			"server_port": 35501,
-			"tag": "_中国台湾省 4",
+			"method": "rc4-md5",
+			"password": "14fFPrbezE3HDZzsMOr6",
+			"server": "138.199.42.68",
+			"server_port": 8080,
+			"tag": "US-138.199.42.68-1514",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "S2QudBxi0vRySw4YRLloPq",
+			"server": "77.238.224.29",
+			"server_port": 55702,
+			"tag": "NL-77.238.224.29-0397",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "f8f7aCzcPKbsF8p3",
+			"server": "185.192.124.188",
+			"server_port": 989,
+			"tag": "BR-185.192.124.188-1575",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "38.247.64.176",
+			"server_port": 990,
+			"tag": "US-38.247.64.176-0879",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "93498539-7838-4836-b9b3-8311ffc79bcf",
+			"server": "82.180.146.173",
+			"server_port": 35652,
+			"tag": "IN-82.180.146.173-1578",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-128-gcm",
+			"password": "162629d7-cb17-43b1-82c9-f9c7ae6cba70",
+			"server": "82.180.146.173",
+			"server_port": 30607,
+			"tag": "IN-82.180.146.173-1944",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "38.89.142.56",
+			"server_port": 990,
+			"tag": "US-38.89.142.56-0882",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "fG2artUmHfNT2cX7",
+			"server": "217.30.10.70",
+			"server_port": 9018,
+			"tag": "PL-217.30.10.70-1577",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-gcm",
+			"password": "RexnBgU7EV5ADxG",
+			"server": "141.164.45.187",
+			"server_port": 7001,
+			"tag": "KR-141.164.45.187-1945",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "l668XHPejoSNNuD66BYzyehaCpZexiF7",
+			"server": "45.12.136.170",
+			"server_port": 443,
+			"tag": "CY-45.12.136.170-0956",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "193.29.139.152",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.152-0689",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "4a2rfixophdjffa8KVA4Aa",
+			"server": "45.87.175.164",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.164-0071",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "167.160.90.178",
+			"server_port": 990,
+			"tag": "US-167.160.90.178-0249",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "89.46.239.231",
+			"server_port": 990,
+			"tag": "IL-89.46.239.231-0238",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf",
+			"password": "asd123456",
+			"server": "103.141.221.88",
+			"server_port": 8388,
+			"tag": "HK-103.141.221.88-1607",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "aes-256-cfb",
+			"password": "rpgbNnU9rDDU4aWZ",
+			"server": "217.30.10.18",
+			"server_port": 9094,
+			"tag": "PL-217.30.10.18-1613",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "jP4Z9J3S6tAldCaSdCtaZR7gZtV7rQg0",
+			"server": "64.31.63.92",
+			"server_port": 443,
+			"tag": "FR-64.31.63.92-1588",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "193.29.139.188",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.188-0812",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "23.95.76.147",
+			"server_port": 990,
+			"tag": "US-23.95.76.147-1999",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "4lUEC91c1d8oeClzDbYpXA",
+			"server": "212.80.206.94",
+			"server_port": 8618,
+			"tag": "IL-212.80.206.94-0077",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "45.15.185.70",
+			"server_port": 990,
+			"tag": "CY-45.15.185.70-1567",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "119.59.127.129",
+			"server_port": 990,
+			"tag": "TH-119.59.127.129-1950",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "44e660b0ee21cf3ac66aee2c08af85d2",
+			"server": "160.16.151.196",
+			"server_port": 4054,
+			"tag": "JP-160.16.151.196-1651",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
-				"server_name": "green2.cdntencentmusic.com"
+				"server_name": "www.nintendogames.net"
+			},
+			"type": "trojan"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "JQcc2rIZtXamatRYAINIddMom3MBu7zF",
+			"server": "37.221.125.38",
+			"server_port": 443,
+			"tag": "GB-37.221.125.38-1532",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "45.82.252.109",
+			"server_port": 990,
+			"tag": "CY-45.82.252.109-0231",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
+			"server": "185.237.185.89",
+			"server_port": 990,
+			"tag": "LT-185.237.185.89-2805",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "oZIoA69Q8yhcQV8ka3Pa3A",
+			"server": "193.29.139.184",
+			"server_port": 8080,
+			"tag": "NL-193.29.139.184-0693",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "1RWwXhwfAB5gAEozU4G2Pg",
+			"server": "45.87.175.171",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.171-1157",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "QCXDxuDlTTMD7jtgHUjIoj",
+			"server": "45.87.175.199",
+			"server_port": 8080,
+			"tag": "LT-45.87.175.199-0989",
+			"type": "shadowsocks"
+		},
+		{
+			"method": "chacha20-ietf-poly1305",
+			"password": "wwzVn2ZnHfqYa6l8EWh3eY",
+			"server": "switcher-nick-croquet.freesocks.work",
+			"server_port": 443,
+			"tag": "US美国(mibei77.com 米贝节点分享) 7",
+			"type": "shadowsocks"
+		},
+		{
+			"password": "BxceQaOe",
+			"server": "219.79.214.159",
+			"server_port": 443,
+			"tag": "_CN_中国 7",
+			"tls": {
+				"enabled": true,
+				"insecure": true,
+				"server_name": "t.me%252Fripaojiedian"
 			},
 			"type": "trojan"
 		},
 		{
 			"flow": "xtls-rprx-vision",
-			"server": "103.106.3.198",
-			"server_port": 4443,
-			"tag": "_孟加拉国",
+			"server": "167.17.70.16",
+			"server_port": 8443,
+			"tag": "_CA_加拿大 12",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
 				"reality": {
 					"enabled": true,
-					"public_key": "5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE",
-					"short_id": "aa7e96542880027a"
+					"public_key": "8W9r2aXGhKNtvPxnL6EiPpQuSm9OJT17x2xyxwxIo30",
+					"short_id": "84f70f1177981563"
 				},
-				"server_name": "github.com",
+				"server_name": "www.microsoft.com",
 				"utls": {
 					"enabled": true,
 					"fingerprint": "chrome"
 				}
 			},
 			"type": "vless",
-			"uuid": "680c950c-417b-4388-8d57-5cd6a65c3cd1"
+			"uuid": "55975415-43c0-461c-8752-d5b8013364e3"
 		},
 		{
 			"flow": "xtls-rprx-vision",
-			"server": "51.250.10.228",
-			"server_port": 443,
-			"tag": "_俄罗斯 5",
+			"server": "178.239.124.30",
+			"server_port": 56482,
+			"tag": "_BG_保加利亚",
 			"tls": {
 				"enabled": true,
 				"insecure": false,
 				"reality": {
 					"enabled": true,
-					"public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
-					"short_id": "65c7748be8"
+					"public_key": "W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg",
+					"short_id": ""
 				},
-				"server_name": "sun6-21.userapi.com",
+				"server_name": "cloudcircus.jp",
 				"utls": {
 					"enabled": true,
 					"fingerprint": "chrome"
 				}
 			},
 			"type": "vless",
-			"uuid": "fd4b0117-d752-46fd-9a94-21a21e360fdb"
+			"uuid": "2c487d9d-25a1-4b79-aed1-086b8c3082ca"
 		}
 	],
 	"route": {}
