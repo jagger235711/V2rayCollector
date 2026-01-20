@@ -5,24 +5,26 @@
 	"ntp": {},
 	"outbounds": [
 		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "boogeyman.chomba.tech",
+			"flow": "xtls-rprx-vision",
+			"server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
 			"server_port": 443,
-			"tag": "_南非",
+			"tag": "_以色列",
 			"tls": {
 				"enabled": true,
-				"insecure": false
-			},
-			"transport": {
-				"headers": {
-					"Host": "boogeyman.chomba.tech"
+				"insecure": false,
+				"reality": {
+					"enabled": true,
+					"public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
+					"short_id": "55e6af1a35e64a98"
 				},
-				"path": "/vmess",
-				"type": "ws"
+				"server_name": "i2pd.website",
+				"utls": {
+					"enabled": true,
+					"fingerprint": "chrome"
+				}
 			},
-			"type": "vmess",
-			"uuid": "9b6a87ed-9949-49f6-ab6f-cf9ab15177d7"
+			"type": "vless",
+			"uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2"
 		}
 	],
 	"route": {}
