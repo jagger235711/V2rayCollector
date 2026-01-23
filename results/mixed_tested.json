@@ -1,60 +1,49 @@
 {
-	"dns": {},
-	"inbounds": [],
-	"log": {},
-	"ntp": {},
-	"outbounds": [
-		{
-			"flow": "xtls-rprx-vision",
-			"server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
-			"server_port": 443,
-			"tag": "_以色列",
-			"tls": {
-				"enabled": true,
-				"insecure": false,
-				"reality": {
-					"enabled": true,
-					"public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
-					"short_id": "55e6af1a35e64a98"
-				},
-				"server_name": "i2pd.website",
-				"utls": {
-					"enabled": true,
-					"fingerprint": "chrome"
-				}
-			},
-			"type": "vless",
-			"uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "183.236.51.36",
-			"server_port": 59003,
-			"tag": "[🇨🇳] [vm-no-ra] [260121-104639.607]",
-			"type": "vmess",
-			"uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
-		},
-		{
-			"alter_id": 0,
-			"security": "auto",
-			"server": "boogeyman.chomba.tech",
-			"server_port": 443,
-			"tag": "[🇿🇦] [vm-tl-ws] [260121-104629.020]",
-			"tls": {
-				"enabled": true,
-				"insecure": false
-			},
-			"transport": {
-				"headers": {
-					"Host": "boogeyman.chomba.tech"
-				},
-				"path": "/vmess",
-				"type": "ws"
-			},
-			"type": "vmess",
-			"uuid": "9b6a87ed-9949-49f6-ab6f-cf9ab15177d7"
-		}
-	],
-	"route": {}
+  "dns": {},
+  "inbounds": [],
+  "log": {},
+  "ntp": {},
+  "outbounds": [
+    {
+      "security": "auto",
+      "server": "183.236.51.36",
+      "server_port": 59003,
+      "tag": "CN3｜家宽｜非常安全",
+      "type": "vmess",
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+    },
+    {
+      "security": "auto",
+      "server": "183.236.51.36",
+      "server_port": 59003,
+      "tag": "CN3｜家宽｜非常安全 2",
+      "type": "vmess",
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+    },
+    {
+      "security": "auto",
+      "server": "183.236.51.36",
+      "server_port": 59003,
+      "tag": "[🇨🇳] [vm-no-ra] [260123-013251.785]",
+      "type": "vmess",
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+    },
+    {
+      "security": "auto",
+      "server": "183.236.51.36",
+      "server_port": 59003,
+      "tag": "[🇨🇳] [vm-no-ra] [260123-013234.284]",
+      "type": "vmess",
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+    },
+    {
+      "security": "auto",
+      "server": "183.236.51.36",
+      "server_port": 59003,
+      "tag": "[🇨🇳] [vm-no-ra] [260123-013251.832]",
+      "type": "vmess",
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+    }
+  ],
+  "route": {}
 }
