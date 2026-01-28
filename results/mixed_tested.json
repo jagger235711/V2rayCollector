@@ -5,12 +5,36 @@
   "ntp": {},
   "outbounds": [
     {
-      "security": "auto",
-      "server": "183.236.51.36",
-      "server_port": 59003,
-      "tag": "CN3｜家宽｜非常安全",
-      "type": "vmess",
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+      "method": "chacha20-ietf-poly1305",
+      "password": "kaQH3hGdcP80XEDI",
+      "server": "admin.c2.havij.co",
+      "server_port": 443,
+      "tag": "英国|@ripaojiedian",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "kaQH3hGdcP80XEDI",
+      "server": "admin.c2.havij.co",
+      "server_port": 443,
+      "tag": "英国 - City of London - Microsoft Corporation - 1",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "kaQH3hGdcP80XEDI",
+      "server": "admin.c2.havij.co",
+      "server_port": 443,
+      "tag": "英国|@ripaojiedian 2",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "kaQH3hGdcP80XEDI",
+      "server": "145.133.64.171",
+      "server_port": 443,
+      "tag": "荷兰 V2CROSS.COM",
+      "type": "shadowsocks"
     },
     {
       "security": "auto",
@@ -19,6 +43,75 @@
       "tag": "CN3｜家宽｜非常安全 2",
       "type": "vmess",
       "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz",
+      "server_port": 443,
+      "tag": "_以色列",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE",
+          "short_id": "55e6af1a35e64a98"
+        },
+        "server_name": "i2pd.website",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "0e8a6896-ad90-4a3b-89a3-77d64aa409e2"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "W74XFALLLuw6m5IA",
+      "server": "4.250.220.204",
+      "server_port": 443,
+      "tag": "US美国14 469.0KB/s",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "W74XFALLLuw6m5IA",
+      "server": "series-a1.samanehha.co",
+      "server_port": 443,
+      "tag": "TG频道:@hkaa0▓英国\r_2",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "W74XFALLLuw6m5IA",
+      "server": "series-a1.samanehha.co",
+      "server_port": 443,
+      "tag": "GB-4.250.220.204-4752",
+      "type": "shadowsocks"
+    },
+    {
+      "security": "auto",
+      "server": "20.193.153.19",
+      "server_port": 15834,
+      "tag": "[🇮🇳] [vm-no-ra] [260128-012939.482]",
+      "type": "vmess",
+      "uuid": "39a8c374-76b1-4e90-ab85-85cd9a42ded2"
+    },
+    {
+      "security": "auto",
+      "server": "20.193.153.19",
+      "server_port": 15834,
+      "tag": "[🇮🇳] [vm-no-ra] [260128-012939.437]",
+      "type": "vmess",
+      "uuid": "39a8c374-76b1-4e90-ab85-85cd9a42ded2"
+    },
+    {
+      "security": "auto",
+      "server": "20.193.153.19",
+      "server_port": 15834,
+      "tag": "[🇮🇳] [vm-no-ra] [260128-012939.391]",
+      "type": "vmess",
+      "uuid": "39a8c374-76b1-4e90-ab85-85cd9a42ded2"
     },
     {
       "security": "auto",
