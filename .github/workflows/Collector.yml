@@ -2,7 +2,9 @@ name: Collector
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *"
+    # 每天北京时间 06:00 / 18:00（CST, UTC+8）触发
+    # GitHub Actions cron 使用 UTC：06:00 CST = 22:00 UTC，18:00 CST = 10:00 UTC
+    - cron: "0 22,10 * * *"
 
 env:
   # 输入文件配置
