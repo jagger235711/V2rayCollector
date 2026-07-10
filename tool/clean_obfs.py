@@ -26,14 +26,17 @@ def main():
 
     fixed = 0
     for p in data['proxies']:
+        # mihomo requires: if obfs is set and non-empty, obfs-password MUST be non-empty too.
+        # If the proxy has obfs but no obfs-password, the safest fix is to
+        # clear obfs entirely (disable obfs) rather than guessing a password.
         if p.get('obfs') and not p.get('obfs-password'):
-            p['obfs-password'] = ''
+            p['obfs'] = ''
             fixed += 1
 
     with open(output_path, 'w') as f:
         yaml.safe_dump(data, f, default_flow_style=False)
 
-    print(f"Fixed {fixed} proxies: added empty obfs-password, "
+    print(f"Fixed {fixed} proxies: cleared obfs (no password), "
           f"total {len(data['proxies'])} proxies")
 
 
