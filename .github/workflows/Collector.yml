@@ -209,6 +209,23 @@ jobs:
             -o ${{ env.RESOULTS_DIR }}/mixed.yaml
           echo "转换完成: $(wc -c < ${{ env.RESOULTS_DIR }}/mixed.yaml) 字节"
 
+      - name: Clean proxy config
+        run: |
+          pip install pyyaml -q
+          python3 << 'PYEOF'
+import yaml, sys
+with open('${{ env.RESOULTS_DIR }}/mixed.yaml') as f:
+    data = yaml.safe_load(f)
+removed = 0
+for p in data['proxies']:
+    if p.get('obfs') and not p.get('obfs-password'):
+        del p['obfs']
+        removed += 1
+with open('${{ env.RESOULTS_DIR }}/mixed.yaml', 'w') as f:
+    yaml.safe_dump(data, f, default_flow_style=False)
+print(f"清洗完成，修复 {removed} 个 obfs 配置，共 {len(data['proxies'])} 个代理")
+PYEOF
+
       - name: Install clash-speedtest
         run: |
           wget -qO- https://github.com/faceair/clash-speedtest/releases/download/v1.8.8/clash-speedtest_Linux_x86_64.tar.gz | tar xz
