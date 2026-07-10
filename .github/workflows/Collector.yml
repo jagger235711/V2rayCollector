@@ -212,7 +212,7 @@ jobs:
       - name: Clean proxy config
         run: |
           pip install pyyaml -q
-          python3 ${{ env.TOOLS_DIR }}/clean_obfs.py ${{ env.RESOULTS_DIR }}/mixed.yaml
+          python3 ${{ env.TOOLS_DIR }}/clean_proxies.py ${{ env.RESOULTS_DIR }}/mixed.yaml
 
       - name: Install clash-speedtest
         run: |
