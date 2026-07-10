@@ -22,7 +22,7 @@
 - 🕷️ **自动爬取** Telegram频道中的V2ray节点配置
 - 🔗 **汇总处理** 来自多个订阅链接的节点
 - 🧹 **智能去重** 支持并发检测，排除无效和慢速链接
-- ⚡ **高效测速** 使用singtools进行批量节点速度测试
+- ⚡ **高效测速** 使用clash-speedtest进行批量节点速度测试
 - 🔄 **格式转换** 基于subconverter支持多种订阅格式
 - ⏰ **自动更新** 通过GitHub Actions每天定时运行
 - 📊 **结果分类** 按协议类型分类输出结果
@@ -71,15 +71,15 @@
     - 清理空行和格式
     │
     ▼
-[5] 节点测速 (singtools)
+[5] 节点测速 (clash-speedtest)
     - 并发测速
-    - 输出JSON结果
+    - 输出过滤后的Clash YAML
     │
     ▼
 输出结果 (results/)
 ├─ mixed.txt              # 原始混合节点
-├─ mixed_tested.json      # 测速结果(JSON)
-├─ mixed_tested.txt       # 测速后节点
+├─ mixed_tested.yaml      # 测速通过的节点(Clash YAML)
+├─ mixed_tested.txt       # 最终订阅(Base64)
 ├─ vmess.txt/vless.txt    # 按协议分类
 └─ *.bak                  # 备份文件
 ```
@@ -108,14 +108,12 @@ V2rayCollector/
 │
 ├── results/                           # 输出结果目录
 │   ├── mixed.txt                      # 混合节点列表
-│   ├── mixed_tested.json              # 测速结果
+│   ├── mixed_tested.yaml              # 测速通过节点(Clash YAML)
 │   ├── vmess.txt / vless.txt / ...    # 按协议分类
 │   └── *.bak                          # 备份文件
 │
 ├── tool/                              # 第三方工具
-│   ├── speedTest_singtools/           # singtools测速工具
-│   │   ├── singtools                  # 可执行文件
-│   │   └── config.json                # 测速配置
+│   └── (clash-speedtest通过GitHub Release下载)
 │   └── (subconverter运行在Docker中)
 │
 ├── deduplicate.py                     # 🔑 URL去重工具
@@ -202,11 +200,18 @@ docker run -d --name subconverter \
 
 #### 步骤 5: 执行测速
 ```bash
-chmod +x tool/speedTest_singtools/singtools
-tool/speedTest_singtools/singtools test \
-  -i results/mixed.txt \
-  -c tool/speedTest_singtools/config.json \
-  -o results/mixed_tested.json
+# 安装 clash-speedtest
+wget -qO- https://github.com/faceair/clash-speedtest/releases/download/v1.8.8/clash-speedtest_Linux_x86_64.tar.gz | tar xz
+sudo mv clash-speedtest /usr/local/bin/
+
+# 将 mixed.txt 转为 Clash YAML
+curl -fsSL "http://localhost:25500/sub?target=clash&url=/subconverter/results/mixed.txt" -o results/mixed.yaml
+
+# 执行测速并输出通过的节点
+clash-speedtest -c results/mixed.yaml \
+  -output results/mixed_tested.yaml \
+  -max-latency 800ms -min-download-speed 5 \
+  -concurrent 16 -timeout 10s -rename=false
 ```
 
 ### 方式 2️⃣：GitHub Actions自动运行 (推荐)
@@ -225,7 +230,7 @@ tool/speedTest_singtools/singtools test \
   5. 运行Telegram爬虫
   6. 启动subconverter容器并批量处理订阅
   7. Base64解码转换
-  8. 执行singtools测速
+  8. 转换mixed.txt为Clash YAML并执行clash-speedtest测速
   9. 生成最终订阅
   10. 提交结果到仓库
 
@@ -268,8 +273,8 @@ https://raw.githubusercontent.com/user/repo/main/subscribe
 | 文件 | 说明 | 格式 |
 |------|------|------|
 | `mixed.txt` | 去重后的所有节点 | 纯文本，每行一个节点 |
-| `mixed_tested.json` | 测速后的节点数据 | JSON格式，包含速度、延迟等信息 |
-| `mixed_tested.txt` | 测速通过的节点 | 纯文本 |
+| `mixed_tested.yaml` | 测速通过的节点 | Clash YAML格式 |
+| `mixed_tested.txt` | 最终订阅输出 | Base64编码 |
 
 ### 协议分类文件
 
@@ -374,8 +379,8 @@ trojan://password@domain.com:443?...
   docker run subconverter:latest
 
 - name: Speedtest
-  # 使用singtools测速
-  singtools test -i results/mixed.txt -o results/mixed_tested.json
+  # 使用clash-speedtest测速
+  clash-speedtest -c results/mixed.yaml -output results/mixed_tested.yaml
 
 - name: Commit Changes
   # 提交结果到仓库
@@ -452,8 +457,9 @@ docker pull asdlokj1qpi23/subconverter:latest
 
 **解决方案**：
 - 检查 `mixed.txt` 是否为空
-- 确认 `singtools` 文件有执行权限: `chmod +x tool/speedTest_singtools/singtools`
-- 检查 `tool/speedTest_singtools/config.json` 配置是否正确
+- 确认网络能访问 `github.com` 以下载clash-speedtest二进制
+- 检查subconverter容器是否在运行（用于格式转换）
+- 尝试减少并发数或增加超时时间
 
 ### Q4: GitHub Actions执行失败？
 
@@ -536,7 +542,7 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 8  # 提高目标并发
 
 - **[Scrapy](https://scrapy.org/)** - Python爬虫框架
 - **[subconverter](https://github.com/asdlokj1qpi233/subconverter)** - 订阅格式转换工具
-- **[singtools](https://github.com/Kdwkakcs/singtools)** - 基于sing-box的节点测试工具
+- **[clash-speedtest](https://github.com/faceair/clash-speedtest)** - 基于Clash/Mihomo核心的高效测速工具
 - **[sing-box](https://github.com/SagerNet/sing-box)** - 通用代理平台
 
 ### 相关文档
@@ -577,7 +583,7 @@ copies or substantial portions of the Software.
 感谢以下项目和贡献者：
 
 - **[asdlokj1qpi233/subconverter](https://github.com/asdlokj1qpi233/subconverter)** - 强大的订阅转换工具
-- **[Kdwkakcs/singtools](https://github.com/Kdwkakcs/singtools)** - 高效的节点测速工具
+- **[faceair/clash-speedtest](https://github.com/faceair/clash-speedtest)** - 高效的节点测速工具
 - **[mrvcoder/V2rayCollector](https://github.com/mrvcoder/V2rayCollector)** - 原始项目灵感来源
 - **所有贡献者和使用者**
 

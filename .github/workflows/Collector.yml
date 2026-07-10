@@ -15,13 +15,12 @@ env:
   # 输出目录配置
   RESOULTS_DIR: $GITHUB_WORKSPACE/results
   # OUTPUT_MIXED: $GITHUB_WORKSPACE/results/mixed.txt
-  # OUTPUT_TESTED: $GITHUB_WORKSPACE/results/mixed_tested.json
+  # OUTPUT_TESTED: $GITHUB_WORKSPACE/results/mixed_tested.yaml
   
   # 工具路径配置
 
   TOOLS_DIR: $GITHUB_WORKSPACE/tool
-  # SPEEDTEST_TOOL: $GITHUB_WORKSPACE/tool/speedTest_singtools/singtools
-  # SPEEDTEST_CONFIG: $GITHUB_WORKSPACE/tool/speedTest_singtools/config.json
+  # SPEEDTEST_TOOL: clash-speedtest (通过GitHub Release下载)
 
 jobs:
   build:
@@ -202,17 +201,32 @@ jobs:
           mv "${{ env.RESOULTS_DIR }}/mixed.txt.tmp" "${{ env.RESOULTS_DIR }}/mixed.txt"
           echo "清理后统计：$(wc -l ${{ env.RESOULTS_DIR }}/mixed.txt) 行 $(wc -c ${{ env.RESOULTS_DIR }}/mixed.txt) 字节"
 
-      - name: Speedtest
+      - name: Convert mixed.txt to Clash YAML
         run: |
           if [ ! -f "${{ env.RESOULTS_DIR }}/mixed.txt" ]; then exit 1; fi
-          chmod +x ${{ env.TOOLS_DIR }}/speedTest_singtools/singtools
-          ${{ env.TOOLS_DIR }}/speedTest_singtools/singtools test -i ${{ env.RESOULTS_DIR }}/mixed.txt -c ${{ env.TOOLS_DIR }}/speedTest_singtools/config.json -o ${{ env.RESOULTS_DIR }}/mixed_tested.json -e fatal -f ""
-          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed_tested.json" ]; then exit 1; fi
+          curl -fsSL "http://localhost:25500/sub?target=clash&url=/subconverter/results/mixed.txt" \
+            -o ${{ env.RESOULTS_DIR }}/mixed.yaml
+          echo "转换完成: $(wc -c < ${{ env.RESOULTS_DIR }}/mixed.yaml) 字节"
+
+      - name: Install clash-speedtest
+        run: |
+          wget -qO- https://github.com/faceair/clash-speedtest/releases/download/v1.8.8/clash-speedtest_Linux_x86_64.tar.gz | tar xz
+          sudo mv clash-speedtest /usr/local/bin/
+          clash-speedtest -v
+
+      - name: Speedtest
+        run: |
+          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed.yaml" ]; then exit 1; fi
+          clash-speedtest -c ${{ env.RESOULTS_DIR }}/mixed.yaml \
+            -output ${{ env.RESOULTS_DIR }}/mixed_tested.yaml \
+            -max-latency 800ms -min-download-speed 5 \
+            -concurrent 16 -timeout 10s -rename=false
+          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed_tested.yaml" ]; then exit 1; fi
 
       - name: Convert to mixed with base64encode
         run: |
-          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed_tested.json" ]; then exit 1; fi
-          full_url="http://localhost:25500/sub?target=mixed&url=/subconverter/results/mixed_tested.json"
+          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed_tested.yaml" ]; then exit 1; fi
+          full_url="http://localhost:25500/sub?target=mixed&url=/subconverter/results/mixed_tested.yaml"
           echo "正在请求: $full_url"
           if ! curl -v -o ${{ env.RESOULTS_DIR }}/mixed_tested.txt "$full_url"; then
             echo "curl failed: $(docker exec subconverter_container ls -l /subconverter/results)"
