@@ -201,10 +201,11 @@ jobs:
           mv "${{ env.RESOULTS_DIR }}/mixed.txt.tmp" "${{ env.RESOULTS_DIR }}/mixed.txt"
           echo "清理后统计：$(wc -l ${{ env.RESOULTS_DIR }}/mixed.txt) 行 $(wc -c ${{ env.RESOULTS_DIR }}/mixed.txt) 字节"
 
-      - name: Convert mixed.txt to Clash YAML
+      - name: Convert to Clash YAML
         run: |
           if [ ! -f "${{ env.RESOULTS_DIR }}/mixed.txt" ]; then exit 1; fi
-          curl -fsSL "http://localhost:25500/sub?target=clash&url=/subconverter/results/mixed.txt" \
+          base64 -w0 ${{ env.RESOULTS_DIR }}/mixed.txt > ${{ env.RESOULTS_DIR }}/mixed_b64.txt
+          curl -fsSL "http://localhost:25500/sub?target=clash&url=/subconverter/results/mixed_b64.txt" \
             -o ${{ env.RESOULTS_DIR }}/mixed.yaml
           echo "转换完成: $(wc -c < ${{ env.RESOULTS_DIR }}/mixed.yaml) 字节"
 
