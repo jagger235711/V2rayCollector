@@ -24,17 +24,17 @@ def main():
         print("No 'proxies' field found, nothing to clean")
         return
 
-    removed = 0
+    fixed = 0
     for p in data['proxies']:
         if p.get('obfs') and not p.get('obfs-password'):
-            del p['obfs']
-            removed += 1
+            p['obfs-password'] = ''
+            fixed += 1
 
     with open(output_path, 'w') as f:
         yaml.safe_dump(data, f, default_flow_style=False)
 
-    print(f"Cleaned {removed} proxies with obfs but no obfs-password, "
-          f"total {len(data['proxies'])} proxies remaining")
+    print(f"Fixed {fixed} proxies: added empty obfs-password, "
+          f"total {len(data['proxies'])} proxies")
 
 
 if __name__ == '__main__':
