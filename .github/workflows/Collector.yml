@@ -209,25 +209,38 @@ jobs:
             -o ${{ env.RESOULTS_DIR }}/mixed.yaml
           echo "转换完成: $(wc -c < ${{ env.RESOULTS_DIR }}/mixed.yaml) 字节"
 
-      - name: Clean proxy config
-        run: |
-          pip install pyyaml -q
-          python3 ${{ env.TOOLS_DIR }}/clean_proxies.py ${{ env.RESOULTS_DIR }}/mixed.yaml
-
       - name: Install clash-speedtest
         run: |
           wget -qO- https://github.com/faceair/clash-speedtest/releases/download/v1.8.8/clash-speedtest_Linux_x86_64.tar.gz | tar xz
           sudo mv clash-speedtest /usr/local/bin/
           clash-speedtest -v
 
-      - name: Speedtest
+      - name: Speedtest (auto-skip bad proxies)
         run: |
           if [ ! -f "${{ env.RESOULTS_DIR }}/mixed.yaml" ]; then exit 1; fi
-          clash-speedtest -c ${{ env.RESOULTS_DIR }}/mixed.yaml \
-            -output ${{ env.RESOULTS_DIR }}/mixed_tested.yaml \
-            -max-latency 800ms -min-download-speed 5 \
-            -concurrent 16 -timeout 10s -rename=false
-          if [ ! -f "${{ env.RESOULTS_DIR }}/mixed_tested.yaml" ]; then exit 1; fi
+          cd "${{ env.RESOULTS_DIR }}"
+          cp mixed.yaml work.yaml
+          max_retries=50
+          for ((attempt=1; attempt<=max_retries; attempt++)); do
+            if clash-speedtest -c work.yaml \
+              -output mixed_tested.yaml \
+              -max-latency 800ms -min-download-speed 5 \
+              -concurrent 16 -timeout 10s -rename=false 2>speedtest_err.log; then
+              echo "Speedtest succeeded on attempt $attempt"
+              break
+            fi
+            bad=$(grep -oP 'proxy \K\d+' speedtest_err.log | head -1)
+            if [ -z "$bad" ]; then
+              echo "Unknown error, aborting:"
+              cat speedtest_err.log
+              exit 1
+            fi
+            # yq is pre-installed on ubuntu-latest
+            yq eval "del(.proxies[${bad}])" -i work.yaml
+            remaining=$(yq eval '.proxies | length' work.yaml)
+            echo "Attempt $attempt: removed bad proxy #$bad, $remaining proxies remaining"
+          done
+          if [ ! -f mixed_tested.yaml ]; then exit 1; fi
 
       - name: Convert to mixed with base64encode
         run: |
